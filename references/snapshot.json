@@ -1,0 +1,24 @@
+{
+  "framework_version": "0.2.0",
+  "packaged_on": "2026-10-22",
+  "parameters": 81,
+  "terms": 94,
+  "sources": 51,
+  "files": [
+    {
+      "file": "gvf-parameters.json",
+      "source": "knowledge/game-visual-framework/data/parameters.json",
+      "sha256": "5a82706a988c580379fdac73ffa37be5139e630ee2c46cdafa6351cb1f78795c"
+    },
+    {
+      "file": "gvf-glossary.json",
+      "source": "knowledge/game-visual-framework/data/glossary.json",
+      "sha256": "72edd97697f2a850e4e272be232aa3ce3227cf0ddcc1dd9a53f1553138ec026b"
+    },
+    {
+      "file": "gvf-evidence.json",
+      "source": "knowledge/game-visual-framework/data/evidence.json",
+      "sha256": "c862cf1578581d6e243f551fd75ba319e216258c2e8cd08179d2528277491872"
+    }
+  ]
+}

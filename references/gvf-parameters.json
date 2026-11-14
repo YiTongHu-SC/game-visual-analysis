@@ -1,0 +1,2471 @@
+{
+  "framework_version": "0.2.0",
+  "catalog_version": "0.2.0",
+  "title": "游戏视觉设计参数目录",
+  "language": "zh-CN",
+  "updated": "2026-10-21",
+  "provenance": "参数拆分、量表与锚点为本项目原创操作性定义；并非行业统一标准。",
+  "scale_policy": {
+    "ordinal": "0–100是带五级锚点的序数量表，不表示百分比、倍数或可互换距离；项目内还需参考片校准。",
+    "physical": "物理量、输入量与比例使用各自单位；数值范围是本目录工作范围，非自然规律。",
+    "unknown": "unknown表示未定；not_applicable表示当前scope下不适用；0与none可代表明确禁用。",
+    "realism": "形体、材质、光照、运动分别定义；overview_realism仅为自报摘要，不计算权威平均。"
+  },
+  "domains": [
+    {
+      "id": "representation",
+      "zh": "表征与媒介",
+      "description": "决定画面如何表示对象与空间。"
+    },
+    {
+      "id": "form",
+      "zh": "造型与形体",
+      "description": "对象的形状、比例、轮廓与空间结构。"
+    },
+    {
+      "id": "line",
+      "zh": "线条与边缘",
+      "description": "描边、内线、线宽和边缘处理。"
+    },
+    {
+      "id": "surface",
+      "zh": "表面与材质",
+      "description": "材质响应、纹理、笔触及细节。"
+    },
+    {
+      "id": "color",
+      "zh": "色彩与调色板",
+      "description": "配色组织、明度、色度、色相和用色分工。"
+    },
+    {
+      "id": "light",
+      "zh": "光照与阴影",
+      "description": "光照模型、明暗组织、曝光和发光。"
+    },
+    {
+      "id": "camera",
+      "zh": "镜头与投影",
+      "description": "观察视点、投影、镜头运动和畸变。"
+    },
+    {
+      "id": "composition",
+      "zh": "构图与可读性",
+      "description": "焦点、留白、分层与主体分离。"
+    },
+    {
+      "id": "motion",
+      "zh": "运动与动画",
+      "description": "时间组织、运动规律及夸张。"
+    },
+    {
+      "id": "vfx",
+      "zh": "特效与反馈",
+      "description": "粒子、后期、屏幕反馈与特效语义。"
+    },
+    {
+      "id": "ui",
+      "zh": "界面与文字",
+      "description": "信息层级、文字、组件与场景的关系。"
+    },
+    {
+      "id": "presentation",
+      "zh": "输出与画面处理",
+      "description": "像素网格、抗锯齿和最终输出表面。"
+    }
+  ],
+  "presets": {
+    "exploratory": {
+      "zh": "探索草案",
+      "required_parameters": [
+        "representation.mode",
+        "camera.projection",
+        "color.palette_mode"
+      ]
+    },
+    "prototype_2d": {
+      "zh": "二维原型",
+      "required_parameters": [
+        "representation.mode",
+        "form.shape_language",
+        "line.usage",
+        "color.palette_mode",
+        "camera.projection",
+        "composition.subject_separation",
+        "presentation.resolution_strategy"
+      ]
+    },
+    "production_2d": {
+      "zh": "二维制作",
+      "required_parameters": [
+        "representation.mode",
+        "representation.source_medium",
+        "form.shape_language",
+        "line.usage",
+        "color.palette_mode",
+        "camera.projection",
+        "composition.subject_separation",
+        "motion.timing",
+        "ui.integration",
+        "presentation.resolution_strategy",
+        "presentation.antialiasing"
+      ]
+    },
+    "production_3d": {
+      "zh": "三维制作",
+      "required_parameters": [
+        "representation.mode",
+        "form.naturalism",
+        "surface.material_physicality",
+        "light.model",
+        "light.physicality",
+        "camera.projection",
+        "composition.subject_separation",
+        "motion.naturalism",
+        "ui.integration",
+        "presentation.resolution_strategy",
+        "presentation.antialiasing"
+      ]
+    }
+  },
+  "parameters": [
+    {
+      "id": "representation.mode",
+      "domain": "representation",
+      "zh": "空间表征",
+      "en": "Spatial representation",
+      "definition": "实际内容和空间组织方式；2.5d表示平面资产与空间深度混合。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "检查资产类型、遮挡与相机可用运动；不可仅凭单张截图猜测。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "2d",
+        "2.5d",
+        "3d"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "representation.recognizability",
+      "domain": "representation",
+      "zh": "对象可辨识度",
+      "en": "Recognizability",
+      "definition": "受众能否从视觉辨认约定的具象对象身份；纯几何形式的可辨不等于具象指涉，与写实程度独立。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "向目标受众展示固定尺寸无标签图，要求辨认预先约定的具象对象身份；记录识别结果，再以锚点片评级。",
+      "applicability": {},
+      "limits": "不是识别正确率；识别正确率需另外记录人数与任务。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无约定具象对象指涉；可辨纯几何形式",
+        "25": "仅有少数对象线索",
+        "50": "多数对象可辨认，语义需语境",
+        "75": "对象身份清楚，细节简化",
+        "100": "指定对象及关键部位明确可辨"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "representation.depth_cues",
+      "domain": "representation",
+      "zh": "深度线索强度",
+      "en": "Depth cue strength",
+      "definition": "深度线索在最终画面中的显著程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定镜头比较遮挡、尺寸、透视、明暗和运动视差参考。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "完全平面，无深度线索",
+        "25": "主要依靠前后遮挡",
+        "50": "含层级、缩放或少量阴影",
+        "75": "多种一致深度线索",
+        "100": "透视、遮挡、光照、运动深度线索充分"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "representation.abstraction_strategy",
+      "domain": "representation",
+      "zh": "抽象策略",
+      "en": "Abstraction strategy",
+      "definition": "形体偏离观察对象的主要策略。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "按样张说明几何化、符号化、删减、变形、观察式或混合的依据。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "geometric",
+        "symbolic",
+        "reductive",
+        "distorted",
+        "observational",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "representation.source_medium",
+      "domain": "representation",
+      "zh": "媒介母题",
+      "en": "Medium cue",
+      "definition": "视觉希望让人联想到的制作媒介，不代表资产真实制作技术。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "比较最终输出中可见媒介痕迹；在rationale注明混合方式。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。 截图只支持媒介外观判断；纸、墨、paint等值不能证明真实手工工艺或作者工具。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "digital_clean",
+        "pixel",
+        "paper",
+        "ink",
+        "paint",
+        "clay",
+        "photographic",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "representation.semantic_load",
+      "domain": "representation",
+      "zh": "符号约定依赖",
+      "en": "Semantic convention dependence",
+      "definition": "理解画面所需的额外符号约定数量与重要程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "以初次接触的目标玩家检查图例、颜色编码和对象含义。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "几乎无需额外图例",
+        "25": "少量通用图形约定",
+        "50": "需要简短图例",
+        "75": "需学习多项游戏内约定",
+        "100": "核心画面依赖完整符号系统"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "form.naturalism",
+      "domain": "form",
+      "zh": "形体自然度",
+      "en": "Form naturalism",
+      "definition": "形体和比例接近指定现实参照的程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "锁定对象类别、视角与参考照片，用五级锚点比较结构比例。",
+      "applicability": {},
+      "limits": "无现实对象时可NA；不得与材质或光照自然度平均成权威总分。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "形体结构与比例完全服从自有规则",
+        "25": "可辨对象的极简变形",
+        "50": "明显风格化，主要结构保留",
+        "75": "接近观察比例，少量调整",
+        "100": "遵循指定真实对象的形体与解剖"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "form.proportion_exaggeration",
+      "domain": "form",
+      "zh": "比例夸张度",
+      "en": "Proportion exaggeration",
+      "definition": "相对约定基准对各部位比例的变形程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "说明基准比例和被放大的部位，用同视角轮廓图评审。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "按指定真实比例",
+        "25": "轻微重点放大",
+        "50": "局部明显放大或缩小",
+        "75": "多部位极端比例",
+        "100": "比例以表达目的彻底重构"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "form.shape_language",
+      "domain": "form",
+      "zh": "形状母题",
+      "en": "Shape language",
+      "definition": "重复使用的基础形状倾向。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "在主体轮廓与二级形体中标注占主导的形状；mixed须说明分工。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "round",
+        "angular",
+        "rectilinear",
+        "organic",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "form.edge_roundness",
+      "domain": "form",
+      "zh": "转角圆润度",
+      "en": "Edge roundness",
+      "definition": "主要可见转角从尖锐到圆润的视觉程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "在固定屏幕大小比较轮廓与高光中的倒角；不等同倒角半径。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "尖角或无倒角",
+        "25": "仅微小倒角",
+        "50": "明显圆角与棱角并存",
+        "75": "以圆润转角为主",
+        "100": "形体接近连续柔软曲面"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "form.silhouette_complexity",
+      "domain": "form",
+      "zh": "轮廓复杂度",
+      "en": "Silhouette complexity",
+      "definition": "主体外轮廓在目标显示尺寸中的结构复杂程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "转为纯色剪影，以相同屏幕占比比较转折层级。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "单一简形",
+        "25": "少量大型转折",
+        "50": "多级清晰形块",
+        "75": "许多小尺度转折",
+        "100": "细碎且多层轮廓变化"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "form.scale_consistency",
+      "domain": "form",
+      "zh": "相对尺度一致度",
+      "en": "Relative scale consistency",
+      "definition": "同类与跨类对象遵循约定尺寸关系的程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "与尺度表比对角色、门、道具等尺寸；没有基准时标unknown。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "按表达随意变化",
+        "25": "仅主要物件保持大小关系",
+        "50": "同类内部一致，跨类可调整",
+        "75": "大多数关系遵循设定",
+        "100": "所有可比物件遵循指定尺度表"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "form.anatomy_strategy",
+      "domain": "form",
+      "zh": "结构处理",
+      "en": "Structural strategy",
+      "definition": "对象的解剖、机械或结构关系如何处理。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "标注保留、省略、夸张的连接与关节，混合时说明对象类别。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "not_representational",
+        "simplified",
+        "exaggerated",
+        "observational",
+        "hybrid"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "line.usage",
+      "domain": "line",
+      "zh": "线条使用方式",
+      "en": "Line usage",
+      "definition": "描边与内线在画面中的角色。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "分别检查外轮廓、内部结构线与草稿线；none是明确禁用。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。 观察时包含可见像素簇形成的外缘/轮廓线；不能仅因未证明矢量描边就否认线条外观。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "none",
+        "outer_only",
+        "outer_and_inner",
+        "selective",
+        "sketch"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "line.width_px",
+      "domain": "line",
+      "zh": "主描边宽度",
+      "en": "Primary outline width",
+      "definition": "最终输出分辨率下主体主描边的屏幕宽度。",
+      "type": "number",
+      "unit": "px_at_output",
+      "scale_type": "ratio",
+      "measurement": "在scope.context.viewport指定最终输出中测垂直于线方向的宽度；多尺寸用range。",
+      "applicability": {},
+      "limits": "0表示禁用；透视变化须给参考距离；不是物体世界空间宽度。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 64,
+      "observation": {
+        "allowed_methods": [
+          "pixel_measurement",
+          "source_document"
+        ],
+        "note": "需要真实像素/区域测量方法或明确来源；仅凭目测不可填精确数值。"
+      }
+    },
+    {
+      "id": "line.weight_variation",
+      "domain": "line",
+      "zh": "线宽变化度",
+      "en": "Line weight variation",
+      "definition": "线条粗细在同笔与不同类别之间的变化程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定画面放大检查，并写明轮廓/内线/受光方向的规则。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "完全等宽",
+        "25": "少量轻微变化",
+        "50": "轮廓与内线明显分级",
+        "75": "同一笔内部显著变化",
+        "100": "以强烈粗细变化主导表达"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "line.edge_regularity",
+      "domain": "line",
+      "zh": "边缘规则度",
+      "en": "Edge regularity",
+      "definition": "线与边缘的规则性。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "在固定缩放比例比较连续边缘；区分手绘扰动与采样锯齿。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "强烈随机抖动",
+        "25": "明显手绘波动",
+        "50": "有控制的不规则",
+        "75": "接近规则，保留少量扰动",
+        "100": "几何精确或像素网格严格一致"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "line.color_mode",
+      "domain": "line",
+      "zh": "描边用色",
+      "en": "Outline color mode",
+      "definition": "线条颜色相对对象底色和光照的关系。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "检查代表对象的明暗区轮廓色；mixed须写适用区域。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "black",
+        "tinted_dark",
+        "local_color",
+        "light_edge",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "line.inner_density",
+      "domain": "line",
+      "zh": "内线密度",
+      "en": "Internal line density",
+      "definition": "主体内部线条在目标画面中的密度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定主体屏幕占比比较结构线、装饰线与排线。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无内线",
+        "25": "仅关键结构",
+        "50": "结构和少量表面线",
+        "75": "大量结构与排线",
+        "100": "内线密集覆盖主体表面"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "surface.material_physicality",
+      "domain": "surface",
+      "zh": "材质响应物理一致度",
+      "en": "Material physicality",
+      "definition": "表面如何服从现实材质的反射与透射行为。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "在固定光源、曝光和几何下比较参考材质；需记录渲染流程。",
+      "applicability": {},
+      "limits": "PBR工作流不保证高分；画面是否物理一致需渲染参照。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "符号色块，不模拟材质响应",
+        "25": "少量材质提示",
+        "50": "部分响应遵循现实，允许重绘",
+        "75": "多数响应遵循指定物理材质",
+        "100": "在约定光照下依真实材质响应"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "surface.detail_density",
+      "domain": "surface",
+      "zh": "表面细节密度",
+      "en": "Surface detail density",
+      "definition": "目标显示尺寸中可见表面信息的密度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定物件屏幕大小，比较纹理、凹凸、磨损与几何细节。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "纯净大色块",
+        "25": "少量大尺度细节",
+        "50": "大中小细节分层",
+        "75": "大量可见小细节",
+        "100": "达到项目最高细节锚点，在目标视口仍可见"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "surface.texture_mode",
+      "domain": "surface",
+      "zh": "纹理组织",
+      "en": "Texture mode",
+      "definition": "表面视觉信息的主要组织或生成方式。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "以最终资产与流程共同确认；无法从截图证明生成来源时标unknown。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "none",
+        "flat_blocks",
+        "hand_painted",
+        "procedural",
+        "photographic",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "surface.brush_visibility",
+      "domain": "surface",
+      "zh": "笔触可见度",
+      "en": "Brush visibility",
+      "definition": "笔触痕迹在目标尺寸中的可辨程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定输出与观看距离比较笔触；不等同绘图软件笔刷参数。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "不可辨笔触",
+        "25": "仔细观察可见",
+        "50": "正常观看可见部分笔触",
+        "75": "笔触明显组织表面",
+        "100": "笔触成为主要视觉结构"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "surface.brush_scale_px",
+      "domain": "surface",
+      "zh": "主要笔触尺度",
+      "en": "Primary brush mark size",
+      "definition": "最终输出中代表笔触的短轴宽度。",
+      "type": "number",
+      "unit": "px_at_output",
+      "scale_type": "ratio",
+      "measurement": "在代表性区域取样，以range记录多尺度笔触。",
+      "applicability": {},
+      "limits": "仅可辨笔触时适用；不能跨分辨率直接复制。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 256,
+      "observation": {
+        "allowed_methods": [
+          "pixel_measurement",
+          "source_document"
+        ],
+        "note": "需要真实像素/区域测量方法或明确来源；仅凭目测不可填精确数值。"
+      }
+    },
+    {
+      "id": "surface.roughness",
+      "domain": "surface",
+      "zh": "PBR粗糙度输入",
+      "en": "PBR roughness input",
+      "definition": "指定PBR着色器使用的粗糙度输入，不是最终视觉粗糙感评分。",
+      "type": "number",
+      "unit": "normalized_input",
+      "scale_type": "ratio",
+      "measurement": "锁定着色器实现、贴图通道及光照，记录代表区域输入。 hybrid管线必须在项目理由和参考中指定使用此输入的PBR对象与着色器，不能应用到全部资产。",
+      "applicability": {
+        "render_pipeline": [
+          "pbr",
+          "hybrid"
+        ]
+      },
+      "limits": "不同着色器映射不同；roughness与glossiness不能直接混填。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "surface.metallic",
+      "domain": "surface",
+      "zh": "PBR金属度输入",
+      "en": "PBR metallic input",
+      "definition": "指定金属度工作流的输入。",
+      "type": "number",
+      "unit": "normalized_input",
+      "scale_type": "ratio",
+      "measurement": "锁定着色器及纹理通道，分区记录材质值。 hybrid管线必须在项目理由和参考中指定使用此输入的PBR对象与着色器，不能应用到全部资产。",
+      "applicability": {
+        "render_pipeline": [
+          "pbr",
+          "hybrid"
+        ]
+      },
+      "limits": "对单一纯材质通常接近0或1；混合/过渡区需说明。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "color.palette_mode",
+      "domain": "color",
+      "zh": "配色组织",
+      "en": "Palette organization",
+      "definition": "调色板色相关系或用途分工的主要原则。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "列出实际色板与主色/辅助/强调/语义角色；名称本身不足以执行。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "monochrome",
+        "analogous",
+        "complementary",
+        "triadic",
+        "limited_roles",
+        "free"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "color.palette_colors",
+      "domain": "color",
+      "zh": "受控色板色数",
+      "en": "Controlled palette size",
+      "definition": "设计中被明确列名的基础色板数量。",
+      "type": "integer",
+      "unit": "colors",
+      "scale_type": "ratio",
+      "measurement": "计算色板token数量；渐变、光照和抗锯齿生成色不计入。",
+      "applicability": {},
+      "limits": "不是截图不同RGB值的数量；非受控色板可NA。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 1,
+      "maximum": 256,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "color.saturation",
+      "domain": "color",
+      "zh": "整体鲜艳感（锚定评价）",
+      "en": "Perceived vividness",
+      "definition": "最终画面整体鲜艳程度的知觉评价。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "在固定输出色彩空间、曝光和参考片下，由人对照五级锚点评价。",
+      "applicability": {},
+      "limits": "禁止直接转换成HSL/HSV S或OKLCH C；不是物理量。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "近无彩色",
+        "25": "低鲜艳度，明显灰化",
+        "50": "中等鲜艳度",
+        "75": "鲜明高色度为主",
+        "100": "项目选定的极高鲜艳感锚点"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "color.value_range",
+      "domain": "color",
+      "zh": "关键区域明度跨度",
+      "en": "Key-region lightness span",
+      "definition": "预先指定关键区域最高与最低OKLCH L之差。",
+      "type": "number",
+      "unit": "OKLCH_L_span",
+      "scale_type": "ratio",
+      "measurement": "将固定sRGB输出转为OKLCH后按已标区域采样；记录分位数策略。",
+      "applicability": {},
+      "limits": "是色板/区域跨度，不能代替文字对比度或场景可读性。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "observation": {
+        "allowed_methods": [
+          "pixel_measurement",
+          "source_document"
+        ],
+        "note": "需要真实像素/区域测量方法或明确来源；仅凭目测不可填精确数值。"
+      }
+    },
+    {
+      "id": "color.palette_lightness",
+      "domain": "color",
+      "zh": "主色板明度",
+      "en": "Dominant palette lightness",
+      "definition": "指定主色板token的OKLCH L值或范围。",
+      "type": "number",
+      "unit": "OKLCH_L",
+      "scale_type": "ratio",
+      "measurement": "取色板token而非含光照截图，注明转换实现及白点。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "color.palette_chroma",
+      "domain": "color",
+      "zh": "主色板色度",
+      "en": "Dominant palette chroma",
+      "definition": "指定主色板token的OKLCH C值或范围。",
+      "type": "number",
+      "unit": "OKLCH_C",
+      "scale_type": "ratio",
+      "measurement": "从sRGB色板转换OKLCH并检查回转色域；不得把C当百分数。",
+      "applicability": {},
+      "limits": "0.4仅为本框架SDR工作范围上限，不是颜色科学全局上限；并非所有L/h组合都在sRGB色域。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 0.4,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "color.palette_hue",
+      "domain": "color",
+      "zh": "主色相",
+      "en": "Dominant hue",
+      "definition": "指定有彩主色板token的OKLCH h角度。",
+      "type": "number",
+      "unit": "degree",
+      "scale_type": "circular",
+      "measurement": "只对C明显非零的token记录；跨0度色相段用value加说明，不用线性range。",
+      "applicability": {},
+      "limits": "无彩色可NA；359与1很接近；不能按普通线性距离处理。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 359.999,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "color.accent_area",
+      "domain": "color",
+      "zh": "强调色可见面积比",
+      "en": "Accent color area",
+      "definition": "指定镜头中强调色mask占有效游戏画面的百分比。",
+      "type": "number",
+      "unit": "percent_area",
+      "scale_type": "ratio",
+      "measurement": "固定镜头、有效画面mask和颜色分类阈值，按像素计面积。",
+      "applicability": {},
+      "limits": "这是比例百分比，与0-100知觉评分不同；应排除独立UI或明确计入。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "observation": {
+        "allowed_methods": [
+          "pixel_measurement",
+          "source_document"
+        ],
+        "note": "需要真实像素/区域测量方法或明确来源；仅凭目测不可填精确数值。"
+      }
+    },
+    {
+      "id": "color.temperature_bias",
+      "domain": "color",
+      "zh": "冷暖倾向",
+      "en": "Temperature bias",
+      "definition": "画面的相对冷暖倾向。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "在相同白点下对照主色/光照的相对关系；split需注明前后景或光影分工。",
+      "applicability": {},
+      "limits": "并非相关色温Kelvin；有色光下的主观冷暖需参考片。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "cool",
+        "neutral",
+        "warm",
+        "split",
+        "contextual"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "light.physicality",
+      "domain": "light",
+      "zh": "光照物理一致度",
+      "en": "Lighting physicality",
+      "definition": "最终画面的光照关系与指定真实场景一致的程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定场景、曝光和光源参照，对照遮挡、阴影、反射与反弹光。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无物理光照逻辑",
+        "25": "仅用简单明暗符号",
+        "50": "现实光照与艺术调整混合",
+        "75": "大体遵循光源和能量关系",
+        "100": "在指定条件下遵循现实光传输"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "light.model",
+      "domain": "light",
+      "zh": "光照模型",
+      "en": "Lighting model",
+      "definition": "用于组织明暗的主要模型或流程。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "核对实际渲染/绘制实现；hybrid需列对象与流程。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "unlit",
+        "painted",
+        "cel",
+        "lambert",
+        "pbr",
+        "hybrid"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "light.shadow_hardness",
+      "domain": "light",
+      "zh": "阴影边缘硬度",
+      "en": "Shadow edge hardness",
+      "definition": "指定投影或明暗分界的边缘硬度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定光源和物体距离，比较相同屏幕尺度的阴影边缘；无阴影用NA。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无边界或极软",
+        "25": "软过渡",
+        "50": "中等软硬",
+        "75": "明显硬边",
+        "100": "近二值硬边"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "light.contrast",
+      "domain": "light",
+      "zh": "明暗戏剧强度",
+      "en": "Tonal drama",
+      "definition": "画面明暗组织的感知强烈程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "灰度查看固定镜头并与锚点比较；不当作WCAG对比度。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "明暗非常平缓",
+        "25": "轻微明暗层次",
+        "50": "清楚而温和的明暗",
+        "75": "强烈明暗分组",
+        "100": "极端亮暗对置"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "light.exposure_ev",
+      "domain": "light",
+      "zh": "曝光补偿",
+      "en": "Exposure compensation",
+      "definition": "相对指定基线曝光的补偿档数。",
+      "type": "number",
+      "unit": "EV",
+      "scale_type": "interval",
+      "measurement": "记录引擎、基线曝光、自动曝光状态和tone mapper后设置。",
+      "applicability": {},
+      "limits": "没有曝光基线时unknown；不是跨引擎绝对亮度。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": -10,
+      "maximum": 10,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "light.emissive_prominence",
+      "domain": "light",
+      "zh": "自发光显著度",
+      "en": "Emissive prominence",
+      "definition": "自发光对象在最终画面中的视觉显著程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定曝光比较自发光区域对注意力与照明的作用。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无可见自发光",
+        "25": "零星弱自发光",
+        "50": "局部自发光可辨",
+        "75": "自发光明显引导注意",
+        "100": "发光成为画面主导"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "light.ambient_occlusion",
+      "domain": "light",
+      "zh": "接触遮蔽显著度",
+      "en": "Ambient occlusion prominence",
+      "definition": "接触或缝隙暗化在最终画面的可见强度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定曝光与镜头对比有/无AO输出；不直接映射某引擎AO强度。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无可见遮蔽强化",
+        "25": "轻微接触暗化",
+        "50": "明确接触暗化",
+        "75": "较强缝隙和接触暗化",
+        "100": "强遮蔽塑造大量形体"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "camera.projection",
+      "domain": "camera",
+      "zh": "投影类型",
+      "en": "Projection",
+      "definition": "世界到画面的主要投影方式。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "查相机参数或绘制透视规则；mixed需逐镜头定义。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "orthographic",
+        "perspective",
+        "oblique",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "camera.elevation_deg",
+      "domain": "camera",
+      "zh": "俯仰角",
+      "en": "Camera elevation",
+      "definition": "视线相对水平面的俯仰角，正值表示从上向下看。",
+      "type": "number",
+      "unit": "degree",
+      "scale_type": "interval",
+      "measurement": "记录世界竖轴、目标点和相机位置；90为正俯视。",
+      "applicability": {},
+      "limits": "2D绘制可作构图参照，不是资产本身旋转。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": -90,
+      "maximum": 90,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "camera.vertical_fov_deg",
+      "domain": "camera",
+      "zh": "垂直视场角",
+      "en": "Vertical field of view",
+      "definition": "透视相机的垂直视场角。",
+      "type": "number",
+      "unit": "degree",
+      "scale_type": "ratio",
+      "measurement": "核对垂直FOV模式、viewport宽高比和引擎实现。",
+      "applicability": {
+        "camera_projection": [
+          "perspective",
+          "mixed"
+        ]
+      },
+      "limits": "正交/斜投影时NA；水平FOV不可直接填入。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 1,
+      "maximum": 179,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "camera.distance_m",
+      "domain": "camera",
+      "zh": "相机到主体距离",
+      "en": "Camera-to-subject distance",
+      "definition": "相机到约定主体锚点的世界空间直线距离。",
+      "type": "number",
+      "unit": "meter",
+      "scale_type": "ratio",
+      "measurement": "锁定世界单位和主体锚点，记录镜头距离。",
+      "applicability": {
+        "dimension": [
+          "2.5d",
+          "3d"
+        ]
+      },
+      "limits": "无米制世界或纯平面图时NA；正交相机距离不直接决定屏幕大小。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0.01,
+      "maximum": 100000,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "camera.movement",
+      "domain": "camera",
+      "zh": "镜头运动",
+      "en": "Camera movement",
+      "definition": "相机移动的控制方式。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "检查运行片段并记录跟随、自由或脚本镜头的规则。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "fixed",
+        "follow",
+        "free",
+        "scripted",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "camera.distortion",
+      "domain": "camera",
+      "zh": "镜头畸变显著度",
+      "en": "Lens distortion",
+      "definition": "有意使用的镜头空间变形程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "使用直线网格和目标镜头比较；不包括透视本身。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无可见畸变",
+        "25": "轻微边缘畸变",
+        "50": "明显桶形或枕形",
+        "75": "强烈非线性变形",
+        "100": "畸变主导空间表现"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "composition.focal_hierarchy",
+      "domain": "composition",
+      "zh": "焦点层级清晰度",
+      "en": "Focal hierarchy clarity",
+      "definition": "目标任务下视觉注意层级的明确程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "给定玩家任务、镜头和目标，进行限时识别；用锚点评价并另存任务结果。",
+      "applicability": {},
+      "limits": "不是客观成功率；不同任务需要不同焦点。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无主次",
+        "25": "主次很弱",
+        "50": "一个主要焦点可辨",
+        "75": "主次层级明确",
+        "100": "关键目标在限定任务内立即突出"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "composition.negative_space",
+      "domain": "composition",
+      "zh": "留白面积比",
+      "en": "Negative space area",
+      "definition": "预先标注非信息/低信息区域占有效画面的面积比。",
+      "type": "number",
+      "unit": "percent_area",
+      "scale_type": "ratio",
+      "measurement": "提供区域mask和“低信息”定义后计算像素面积。",
+      "applicability": {},
+      "limits": "背景不自动等于留白；任务变化会改变区域定义。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "observation": {
+        "allowed_methods": [
+          "pixel_measurement",
+          "source_document"
+        ],
+        "note": "需要真实像素/区域测量方法或明确来源；仅凭目测不可填精确数值。"
+      }
+    },
+    {
+      "id": "composition.depth_layers",
+      "domain": "composition",
+      "zh": "可辨空间层数",
+      "en": "Readable depth layers",
+      "definition": "代表镜头中可区分的前中后景分层数量。",
+      "type": "integer",
+      "unit": "layers",
+      "scale_type": "ratio",
+      "measurement": "在固定镜头标注层mask，不能把每个物体各算一层。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 1,
+      "maximum": 20,
+      "observation": {
+        "allowed_methods": [
+          "pixel_measurement",
+          "source_document"
+        ],
+        "note": "需要真实像素/区域测量方法或明确来源；仅凭目测不可填精确数值。"
+      }
+    },
+    {
+      "id": "composition.density",
+      "domain": "composition",
+      "zh": "画面信息密度",
+      "en": "Visual information density",
+      "definition": "目标尺寸与任务下可见信息的感知密度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定镜头和有效区域，对照锚点；UI与场景分别注明范围。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "极简，元素稀少",
+        "25": "少量元素且间距大",
+        "50": "元素适中并有分组",
+        "75": "元素密集且细节多",
+        "100": "多层信息密集覆盖"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "composition.alignment",
+      "domain": "composition",
+      "zh": "构图组织",
+      "en": "Composition organization",
+      "definition": "主要元素的位置组织规则。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "在代表镜头上标出网格、中心线、对角线或自由组织依据。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "grid",
+        "centered",
+        "diagonal",
+        "radial",
+        "organic",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "composition.subject_separation",
+      "domain": "composition",
+      "zh": "主体背景分离度",
+      "en": "Subject-background separation",
+      "definition": "任务主体与周围视觉信息的可分辨程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "在缩略图、灰度和高压场景下对照目标与背景，并做玩家任务测试。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "主体常与背景融为一体",
+        "25": "仅少量线索分离",
+        "50": "多数情况下可辨",
+        "75": "主要镜头稳定清晰",
+        "100": "压力场景中仍有多重分离线索"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "motion.naturalism",
+      "domain": "motion",
+      "zh": "运动自然度",
+      "en": "Motion naturalism",
+      "definition": "运动时序、重量和惯性接近指定现实参照的程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "比较同动作、同速度与同镜头的视频；单张截图不可评。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无真实运动规律",
+        "25": "符号化离散运动",
+        "50": "现实节奏与夸张混合",
+        "75": "多数遵循重量和惯性",
+        "100": "依指定现实参照运动规律"
+      },
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "motion.timing",
+      "domain": "motion",
+      "zh": "时间组织",
+      "en": "Animation timing",
+      "definition": "动作连续性与停顿节奏的主要处理。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "观察动作曲线和连续片段；stepped需注明采样频率。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "continuous",
+        "stepped",
+        "snappy",
+        "held",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "motion.animation_fps",
+      "domain": "motion",
+      "zh": "动作采样频率",
+      "en": "Animation sampling rate",
+      "definition": "动作姿态更新频率，可以低于最终渲染帧率。",
+      "type": "integer",
+      "unit": "frames_per_second",
+      "scale_type": "ratio",
+      "measurement": "从姿态更新时间或源动画采样率核对；不是输出视频fps。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 1,
+      "maximum": 240,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "motion.squash_stretch",
+      "domain": "motion",
+      "zh": "挤压拉伸强度",
+      "en": "Squash and stretch",
+      "definition": "动作中有意进行挤压拉伸的程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "对比关键姿态与中性姿态的形变；不等同物理解算参数。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "不使用",
+        "25": "轻微形变",
+        "50": "明显形变但体积感稳定",
+        "75": "大幅弹性形变",
+        "100": "形变成为动作主导"
+      },
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "motion.anticipation_ms",
+      "domain": "motion",
+      "zh": "主要预备动作时长",
+      "en": "Primary anticipation duration",
+      "definition": "约定主要动作从预备动作开始到主动作启动的时长。",
+      "type": "number",
+      "unit": "millisecond",
+      "scale_type": "ratio",
+      "measurement": "定义一个动作事件和两个帧标记，以时间戳差测量。",
+      "applicability": {},
+      "limits": "不是所有动作共享的固定值；用range记录同类动作。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 2000,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "motion.secondary_motion",
+      "domain": "motion",
+      "zh": "次级运动显著度",
+      "en": "Secondary motion prominence",
+      "definition": "毛发、衣物、附属物等次级运动的视觉显著程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定动作与镜头，比较主运动和附属运动；无附属结构可NA。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无次级运动",
+        "25": "少量微动",
+        "50": "清楚但不抢主动作",
+        "75": "丰富跟随和延迟",
+        "100": "次级运动成为主要表现"
+      },
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "vfx.density",
+      "domain": "vfx",
+      "zh": "特效占据密度",
+      "en": "VFX density",
+      "definition": "指定静帧中特效相对整帧的空间占据范围与同时可见叠层量；不含发生频率、持续时间或时间分布。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定输出视口、整帧参照与对象归属后比较可见特效的覆盖范围和同帧叠层；分别说明两者依据。局部ROI只定位证据，不将其内部占比等同整帧占比。跨静帧保留差异；频率、持续时间和时间峰值另需动态证据。",
+      "applicability": {},
+      "limits": "须绑定任务、完整画面范围和参考样本后解释；此序数不是面积百分比、粒子数或性能指标。不能把非连续静帧解释为发生频率或持续叠加。0.2收窄了旧时间性措辞，旧生产配置数值须经项目复核，不因数值保留而视为已重新校准。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无可见特效",
+        "25": "少量孤立特效，整帧占据范围小且叠层少",
+        "50": "若干局部有明显特效，或局部可见中等叠层",
+        "75": "特效占据整帧较大范围，或多个局部可见显著叠层",
+        "100": "特效几乎铺满整帧，或大范围存在密集可见叠层"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数须以指定静帧的整帧为参照，保留非零宽区间并说明空间占据与同帧叠层依据；局部ROI仅定位证据，不直接表示全帧占比。不是实测百分比；静帧不支持发生频率、持续时间或时间峰值判断。"
+      }
+    },
+    {
+      "id": "vfx.bloom",
+      "domain": "vfx",
+      "zh": "泛光显著度",
+      "en": "Bloom prominence",
+      "definition": "最终画面中高亮周围光晕扩散的感知强度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定曝光、阈值与镜头比较；不直接映射引擎strength。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "禁用或不可见",
+        "25": "极轻光晕",
+        "50": "局部可见光晕",
+        "75": "明显扩散光晕",
+        "100": "强泛光影响大片边缘"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "vfx.motion_blur_shutter",
+      "domain": "vfx",
+      "zh": "运动模糊快门角",
+      "en": "Motion blur shutter angle",
+      "definition": "按输出帧时间定义的运动模糊曝光快门角。",
+      "type": "number",
+      "unit": "degree",
+      "scale_type": "ratio",
+      "measurement": "核对实现与输出fps；曝光时长=角度/360/fps秒。",
+      "applicability": {},
+      "limits": "0表示禁用；不是相机快门速度倒数；实现可因引擎而异。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 360,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "vfx.screen_shake_px",
+      "domain": "vfx",
+      "zh": "屏幕震动幅度",
+      "en": "Screen shake amplitude",
+      "definition": "约定事件窗口中屏幕平移震动的最大位移。",
+      "type": "number",
+      "unit": "px_at_output",
+      "scale_type": "ratio",
+      "measurement": "固定输出分辨率和事件，比较稳定镜头与震动位置。",
+      "applicability": {},
+      "limits": "不涵盖旋转震动；需另记频率/衰减，0表示禁用。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 256,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "vfx.hit_flash_ms",
+      "domain": "vfx",
+      "zh": "受击闪白时长",
+      "en": "Hit flash duration",
+      "definition": "单次受击反馈的主要亮色替换持续时长。",
+      "type": "number",
+      "unit": "millisecond",
+      "scale_type": "ratio",
+      "measurement": "以受击事件到主色恢复的时间戳差测量。",
+      "applicability": {},
+      "limits": "0表示禁用；频率、面积与亮度仍需独立检查。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 1000,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "vfx.semantic_color",
+      "domain": "vfx",
+      "zh": "特效颜色语义",
+      "en": "VFX color semantics",
+      "definition": "特效颜色主要编码什么信息。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "列出颜色到元素、阵营、危险等级等含义的映射；mixed需说明优先级。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "decorative",
+        "element_based",
+        "faction_based",
+        "danger_based",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "ui.integration",
+      "domain": "ui",
+      "zh": "界面与世界关系",
+      "en": "UI integration",
+      "definition": "信息显示在屏幕覆盖层、世界内物件或空间标记中的方式。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "按具体信息组件列出承载位置；diegetic需说明世界内存在依据。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。 截图未出现UI只能记unknown，不能当作整个游戏没有UI或该项NA。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "overlay",
+        "diegetic",
+        "spatial",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "ui.typography",
+      "domain": "ui",
+      "zh": "文字气质",
+      "en": "Typography style",
+      "definition": "界面主文字的字体类型。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "记录实际字体文件、授权、字重与中英文字形；类型不能替代字体名。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。 截图未出现UI只能记unknown，不能当作整个游戏没有UI或该项NA。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "sans",
+        "serif",
+        "pixel",
+        "handwritten",
+        "display",
+        "mixed"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "可观察字体外观类别；不能由截图确定字体文件、授权、实际字号或字体家族身份。"
+      }
+    },
+    {
+      "id": "ui.min_font_px",
+      "domain": "ui",
+      "zh": "关键文字最小字号",
+      "en": "Minimum critical text size",
+      "definition": "最终输出中关键可读文字使用的最小字号。",
+      "type": "number",
+      "unit": "px_at_output",
+      "scale_type": "ratio",
+      "measurement": "检查实际输出、UI缩放和语言；另做目标设备观看测试。",
+      "applicability": {},
+      "limits": "像素字号不是通用可读性保证；大字形不等于实际字面高度。 截图未出现UI只能记unknown，不能当作整个游戏没有UI或该项NA。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 8,
+      "maximum": 128,
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "ui.text_contrast",
+      "domain": "ui",
+      "zh": "关键文字对比度",
+      "en": "Critical text contrast ratio",
+      "definition": "指定关键文字与实际相邻背景的WCAG相对亮度对比值。",
+      "type": "number",
+      "unit": "contrast_ratio",
+      "scale_type": "ratio",
+      "measurement": "在sRGB输出中按WCAG公式测前背景；动态背景取最不利受测状态。",
+      "applicability": {},
+      "limits": "仅作为UI筛查；阈值由字号与用途另定，不能用于全画面美感评分。 截图未出现UI只能记unknown，不能当作整个游戏没有UI或该项NA。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 1,
+      "maximum": 21,
+      "observation": {
+        "allowed_methods": [
+          "pixel_measurement",
+          "source_document"
+        ],
+        "note": "需要真实像素/区域测量方法或明确来源；仅凭目测不可填精确数值。"
+      }
+    },
+    {
+      "id": "ui.information_density",
+      "domain": "ui",
+      "zh": "界面信息密度",
+      "en": "UI information density",
+      "definition": "固定viewport下界面信息的感知密度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定页面、语言和玩家任务，对照锚点。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。 截图未出现UI只能记unknown，不能当作整个游戏没有UI或该项NA。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "极少信息组件",
+        "25": "少量大分组",
+        "50": "适中信息分组",
+        "75": "多组件持续显示",
+        "100": "高密度数据和控制组件"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "ui.component_shape",
+      "domain": "ui",
+      "zh": "组件形状",
+      "en": "UI component shape",
+      "definition": "按钮、面板等组件的主要外形规则。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "记录形状token、圆角或装饰边界；mixed需指定组件族。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。 截图未出现UI只能记unknown，不能当作整个游戏没有UI或该项NA。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "square",
+        "rounded",
+        "capsule",
+        "ornamental",
+        "organic",
+        "mixed",
+        "circular"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "presentation.resolution_strategy",
+      "domain": "presentation",
+      "zh": "分辨率策略",
+      "en": "Resolution strategy",
+      "definition": "内部渲染与最终输出分辨率的组织方式。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "核对渲染目标与缩放配置，记录内部基准尺寸。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "native",
+        "fixed_internal",
+        "integer_scaled",
+        "dynamic"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "presentation.pixel_grid_px",
+      "domain": "presentation",
+      "zh": "输出像素网格步长",
+      "en": "Pixel grid step",
+      "definition": "像素美术逻辑网格在最终输出上的整数步长。",
+      "type": "integer",
+      "unit": "px_at_output",
+      "scale_type": "ratio",
+      "measurement": "检查像素边缘是否对齐相同网格；1表示原生单像素。",
+      "applicability": {},
+      "limits": "仅适用于受控像素网格；一般高清画面用NA。 只能测明确受控的输出网格；JPG、缩放和重压缩截图不能单独证明游戏原生像素倍率。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 1,
+      "maximum": 64,
+      "observation": {
+        "allowed_methods": [
+          "pixel_measurement",
+          "source_document"
+        ],
+        "note": "需要真实像素/区域测量方法或明确来源；仅凭目测不可填精确数值。"
+      }
+    },
+    {
+      "id": "presentation.antialiasing",
+      "domain": "presentation",
+      "zh": "抗锯齿策略",
+      "en": "Antialiasing strategy",
+      "definition": "最终画面主要抗锯齿或最近邻采样策略。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "measurement": "读取实际渲染设置并检查运动边缘；other须说明实现。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "options": [
+        "none",
+        "nearest",
+        "fxaa",
+        "smaa",
+        "taa",
+        "msaa",
+        "supersample",
+        "other"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "source_document"
+        ],
+        "note": "静态截图不支持此底层流程、来源输入或时间/技术量的推断；仅可引用明确来源，否则unknown。"
+      }
+    },
+    {
+      "id": "presentation.grain",
+      "domain": "presentation",
+      "zh": "颗粒可见度",
+      "en": "Grain visibility",
+      "definition": "最终输出中随机或规则颗粒的可见程度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定输出与曝光，比较静帧和运动；不直接映射插件强度。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无可见颗粒",
+        "25": "细看可见",
+        "50": "正常观看局部可见",
+        "75": "颗粒明显覆盖画面",
+        "100": "颗粒主导表面观感"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "presentation.chromatic_aberration_px",
+      "domain": "presentation",
+      "zh": "边缘色差位移",
+      "en": "Chromatic aberration displacement",
+      "definition": "输出画面约定边缘处红蓝通道分离的最大位移。",
+      "type": "number",
+      "unit": "px_at_output",
+      "scale_type": "ratio",
+      "measurement": "用白色直线测试图在固定viewport边缘测量，说明通道定义。",
+      "applicability": {},
+      "limits": "0表示禁用；不等同物理镜头色散。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 20,
+      "observation": {
+        "allowed_methods": [
+          "pixel_measurement",
+          "source_document"
+        ],
+        "note": "需要真实像素/区域测量方法或明确来源；仅凭目测不可填精确数值。"
+      }
+    },
+    {
+      "id": "presentation.vignette",
+      "domain": "presentation",
+      "zh": "暗角显著度",
+      "en": "Vignette prominence",
+      "definition": "最终画面周边相对中心暗化的感知强度。",
+      "type": "ordinal",
+      "unit": "anchored_score_0_100",
+      "scale_type": "ordinal",
+      "measurement": "固定镜头、曝光与测试底图，对照五级锚点。",
+      "applicability": {},
+      "limits": "需在固定任务、画面范围和参考条件下评审；单项不能判定整体风格。",
+      "source_ids": [
+        "framework"
+      ],
+      "minimum": 0,
+      "maximum": 100,
+      "anchors": {
+        "0": "无可见暗角",
+        "25": "极轻边缘暗化",
+        "50": "明确边缘暗化",
+        "75": "强暗角引导中心",
+        "100": "边缘近遮蔽的强暗角"
+      },
+      "observation": {
+        "allowed_methods": [
+          "visual_ordinal"
+        ],
+        "note": "视觉序数判断必须给非零宽区间和项目锚点说明；不是实测百分比。"
+      }
+    },
+    {
+      "id": "camera.view_orientation",
+      "domain": "camera",
+      "zh": "可见观察方向",
+      "en": "Visible view orientation",
+      "definition": "画面中可见的观察方位类别；不推断相机投影矩阵、镜头FOV或底层资产维度。 side=主体侧面/立面主导；top_down=近正上方顶面/平面组织主导，无显著立面；elevated_oblique=明显俯看且同时展示顶面与立面；first_person=明确第一人称主体视点；mixed=样本图/区域包含多个上述方向。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "options": [
+        "side",
+        "top_down",
+        "elevated_oblique",
+        "first_person",
+        "mixed"
+      ],
+      "measurement": "比较样图中主体可见侧面/顶面与地平关系；混合时指出各区域或各图的差别。",
+      "applicability": {},
+      "limits": "侧向、俯视和斜俯视是可见姿态；不能从此自动设置orthographic、2D/3D或具体俯仰角。 top_down不是技术上的90度断言；常被口语称为俯视2D、但同时明显显示顶面/立面的样图应填elevated_oblique。",
+      "source_ids": [
+        "framework"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "light.shading_appearance",
+      "domain": "light",
+      "zh": "可见明暗过渡",
+      "en": "Visible shading appearance",
+      "definition": "可见表面明暗组织呈平涂、连续、分段还是混合；描述外观而非实际着色器流程。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "options": [
+        "flat",
+        "continuous",
+        "stepped",
+        "mixed"
+      ],
+      "measurement": "在指定ROI检查同一对象内部明暗是否有连续过渡、清晰分段或近乎无体积明暗；忽略UI叠层的独立处理。",
+      "applicability": {},
+      "limits": "分段明暗不等于已经证明cel shader；连续明暗也不等于PBR；压缩与缩放可能抹平过渡。",
+      "source_ids": [
+        "framework"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    },
+    {
+      "id": "representation.spatial_logic",
+      "domain": "representation",
+      "zh": "空间逻辑",
+      "en": "Spatial logic",
+      "definition": "指定样图/场景中空间关系表现为常规欧氏组织、依视点幻视组织还是二者混合。",
+      "type": "enum",
+      "unit": "category",
+      "scale_type": "nominal",
+      "options": [
+        "euclidean",
+        "illusion_based",
+        "mixed"
+      ],
+      "measurement": "检查可见连接、遮挡与路径是否依观看角度产生不可能/多义空间；幻视判断需可指认ROI或官方说明。",
+      "applicability": {},
+      "limits": "单图不能证明整个可交互世界的拓扑；没有足够线索时unknown。与几何简化、可辨识度、写实程度和投影类型独立。",
+      "source_ids": [
+        "framework"
+      ],
+      "observation": {
+        "allowed_methods": [
+          "visual_category",
+          "source_document"
+        ],
+        "note": "只描述指定图像/ROI中可见类别；不得外推全游戏或底层技术。"
+      }
+    }
+  ]
+}

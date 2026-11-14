@@ -1,0 +1,933 @@
+{
+  "framework_version": "0.2.0",
+  "assembled": "2026-10-21",
+  "sources": [
+    {
+      "id": "A01",
+      "title": "Understanding Formal Analysis: Elements of Art",
+      "url": "https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html",
+      "publisher": "J. Paul Getty Museum",
+      "accessed": "2026-10-20",
+      "kind": "museum_education",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A01-C1",
+          "claim": "形式分析可以把作品拆为线、形、体、空间、色彩和肌理等要素。",
+          "support": "页面逐项解释视觉要素，区分二维shape与三维form。",
+          "limits": "美术教育词汇；不覆盖游戏交互、渲染实现与所有文化中的术语差异。"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "title": "Understanding Formal Analysis: Principles of Design",
+      "url": "https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html",
+      "publisher": "J. Paul Getty Museum",
+      "accessed": "2026-10-20",
+      "kind": "museum_education",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A02-C1",
+          "claim": "设计原则描述要素如何组织，包括平衡、强调、运动、节奏、统一与变化等。",
+          "support": "页面用馆藏实例说明要素间的组织关系。",
+          "limits": "其中movement可以指视线的移动；不能直接等同游戏动画。原则不是固定配方或审美评分标准。"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "title": "Illustrative Rendering in Team Fortress 2",
+      "url": "https://steamcdn-a.akamaihd.net/apps/valve/2007/NPAR07_IllustrativeRenderingInTeamFortress2_Slides.pdf",
+      "publisher": "Valve; Jason Mitchell, Moby Francke, Dhabih Eng",
+      "accessed": "2026-10-20",
+      "kind": "developer_conference_slides",
+      "verification": "web_open_pdf_57_pages",
+      "claims": [
+        {
+          "id": "A03-C1",
+          "claim": "TF2将队伍、职业、所持武器分成读取层级，并用色彩、剪影和对比支持识别。",
+          "support": "PDF第22页（从1起）列出read hierarchy。",
+          "limits": "来自2007年的特定多人对战游戏；不代表所有游戏应沿用其配色与明暗梯度。"
+        },
+        {
+          "id": "A03-C2",
+          "claim": "插画外观可同时使用三维技术、手绘纹理和为目标外观定制的光照处理。",
+          "support": "PDF第8、16页介绍世界渲染和选取的插画惯例。",
+          "limits": "是该项目的实现选择，不是插画风的充分必要条件。"
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "title": "Dota 2 Workshop - Character Art Guide",
+      "url": "https://help.steampowered.com/en/faqs/view/0688-7692-4D5A-1935",
+      "publisher": "Valve / Steam Support",
+      "accessed": "2026-10-20",
+      "kind": "official_game_art_guide",
+      "verification": "web_search_full_index_and_direct_http_200_html_embedded_article",
+      "claims": [
+        {
+          "id": "A04-C1",
+          "claim": "Dota允许物品改变默认剪影或颜色，但要保持角色识别；某通道的变化可由其他熟悉线索补偿。",
+          "support": "当前英文指南的Silhouette与Summary段。",
+          "limits": "有绑定、骨架和玩法视角等上下文；不可简化为任意变化都能自动相互抵消。"
+        },
+        {
+          "id": "A04-C2",
+          "claim": "细节效果取决于角色在游戏里的实际尺寸；细节区需要休息区形成对照。",
+          "support": "Areas of Rest and Detail段要求在游戏视角反复检查。",
+          "limits": "不提供可移植到任何项目的细节百分比或像素阈值。"
+        }
+      ]
+    },
+    {
+      "id": "A05",
+      "title": "Clarity in League",
+      "url": "https://www.leagueoflegends.com/en-us/news/dev/clarity-in-league/",
+      "publisher": "Riot Games; bananaband1t",
+      "accessed": "2026-10-20",
+      "kind": "developer_article",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A05-C1",
+          "claim": "League要求视觉层级支持玩法重要度，并在变化的外观中保留识别线索。",
+          "support": "The Unbreakable Vows、Silhouettes和Filling Up Buckets段。",
+          "limits": "服务竞技公平与迅速反应；恐怖、探索等游戏可能有不同的信息显露目标。"
+        },
+        {
+          "id": "A05-C2",
+          "claim": "视觉效果需要对照命中范围、朝向和地图背景验证。",
+          "support": "Abilities、Direction和Maps段。",
+          "limits": "文中案例是设计目标与开发复盘，不是对全部版本视觉质量的独立测评。"
+        }
+      ]
+    },
+    {
+      "id": "A06",
+      "title": "GuiltyGearXrd's Art Style: The X Factor Between 2D and 3D",
+      "url": "https://www.gdcvault.com/play/1022031/GuiltyGearXrd-s-Art-Style-The",
+      "publisher": "GDC Vault; Junya Christopher Motomura / Arc System Works",
+      "accessed": "2026-10-20",
+      "kind": "conference_record",
+      "verification": "web_open_session_metadata",
+      "claims": [
+        {
+          "id": "A06-C1",
+          "claim": "该演讲由Arc System Works的Junya Christopher Motomura在GDC 2015发表，主题是在三维框架中保留二维风格。",
+          "support": "会议信息和官方摘要。",
+          "limits": "本条只核对演讲身份与主题；技术细节采用A07，不把摘要当完整视频的替代证据。"
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "title": "GuiltyGearXrd's Art Style — author presentation notes",
+      "url": "https://www.ggxrd.com/Motomura_Junya_GuiltyGearXrd.pdf",
+      "publisher": "Arc System Works / ggxrd.com; Junya Christopher Motomura",
+      "accessed": "2026-10-20",
+      "kind": "author_conference_notes",
+      "verification": "web_open_pdf_34_pages",
+      "claims": [
+        {
+          "id": "A07-C1",
+          "claim": "Xrd的二维感由模型、分段着色、专用光照和逐姿态动画共同产生。",
+          "support": "PDF第6、17–21、27–29页解释各环节。",
+          "limits": "该讲稿描述特定项目的人工控制方法；不意味着所有二维感都必须采用同一工作流。"
+        },
+        {
+          "id": "A07-C2",
+          "claim": "动画平滑程度是风格选择：团队为二维感停用了关键姿态间的插值。",
+          "support": "PDF第27页讲有限动画及插值取舍。",
+          "limits": "姿态更新频率、渲染帧率和游戏模拟频率需分开记录。"
+        }
+      ]
+    },
+    {
+      "id": "A08",
+      "title": "Physically Based Materials in Unreal Engine",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/physically-based-materials-in-unreal-engine",
+      "publisher": "Epic Games",
+      "accessed": "2026-10-20",
+      "kind": "engine_documentation",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A08-C1",
+          "claim": "UE的PBR材质使用Base Color、Roughness、Metallic、Specular等属性；PBR也能用于非照片写实图像。",
+          "support": "PBR Material Attributes及开篇说明。",
+          "limits": "参数含义与着色模型有关；不可把0–1材质参数直接当作通用视觉风格分数。"
+        }
+      ]
+    },
+    {
+      "id": "A09",
+      "title": "Unity Manual: Cameras overview (6000.0)",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/CamerasOverview.html",
+      "publisher": "Unity Technologies",
+      "accessed": "2026-10-20",
+      "kind": "engine_documentation",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A09-C1",
+          "claim": "透视投影随距离改变对象的表观大小；正交投影不产生这种近大远小。",
+          "support": "Perspective and orthographic cameras段。",
+          "limits": "投影不同于相机俯角；正交不自动等于等距，也不自动等于二维制作。"
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "title": "Blender 4.0 Release Notes: Color Management",
+      "url": "https://developer.blender.org/docs/release_notes/4.0/color_management/",
+      "publisher": "Blender Foundation",
+      "accessed": "2026-10-20",
+      "kind": "software_release_documentation",
+      "verification": "direct_http_200_full_html; web_open_blocked_402",
+      "claims": [
+        {
+          "id": "A10-C1",
+          "claim": "显示变换会改变渲染的输出表现；Blender 4.0引入AgX并讨论SDR/HDR输出适用条件。",
+          "support": "AgX View Transform、HDR Display on macOS段。",
+          "limits": "这是4.0版本说明；不推断当前安装版本的默认值或所有引擎的色彩流水线。"
+        }
+      ]
+    },
+    {
+      "id": "A11",
+      "title": "Blender 4.5 LTS Manual: Freestyle Line Style Introduction",
+      "url": "https://docs.blender.org/manual/en/4.5/render/freestyle/view_layer/line_style/introduction.html",
+      "publisher": "Blender Foundation",
+      "accessed": "2026-10-20",
+      "kind": "software_documentation",
+      "verification": "direct_http_200_full_html; web_open_blocked_402",
+      "claims": [
+        {
+          "id": "A11-C1",
+          "claim": "线条外观可分别控制笔画、颜色、透明度、宽度、几何与纹理。",
+          "support": "手册列出line style的控制页及可复用line style。",
+          "limits": "原页把这些称作five aspects但实际列出六项；本框架逐项列出而不沿用计数。Freestyle不是全部描边技术的标准。"
+        }
+      ]
+    },
+    {
+      "id": "A12",
+      "title": "Understanding the 12 Principles of Animation",
+      "url": "https://www.adobe.com/creativecloud/animation/discover/principles-of-animation.html",
+      "publisher": "Adobe",
+      "accessed": "2026-10-20",
+      "kind": "official_animation_education",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A12-C1",
+          "claim": "动画词汇包含预备动作、时间控制、缓入缓出、跟随动作、挤压伸展与夸张等。",
+          "support": "官方教学页逐项说明12原则。",
+          "limits": "属于软件厂商对传统动画原则的教学整理，非原始著作；这些方法不必在每个游戏或每个动作中同时使用。"
+        }
+      ]
+    },
+    {
+      "id": "A13",
+      "title": "Material Design (v1): Introduction",
+      "url": "https://m1.material.io/material-design/introduction.html",
+      "publisher": "Google",
+      "accessed": "2026-10-20",
+      "kind": "official_design_system",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A13-C1",
+          "claim": "设计系统可把字体、网格、空间、色彩和运动组织成有关系与层级的统一语言。",
+          "support": "Goals及Bold, graphic, intentional、Motion provides meaning段。",
+          "limits": "来自界面系统，不是游戏画风标准；可借鉴规范的组织方式，无须复制其材料隐喻或视觉外观。"
+        }
+      ]
+    },
+    {
+      "id": "A14",
+      "title": "CSS Color Module Level 4",
+      "url": "https://www.w3.org/TR/css-color-4/",
+      "publisher": "W3C / CSS Working Group",
+      "accessed": "2026-10-20",
+      "kind": "web_color_specification",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A14-C1",
+          "claim": "HSL的等数值距离并不保证等知觉差异；Oklab/OkLCh提供另一种色彩描述坐标。",
+          "support": "HSL和Oklab、OkLCh相关章节对比。",
+          "limits": "色彩坐标不能单独决定艺术质量；显示设备、色域与观察条件仍影响结果。"
+        }
+      ]
+    },
+    {
+      "id": "A15",
+      "title": "Xbox Accessibility Guideline 102: Contrast",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/102",
+      "publisher": "Microsoft",
+      "accessed": "2026-10-20",
+      "kind": "game_accessibility_guideline",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A15-C1",
+          "claim": "关键视觉元素需要对背景有足够对比，让低视力玩家可辨认。",
+          "support": "Goal及Implementation guidelines。",
+          "limits": "指南中的对比比率要按元素类别与上下文使用；不可把文字阈值机械套给全画面所有纹理。"
+        }
+      ]
+    },
+    {
+      "id": "A16",
+      "title": "Xbox Accessibility Guideline 103: Additional channels for visual and audio cues",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/103",
+      "publisher": "Microsoft",
+      "accessed": "2026-10-20",
+      "kind": "game_accessibility_guideline",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A16-C1",
+          "claim": "重要信息应有可替代线索，避免仅由视觉或听觉单一感官方式提供。",
+          "support": "Goal及Overview，并列出颜色信息和其他提示示例。",
+          "limits": "多线索需评估同步与负荷；图形与文字虽能补偿色觉差异，却不等于覆盖完全失明玩家。"
+        }
+      ]
+    },
+    {
+      "id": "A17",
+      "title": "Xbox Accessibility Guideline 117: Visual distractions and motion settings",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/117",
+      "publisher": "Microsoft",
+      "accessed": "2026-10-20",
+      "kind": "game_accessibility_guideline",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A17-C1",
+          "claim": "相机摇晃、视场角、动态模糊、自动相机变化等需要可访问性层面的配置考虑。",
+          "support": "Overview及Implementation guidelines。",
+          "limits": "需要按游戏和玩家测试；不存在适用于所有人的统一舒适数值。"
+        }
+      ]
+    },
+    {
+      "id": "A18",
+      "title": "Xbox Accessibility Guideline 101: Text display",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/101",
+      "publisher": "Microsoft",
+      "accessed": "2026-10-20",
+      "kind": "game_accessibility_guideline",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "A18-C1",
+          "claim": "文字表现需要共同考虑可见字高、字形、粗细、间距、对齐、颜色及缩放。",
+          "support": "Text display、Measuring text size及Implementation guidelines。",
+          "limits": "字体文件的标称字号不是最终可见字高；数值建议有平台与显示条件，中文等文字还需独立核验。"
+        }
+      ]
+    },
+    {
+      "id": "B01",
+      "title": "CSS Color Module Level 4",
+      "url": "https://www.w3.org/TR/css-color-4/",
+      "publisher": "W3C CSS Working Group",
+      "accessed": "2026-10-20",
+      "kind": "standards_draft",
+      "claims": [
+        {
+          "id": "B01-C1",
+          "claim": "OKLCH 是 Oklab 的极坐标形式，以 L、C、h 表示明度、色度与色相。",
+          "support": "实际打开正文，§9.2 Oklab and OkLCh、§9.4 Specifying Oklab and OkLCh；相关分量定义及无彩色附近色相处理。",
+          "limits": "核验日页面为 2026-10-20 Candidate Recommendation Draft，仍是草案；不是游戏风格量表。L/C/h 不等于 HSL 或 HSV 的同名字母。"
+        },
+        {
+          "id": "B01-C2",
+          "claim": "语法有效的颜色仍可能超出目标输出设备色域，需区分色值表达与输出色域映射。",
+          "support": "§2 Color Terminology 对 valid/out of gamut 的区分，§14 Gamut Mapping。",
+          "limits": "不能从分量各自落在独立范围内推断组合可显示；不将 C=0.4 当作所有情况的科学上限。"
+        }
+      ]
+    },
+    {
+      "id": "B02",
+      "title": "A perceptual color space for image processing",
+      "url": "https://bottosson.github.io/posts/oklab/",
+      "publisher": "Björn Ottosson（Oklab 作者）",
+      "accessed": "2026-10-20",
+      "kind": "original_technical_publication",
+      "claims": [
+        {
+          "id": "B02-C1",
+          "claim": "固定 HSV S/V 的色相渐变仍有明显明度不均；Oklab 旨在更好地预测明度、色度与色相。",
+          "support": "实际打开作者原文，Comparing Oklab to HSV 的图示解释和 Motivation and derivation。",
+          "limits": "作者说明其观察条件假设，部分训练／比较数据由颜色外观模型生成；不能当作对所有观察条件与 HDR 显示的全面验证。"
+        },
+        {
+          "id": "B02-C2",
+          "claim": "Oklab/OKLCH 具有明确转换，色度可由 a/b 的向量长度求得，h 为极角。",
+          "support": "The Oklab color space 的 C、h 公式及 Converting from linear sRGB to Oklab；作者标注矩阵 2021-01-25 更新。",
+          "limits": "公式输入为相应线性 sRGB／D65 条件，不能直接把 gamma 编码的 RGB 通道代入；未将任何通用风格饱和度评分等同此公式。"
+        }
+      ]
+    },
+    {
+      "id": "B03",
+      "title": "Understanding SC 1.4.3: Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "publisher": "W3C Web Accessibility Initiative",
+      "accessed": "2026-10-20",
+      "kind": "official_standards_explanation",
+      "claims": [
+        {
+          "id": "B03-C1",
+          "claim": "WCAG 文字通常采用至少 4.5:1 对比，符合大文字定义时采用至少 3:1，并存在适用例外。",
+          "support": "实际打开 Success Criterion 正文、大文字／附带／标志等例外、阈值不得四舍五入的说明。",
+          "limits": "属于 Web 内容规则，不能作为全屏游戏场景逐像素门槛；大文字须按来源定义，不能把设计软件字号随意移植至游戏。"
+        },
+        {
+          "id": "B03-C2",
+          "claim": "名义色值的对比合格不必然保证细字体实际观感清晰，抗锯齿与字体特征仍会影响呈现。",
+          "support": "SC 后的 Note 讨论抗锯齿和细／特殊字体，使显示的文字比定义的前景色更淡。",
+          "limits": "该说明不提供通用的游戏最小字体像素数，也不替代真实观看与用户检查。"
+        }
+      ]
+    },
+    {
+      "id": "B04",
+      "title": "Understanding SC 1.4.11: Non-text Contrast",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "publisher": "W3C Web Accessibility Initiative",
+      "accessed": "2026-10-20",
+      "kind": "official_standards_explanation",
+      "claims": [
+        {
+          "id": "B04-C1",
+          "claim": "必要的 UI 组件／状态视觉信息及必要图形部分一般需与相邻颜色形成至少 3:1 对比，存在非活动组件和本质表现等例外。",
+          "support": "实际打开 SC、User Interface Components、Graphical Objects、Essential exception 与 Testing principles。",
+          "limits": "不是每个装饰边框、照片或现实场景都必须满足 3:1；也不是要求控件不同且不相邻的状态彼此达到 3:1。"
+        }
+      ]
+    },
+    {
+      "id": "B05",
+      "title": "Xbox Accessibility Guideline 102: Contrast",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/102",
+      "publisher": "Microsoft Game Dev / Xbox",
+      "accessed": "2026-10-20",
+      "kind": "official_game_accessibility_guideline",
+      "claims": [
+        {
+          "id": "B05-C1",
+          "claim": "XAG 102 对游戏标准／大文字和视觉元素、高对比模式给出不同建议，并按平台定义大文字。",
+          "support": "实际打开 Implementation guidelines 与 Contrast ratio summary chart，列有 4.5:1、3:1、7:1 及平台尺寸条件。",
+          "limits": "是游戏开发指南而非本文已完成的认证；不可将所有门槛无差别施加于场景所有像素。"
+        },
+        {
+          "id": "B05-C2",
+          "claim": "复杂背景上的文字要考虑最低对比背景区域；XAG 对不可交互元素中的文字也有建议。",
+          "support": "Implementation guidelines 中 non-solid color background 和 inactive elements 条目。",
+          "limits": "XAG 的禁用元素建议与 WCAG 的例外范围不同，项目需明确采纳来源，不能拼成无出处的一套规则。"
+        }
+      ]
+    },
+    {
+      "id": "B06",
+      "title": "Xbox Accessibility Guideline 103: Additional channels for visual and audio cues",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/103",
+      "publisher": "Microsoft Game Dev / Xbox",
+      "accessed": "2026-10-20",
+      "kind": "official_game_accessibility_guideline",
+      "claims": [
+        {
+          "id": "B06-C1",
+          "claim": "关键提示宜通过多个感官渠道呈现，并考虑色觉差异，以减少单一视觉／听觉通道造成的信息障碍。",
+          "support": "实际打开 Goal、Overview、Options for multisensory communication of information；包含文字、形状、视觉／声音等提示讨论。",
+          "limits": "本文将其转为语义 token 与冗余提示设计；具体组合仍需按玩法和玩家验证，色觉模拟不等于玩家测试。"
+        }
+      ]
+    },
+    {
+      "id": "B07",
+      "title": "Xbox Accessibility Guideline 117: Visual distractions and motion settings",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/117",
+      "publisher": "Microsoft Game Dev / Xbox",
+      "accessed": "2026-10-20",
+      "kind": "official_game_accessibility_guideline",
+      "claims": [
+        {
+          "id": "B07-C1",
+          "claim": "指南涵盖文字 UI 周围的动态内容控制，以及相机摇晃／晃动、模糊、视场和相机移动设置。",
+          "support": "实际打开 Implementation guidelines，含关闭或暂停 UI 动态内容、关闭相机／模糊行为、调整 FOV 等条目及范围说明。",
+          "limits": "某些 UI 动态条目不要求关闭作为核心玩法的一切背景运动；本文不声称某个 FOV 能对所有人保证舒适。"
+        }
+      ]
+    },
+    {
+      "id": "B08",
+      "title": "Xbox Accessibility Guideline 118: Photosensitivity",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/118",
+      "publisher": "Microsoft Game Dev / Xbox",
+      "accessed": "2026-10-20",
+      "kind": "official_game_accessibility_guideline",
+      "claims": [
+        {
+          "id": "B08-C1",
+          "claim": "指南要求所有游戏检查光敏触发因素，涉及亮度闪烁、红闪烁与空间图案，优先消除问题内容。",
+          "support": "实际打开 Scoping questions、Luminance flash failure、Red flash failure、Spatial pattern failure；页面注明 2026-03-04 更新。",
+          "limits": "不能只检频率、只看静帧或以开场警告证明安全；本文没有执行光敏专项分析，也不复述成简化的安全保证。"
+        }
+      ]
+    },
+    {
+      "id": "B09",
+      "title": "OpenColorIO — Overview",
+      "url": "https://opencolorio.readthedocs.io/en/latest/concepts/overview/overview.html",
+      "publisher": "OpenColorIO / Academy Software Foundation",
+      "accessed": "2026-10-20",
+      "kind": "official_documentation",
+      "claims": [
+        {
+          "id": "B09-C1",
+          "claim": "OCIO 是颜色管理库，其变换含义由所用配置定义，可描述颜色空间和变换流程。",
+          "support": "实际打开导言与 Configs、ColorSpaces、Transforms 章节；原文区分库和 config 中定义的颜色科学。",
+          "limits": "使用 OCIO 本身不指定某一美术风格或强制 ACES；页面中的历史示例配置不能不加版本限定地复制为当前项目管线。"
+        }
+      ]
+    },
+    {
+      "id": "B10",
+      "title": "ACES Documentation — Output Transforms",
+      "url": "https://docs.acescentral.com/system-components/output-transforms/",
+      "publisher": "Academy Color Encoding System / Academy of Motion Picture Arts and Sciences",
+      "accessed": "2026-10-20",
+      "kind": "official_documentation",
+      "claims": [
+        {
+          "id": "B10-C1",
+          "claim": "ACES 输出变换把场景参照图像转换为适合特定设备和观察条件显示的状态，输出与显示编码条件相关。",
+          "support": "实际打开 What Is An Output Transform?、Overall Structure 与 ACES 1 vs ACES 2 说明；页面日期 2025-09-10。",
+          "limits": "仅写 ACES 不能确定版本、工作空间、look 和输出；ACES 不作为风格量表，也不保证不同不受控显示器外观完全一致。"
+        }
+      ]
+    },
+    {
+      "id": "B11",
+      "title": "Physically Based Materials in Unreal Engine",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/physically-based-materials-in-unreal-engine",
+      "publisher": "Epic Games",
+      "accessed": "2026-10-20",
+      "kind": "official_engine_documentation",
+      "claims": [
+        {
+          "id": "B11-C1",
+          "claim": "Unreal 的 PBR 材料包含 Base Color、Roughness、Metallic、Specular 等控制；PBR 也适用于非写实渲染。",
+          "support": "实际打开 What Does Physically Based Mean?、PBR Material Attributes 与对应属性章节。",
+          "limits": "属性语义和数值应绑定 Unreal 工作流；并非所有引擎的 roughness／specular 输入可直接互换，也不是写实总分。"
+        },
+        {
+          "id": "B11-C2",
+          "claim": "Roughness 影响反射的清晰／模糊表现；纯金属与非金属表面的 Metallic 通常按二元处理。",
+          "support": "Roughness、Metallic 章节，包含混合／腐蚀／蒙尘表面的限定。",
+          "limits": "不可把引擎控制量的倍数当作知觉倍数，不将混合像素与纯物质的规则混为一谈。"
+        }
+      ]
+    },
+    {
+      "id": "B12",
+      "title": "Blender Manual — Cameras",
+      "url": "https://docs.blender.org/manual/en/latest/render/cameras.html",
+      "publisher": "Blender Foundation",
+      "accessed": "2026-10-20",
+      "kind": "official_engine_documentation",
+      "retrieval_note": "web open 抓取失败；用本机 PowerShell Invoke-WebRequest 实际取得 HTTP 200 并读取 article 正文中 Focal Length、Lens Unit、Orthographic、Orthographic Scale、Sensor Size 等段落。未以搜索摘要代替正文。",
+      "claims": [
+        {
+          "id": "B12-C1",
+          "claim": "透视相机可用焦距或 FOV 描述，正交模式以 Orthographic Scale 控制大小且不发生随距离的透视缩小。",
+          "support": "Cameras > Lens 中 Perspective、Lens Unit 与 Orthographic 段落；Sensor Size 另说明画幅与视角关系。",
+          "limits": "latest 为滚动页面；框架中的 ortho_view_height_world 是自有清晰语义，不假定各引擎参数名称完全等价。"
+        }
+      ]
+    },
+    {
+      "id": "B13",
+      "title": "Blender Manual — Freestyle Render Properties",
+      "url": "https://docs.blender.org/manual/en/latest/render/freestyle/render.html",
+      "publisher": "Blender Foundation",
+      "accessed": "2026-10-20",
+      "kind": "official_engine_documentation",
+      "retrieval_note": "web open 抓取失败；本机 PowerShell Invoke-WebRequest 实际取得 HTTP 200，并读取 article 的 Line Thickness Mode、Absolute、Relative 正文。",
+      "claims": [
+        {
+          "id": "B13-C1",
+          "claim": "Freestyle 支持按像素的 Absolute 与随纵向分辨率变化的 Relative 基础线宽模式。",
+          "support": "Render Properties > Line Thickness Mode；原文 Relative 使用相对 480 px 纵向分辨率的比值。",
+          "limits": "本文 px1080 是本框架另定义的跨工具约定，不是 Blender 自带 Relative 的基准；latest 页面需在工具适配时重新核对。"
+        }
+      ]
+    },
+    {
+      "id": "B14",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2 — Relative luminance",
+      "url": "https://www.w3.org/TR/WCAG22/#dfn-relative-luminance",
+      "publisher": "W3C Accessibility Guidelines Working Group",
+      "accessed": "2026-10-20",
+      "kind": "standard",
+      "claims": [
+        {
+          "id": "B14-C1",
+          "claim": "WCAG sRGB 相对亮度由线性化 RGB 的加权值定义，不能用 OKLCH L 或直接用编码 RGB 的均值替代。",
+          "support": "实际打开 WCAG 2.2 正文定义：相对亮度系数 0.2126、0.7152、0.0722；sRGB 分段线性化阈值 0.04045。",
+          "limits": "用于该标准指定条件中的相对亮度／对比计算；不是 HDR 显示亮度 cd/m² 的仪器测量，也不是完整可读性模型。"
+        }
+      ]
+    },
+    {
+      "id": "framework",
+      "title": "GVF项目操作性定义与工程提案（0.1/0.2）",
+      "url": "",
+      "publisher": "本项目",
+      "accessed": "2026-10-21",
+      "kind": "proposal",
+      "claims": [
+        {
+          "id": "framework-1",
+          "claim": "框架的参数、锚点、阈值及数据契约是本项目的操作性提案。",
+          "support": "本地文档与实现可审阅。",
+          "limits": "不是行业统一标准；没有跨团队、模型或玩家实测。"
+        },
+        {
+          "id": "framework-2",
+          "claim": "0.2将截图观察与设计处方分开，并依据四游戏样本修订可观测性、作用范围及外观字段。",
+          "support": "docs/10-real-game-validation.md、docs/11-contract-changes.md及cases数据可审阅。",
+          "limits": "完成一次样本拆解与契约改进，不代表跨团队标注一致性、生产服从度或玩家体验验证。"
+        }
+      ]
+    },
+    {
+      "id": "C01",
+      "title": "Design Tokens Format Module 2025.10",
+      "url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+      "publisher": "W3C Design Tokens Community Group",
+      "accessed": "2026-10-20",
+      "kind": "community_specification",
+      "claims": [
+        {
+          "id": "C01-1",
+          "claim": "规范定义设计token交换的类型、分组及引用机制。",
+          "support": "Abstract及格式章节。",
+          "limits": "社区组报告，非W3C标准；不定义游戏画风，本框架未实现DTCG兼容导出。"
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "title": "JSON Schema Validation: Draft 2020-12",
+      "url": "https://json-schema.org/draft/2020-12/json-schema-validation",
+      "publisher": "JSON Schema",
+      "accessed": "2026-10-20",
+      "kind": "specification",
+      "claims": [
+        {
+          "id": "C02-1",
+          "claim": "验证词汇对实例施加类型、数值及结构等断言。",
+          "support": "Validation keywords章节。",
+          "limits": "不提供美术质量验证，也不自动解决跨字段业务关系。"
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "title": "Guilty Gear Xrd’s Art Style: The X Factor Between 2D and 3D 官方演讲介绍",
+      "url": "https://www.arcsystemworks.com/guilty-gear-xrds-art-style-the-x-factor-between-2d-and-3d-talk-from-gdc-2015-is-now-available-online/",
+      "publisher": "Arc System Works",
+      "accessed": "2026-10-20",
+      "kind": "developer_case",
+      "claims": [
+        {
+          "id": "C03-1",
+          "claim": "开发团队以全3D图形框架重建格斗游戏并追求传统2D魅力。",
+          "support": "2015-04-09官方介绍的Overview。",
+          "limits": "此页支持制作技术与观感可分离，不独立证明每项着色实现细节。"
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "title": "Cuphead — Made with Unity",
+      "url": "https://unity.com/made-with-unity/cuphead",
+      "publisher": "Unity / StudioMDHR",
+      "accessed": "2026-10-20",
+      "kind": "developer_case",
+      "claims": [
+        {
+          "id": "C04-1",
+          "claim": "案例说明手绘制作，并区分24fps动画与60fps游戏运行。",
+          "support": "50,000 frames of amazing hand-drawn animation章节。",
+          "limits": "是该作品案例，不应推广成手绘游戏必须采用24fps。"
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "title": "Adding Conditional Control to Text-to-Image Diffusion Models",
+      "url": "https://arxiv.org/abs/2302.05543",
+      "publisher": "Lvmin Zhang, Anyi Rao, Maneesh Agrawala",
+      "accessed": "2026-10-20",
+      "kind": "research_paper",
+      "claims": [
+        {
+          "id": "C05-1",
+          "claim": "ControlNet研究使用边缘、深度等空间条件控制扩散模型。",
+          "support": "论文摘要及研究问题。",
+          "limits": "不证明通用风格数值与生成像素一一对应，也不保证所有工具可调用此方法。"
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "title": "A Neural Algorithm of Artistic Style",
+      "url": "https://arxiv.org/abs/1508.06576",
+      "publisher": "Leon A. Gatys, Alexander S. Ecker, Matthias Bethge",
+      "accessed": "2026-10-20",
+      "kind": "research_paper",
+      "claims": [
+        {
+          "id": "C06-1",
+          "claim": "论文构建神经网络中的内容和风格表示并进行图像合成。",
+          "support": "原论文摘要。",
+          "limits": "模型中的style表示不是游戏美术方向、互动语义或时间一致性的完整定义。"
+        }
+      ]
+    },
+    {
+      "id": "R21",
+      "title": "Pillow ImageCms module",
+      "url": "https://pillow.readthedocs.io/en/stable/reference/ImageCms.html",
+      "publisher": "Pillow documentation",
+      "accessed": "2026-10-21",
+      "kind": "official_technical_documentation",
+      "claims": [
+        {
+          "id": "R21-C1",
+          "claim": "Pillow ImageCms支持通过ICC配置将图像颜色从输入配置转换至输出配置，并能显式选择rendering intent。",
+          "support": "已读取官方ImageCms文档，profileToProfile、createProfile与Intent.RELATIVE_COLORIMETRIC参数说明；实现使用LittleCMS。",
+          "limits": "只能说明计算工具与明确提供的ICC；未标ICC图片仍需记录sRGB假定，不能据此证明原游戏输出色域或设备显示。"
+        }
+      ]
+    },
+    {
+      "id": "R01",
+      "title": "Hollow Knight — Steam official store and screenshot gallery",
+      "url": "https://store.steampowered.com/app/367520/?l=english",
+      "publisher": "Team Cherry / Steam",
+      "accessed": "2026-10-21",
+      "kind": "official_store_gallery",
+      "verification": "web_open; gallery metadata and unchanged local JPEGs recorded in image-manifest.json; three images visually inspected",
+      "claims": [
+        {
+          "id": "R01-C1",
+          "claim": "本案例采用该商店图库顺序0、1、2的三张发布方截图。",
+          "support": "steam-gallery.json的app 367520和image-manifest.json记录原图URL、尺寸与SHA256。",
+          "limits": "属于官方发布的游戏内画面，不是本次实机录制；截图build、拍摄日期、运行设置未知，三张不代表全游戏。"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "title": "Games — Team Cherry",
+      "url": "https://www.teamcherry.com.au/games",
+      "publisher": "Team Cherry",
+      "accessed": "2026-10-21",
+      "kind": "developer_official_site",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "R02-C1",
+          "claim": "开发者把Hollow Knight的表现称为手绘二维风格。",
+          "support": "Hollow Knight产品段。",
+          "limits": "是高层风格描述，不提供轮廓宽度、色板或每张截图的制作设置。"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "title": "Hollow Knight — Made with Unity",
+      "url": "https://unity.com/made-with-unity/hollow-knight",
+      "publisher": "Unity / Team Cherry case study",
+      "accessed": "2026-10-21",
+      "kind": "official_engine_developer_case_study",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "R03-C1",
+          "claim": "该制作回顾介绍手绘二维资产、三维空间中的分层和透明柔形光照。",
+          "support": "Sprites help create striking 2D visuals段。",
+          "limits": "支持历史制作方法的背景信息；不识别本次截图的build、相机投影、确切shader、曝光或材质数值。"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "title": "Introducing Hollow Knight",
+      "url": "https://www.teamcherry.com.au/blog/introducing-hollow-knight",
+      "publisher": "Team Cherry; Ari Gibson",
+      "accessed": "2026-10-21",
+      "kind": "early_developer_blog",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "R04-C1",
+          "claim": "早期开发介绍曾把外观概括为简洁、接近单色，并强调传统二维动画。",
+          "support": "Ari Gibson署名的早期介绍正文。",
+          "limits": "正文明确处于早期阶段；不能当作最终全游戏的单色约束，更不能覆盖本次三图中的青绿、橙光和红紫变化。"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "title": "Dota 2 — Steam official store and screenshot gallery",
+      "url": "https://store.steampowered.com/app/570/?l=english",
+      "publisher": "Valve / Steam",
+      "accessed": "2026-10-21",
+      "kind": "official_store_gallery",
+      "verification": "web_open; gallery metadata and unchanged local JPEGs recorded in image-manifest.json; three images visually inspected",
+      "claims": [
+        {
+          "id": "R05-C1",
+          "claim": "本案例采用该商店图库顺序0、1、2的三张发布方截图。",
+          "support": "steam-gallery.json的app 570和image-manifest.json记录原图URL、尺寸与SHA256。",
+          "limits": "不等于当前客户端或最新地图的录屏；版本、皮肤、具体运行参数及截图日期未知。"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "title": "Dota 2 Workshop — Character Art Guide",
+      "url": "https://help.steampowered.com/en/faqs/view/0688-7692-4D5A-1935",
+      "publisher": "Valve / Steam Support",
+      "accessed": "2026-10-21",
+      "kind": "official_game_art_guide",
+      "verification": "web_open returned incomplete article; direct HTTP 200 HTML article checked",
+      "claims": [
+        {
+          "id": "R06-C1",
+          "claim": "指南允许默认剪影和色彩改变，前提是身份识别仍成立，并要求在实际游戏尺寸检查细节。",
+          "support": "Silhouette、Areas of Rest and Detail和Summary。",
+          "limits": "是角色物品设计指南，不是三张截图中所有角色、地图、UI和技能的统一shader或配色规范；不据此反推生产参数。"
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "title": "Dota 2 Item Workshop — Guidelines Homepage",
+      "url": "https://www.dota2.com/workshop/build/references?l=english",
+      "publisher": "Valve",
+      "accessed": "2026-10-21",
+      "kind": "official_asset_workflow_document",
+      "verification": "web_open_full_text",
+      "claims": [
+        {
+          "id": "R07-C1",
+          "claim": "官方工坊把三维模型物品、二维图像、角色、特效与其他素材分成不同提交/制作类别。",
+          "support": "介绍、Submission Types和Asset Creation Guidelines。",
+          "limits": "支持实际三维资产工作流的背景说明；本案例仍不从静帧推断相机数值、渲染管线或图中每个物件的源文件结构。"
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "title": "Stardew Valley on Steam",
+      "url": "https://store.steampowered.com/app/413150/?l=english",
+      "publisher": "ConcernedApe / Steam",
+      "accessed": "2026-10-21",
+      "kind": "official_store_product_page",
+      "claims": [
+        {
+          "id": "R11-C1",
+          "claim": "App 413150是ConcernedApe发行的Stardew Valley产品，官方说明包含农耕与洞窟探索等活动。",
+          "support": "实际打开Steam页面，读取产品身份、Developer/Publisher与About This Game；用于核对所选画面归属及场景类别。",
+          "limits": "不使用价格、评论和用户标签推导美术参数；产品介绍不能证明截图构建号、拍摄日期、相机矩阵、原生像素倍率或运行FPS。"
+        },
+        {
+          "id": "R11-C2",
+          "claim": "本案选用该App官方商店截图索引0、1、2，且逐张实际查看了本地保留原文件。",
+          "support": "cases/steam-gallery.json保存该App商店API导出的screenshots与CDN URL；cases/image-manifest.json保存所下3图的URL、尺寸、SHA256与未变换声明；三图已通过view_image检查。",
+          "limits": "商店发布的是开发者选取的游戏内画面资料，本次没有亲自运行重现；1920x1080仅为交付JPG尺寸，未证明游戏内部渲染分辨率。"
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "title": "Stardew Valley — Official Press",
+      "url": "https://www.stardewvalley.net/press/",
+      "publisher": "ConcernedApe",
+      "accessed": "2026-10-21",
+      "kind": "official_press_page",
+      "claims": [
+        {
+          "id": "R12-C1",
+          "claim": "官方Press页列出多个平台，并说明移动版菜单与UI经过重新设计。",
+          "support": "实际打开Platforms及Features；移动版说明含fully redesigned menus and UI，故不混用移动截图补充PC界面判断。",
+          "limits": "本文未将其当成当前所有平台功能的完整清单，也未引入移动版截图。"
+        },
+        {
+          "id": "R12-C2",
+          "claim": "该页Factsheet日期与History所述PC发行日期存在差异，不能以单个日期字段确定图像版本。",
+          "support": "读取Factsheet的22 February 2016，以及History的February 26 2016；Steam也列26 Feb 2016。",
+          "limits": "仅保留来源内不一致，不自行更改其事实表；两者都不是所选截图的拍摄日期。"
+        }
+      ]
+    },
+    {
+      "id": "R13",
+      "title": "Monument Valley on Steam — PC / Panoramic description",
+      "url": "https://store.steampowered.com/app/1927720/?l=english",
+      "publisher": "ustwo games / Steam",
+      "accessed": "2026-10-21",
+      "kind": "official_store_product_page",
+      "claims": [
+        {
+          "id": "R13-C1",
+          "claim": "App 1927720是Monument Valley的PC产品；正文含Panoramic Edition、全景画面与PC操作的说明。",
+          "support": "实际打开The Modern Classic Comes to PC、Simply Explorative、Beautifully Reimagined与Panoramic Collection Out Now等段落；据App身份限定本案平台。",
+          "limits": "当前页面标题为Monument Valley，不假设名称从未变化；不将原版手机、续作或其他平台截图混入。"
+        },
+        {
+          "id": "R13-C2",
+          "claim": "官方将视觉错觉与不可能空间列为谜题核心，并提及极简3D设计灵感。",
+          "support": "About This Game及The Modern Classic Comes to PC说明optical illusions、impossible environments；Every World Included段落述minimalist 3D design inspiration。",
+          "limits": "灵感描述不唯一证明底层资产维度、相机正交矩阵、shader或PBR值；本案的spatial_logic引用官方机制，同时不重建每张截图的路径连通图。"
+        },
+        {
+          "id": "R13-C3",
+          "claim": "本案查看的是该App官方商店截图索引0、1、2的原始JPG保留件。",
+          "support": "商店图库导出见cases/steam-gallery.json；来源URL、SHA256、1920x1080尺寸和未知构建/拍摄日期见cases/image-manifest.json；三图均已通过view_image实际查看。",
+          "limits": "只覆盖三个开发者选取的画面；截图不是运行记录或全作一致性证明，不据静帧推FPS、动作时长或性能。"
+        }
+      ]
+    },
+    {
+      "id": "R14",
+      "title": "10 Years of MV — Official timeline",
+      "url": "https://ustwogames.co.uk/mv10/",
+      "publisher": "ustwo games",
+      "accessed": "2026-10-21",
+      "kind": "official_developer_history",
+      "claims": [
+        {
+          "id": "R14-C1",
+          "claim": "ustwo官方时间线将Monument Valley: Panoramic Edition登陆Steam列在2022年。",
+          "support": "实际打开Timeline，2022标题下的Panoramic Edition Launches on Steam条目。",
+          "limits": "仅为PC版本身份的交叉核对；不以年份确定当前Steam截图的拍摄日期、构建号或外观没有改动。"
+        }
+      ]
+    }
+  ]
+}
