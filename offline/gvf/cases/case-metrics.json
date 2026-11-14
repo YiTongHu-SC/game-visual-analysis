@@ -1,0 +1,951 @@
+{
+  "document_type": "sampled_frame_color_statistics",
+  "version": "0.2.0",
+  "sample_date": "2026-10-21",
+  "method": "Published JPEG decoded; embedded ICC converted to sRGB using relative colorimetric intent, untagged RGB frames explicitly assumed sRGB; deterministic rectangular sampling anchored at each ROI upper-left pixel (no shared full-frame phase), linear sRGB -> Oklab/OKLCH; percentiles use linear interpolation.",
+  "runtime": {
+    "Pillow": "12.3.0",
+    "LittleCMS": "2.19"
+  },
+  "method_sources": [
+    "B02",
+    "R21"
+  ],
+  "limits": [
+    "Not an authored palette or source asset color.",
+    "Rectangles can mix foreground/background/UI/effects; no semantic segmentation.",
+    "JPEG compression, publication scaling and unknown display transforms affect values.",
+    "Stride sampling is not every-pixel measurement and cannot determine stroke width, logical pixel scale or exact extrema.",
+    "The sampling phase restarts at each ROI upper-left pixel; narrow periodic details can alias with the stride.",
+    "ICC conversion and decoded image channels use 8-bit RGB precision.",
+    "No conversion to the ordinal vividness scale and no aesthetic/visibility pass-fail claim."
+  ],
+  "results": [
+    {
+      "image_id": "hollow-knight-00",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": true,
+      "color_preparation": {
+        "policy": "embedded_ICC_to_sRGB",
+        "profile_name": "IEC 61966-2.1 Default RGB colour space - sRGB",
+        "profile_sha256": "3f6d674174f3804eb0dabdac90ae17486e898c5063a66f861c116ea033da8301",
+        "intent": "relative_colorimetric",
+        "black_point_compensation": false
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.2026322123685953,
+        "p50": 0.46896508551510807,
+        "p90": 0.805594114511638
+      },
+      "OKLCH_C": {
+        "p10": 0.01648352397037724,
+        "p50": 0.04341569385732078,
+        "p90": 0.0687711830150365
+      },
+      "relative_luminance_Y": {
+        "p10": 0.007752779955326434,
+        "p50": 0.10138129175885027,
+        "p90": 0.5146291424190853
+      }
+    },
+    {
+      "image_id": "hollow-knight-00",
+      "region_id": "background-top",
+      "description": "上方背景矩形，含可见竖向结构；不是纯背景语义mask。",
+      "source_mode": "RGB",
+      "icc_present": true,
+      "color_preparation": {
+        "policy": "embedded_ICC_to_sRGB",
+        "profile_name": "IEC 61966-2.1 Default RGB colour space - sRGB",
+        "profile_sha256": "3f6d674174f3804eb0dabdac90ae17486e898c5063a66f861c116ea033da8301",
+        "intent": "relative_colorimetric",
+        "black_point_compensation": false
+      },
+      "normalized_roi": [
+        0.28,
+        0.04,
+        0.32,
+        0.24
+      ],
+      "pixel_box_xyxy": [
+        537,
+        43,
+        1153,
+        303
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        537,
+        43
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 2541,
+      "OKLCH_L": {
+        "p10": 0.1843923085779311,
+        "p50": 0.24472178735822436,
+        "p90": 0.46351458754018376
+      },
+      "OKLCH_C": {
+        "p10": 0.025907267036633215,
+        "p50": 0.04981931839164133,
+        "p90": 0.05917506607490364
+      },
+      "relative_luminance_Y": {
+        "p10": 0.005808487717287458,
+        "p50": 0.013683531824851452,
+        "p90": 0.10022296828289959
+      }
+    },
+    {
+      "image_id": "hollow-knight-00",
+      "region_id": "bright-effect",
+      "description": "右侧高亮攻击外观及邻近背景；不推断事件持续时间。",
+      "source_mode": "RGB",
+      "icc_present": true,
+      "color_preparation": {
+        "policy": "embedded_ICC_to_sRGB",
+        "profile_name": "IEC 61966-2.1 Default RGB colour space - sRGB",
+        "profile_sha256": "3f6d674174f3804eb0dabdac90ae17486e898c5063a66f861c116ea033da8301",
+        "intent": "relative_colorimetric",
+        "black_point_compensation": false
+      },
+      "normalized_roi": [
+        0.69,
+        0.44,
+        0.15,
+        0.15
+      ],
+      "pixel_box_xyxy": [
+        1324,
+        475,
+        1613,
+        638
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        1324,
+        475
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 777,
+      "OKLCH_L": {
+        "p10": 0.6845650243272935,
+        "p50": 0.8640186555458328,
+        "p90": 0.9999999934735462
+      },
+      "OKLCH_C": {
+        "p10": 3.727399553519285e-08,
+        "p50": 0.05546978209570174,
+        "p90": 0.11370972718708572
+      },
+      "relative_luminance_Y": {
+        "p10": 0.3113338609411348,
+        "p50": 0.6357773257127622,
+        "p90": 1.0
+      }
+    },
+    {
+      "image_id": "hollow-knight-01",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.1214754269385847,
+        "p50": 0.38157995237139436,
+        "p90": 0.6924592300684118
+      },
+      "OKLCH_C": {
+        "p10": 0.01591291838605885,
+        "p50": 0.06407435705807665,
+        "p90": 0.11479794126858017
+      },
+      "relative_luminance_Y": {
+        "p10": 0.0018101620591743333,
+        "p50": 0.05778350806328336,
+        "p90": 0.353805700642141
+      }
+    },
+    {
+      "image_id": "hollow-knight-02",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.1798097165022558,
+        "p50": 0.3177734134892834,
+        "p90": 0.588484568841419
+      },
+      "OKLCH_C": {
+        "p10": 0.029588298437877986,
+        "p50": 0.07804808805007832,
+        "p90": 0.17085975566824976
+      },
+      "relative_luminance_Y": {
+        "p10": 0.005373758516532123,
+        "p50": 0.029108035735811368,
+        "p90": 0.18197628499205978
+      }
+    },
+    {
+      "image_id": "dota2-00",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.27950192730083,
+        "p50": 0.4783835069800391,
+        "p90": 0.6553786159776106
+      },
+      "OKLCH_C": {
+        "p10": 0.0289213909693939,
+        "p50": 0.050806989738806006,
+        "p90": 0.18688104077906084
+      },
+      "relative_luminance_Y": {
+        "p10": 0.020573223436102767,
+        "p50": 0.10229956975406931,
+        "p90": 0.2716164259881037
+      }
+    },
+    {
+      "image_id": "dota2-00",
+      "region_id": "terrain-left",
+      "description": "左侧地形/树木矩形；局部纹理和烟雾混合。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0.02,
+        0.44,
+        0.23,
+        0.25
+      ],
+      "pixel_box_xyxy": [
+        38,
+        475,
+        480,
+        746
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        38,
+        475
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 1904,
+      "OKLCH_L": {
+        "p10": 0.2438858728305086,
+        "p50": 0.34988717662960034,
+        "p90": 0.5696286900803418
+      },
+      "OKLCH_C": {
+        "p10": 0.04015471954042138,
+        "p50": 0.04897821004788371,
+        "p90": 0.0712577096452633
+      },
+      "relative_luminance_Y": {
+        "p10": 0.0130133600249234,
+        "p50": 0.040504684002248534,
+        "p90": 0.18015666572566846
+      }
+    },
+    {
+      "image_id": "dota2-00",
+      "region_id": "spell-region",
+      "description": "紫蓝特效占据矩形，含其后地面及单位。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0.52,
+        0.3,
+        0.25,
+        0.4
+      ],
+      "pixel_box_xyxy": [
+        998,
+        324,
+        1479,
+        756
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        998,
+        324
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 3294,
+      "OKLCH_L": {
+        "p10": 0.30931721471358314,
+        "p50": 0.5085529312813881,
+        "p90": 0.699977014012281
+      },
+      "OKLCH_C": {
+        "p10": 0.07808360281527164,
+        "p50": 0.16808705979486616,
+        "p90": 0.27112365475525063
+      },
+      "relative_luminance_Y": {
+        "p10": 0.026186190150255202,
+        "p50": 0.12322351770836909,
+        "p90": 0.3306756866540963
+      }
+    },
+    {
+      "image_id": "dota2-01",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.2519317547202486,
+        "p50": 0.4005463595021184,
+        "p90": 0.5408829842697109
+      },
+      "OKLCH_C": {
+        "p10": 0.005476631115978398,
+        "p50": 0.01322281878401256,
+        "p90": 0.034579366999686334
+      },
+      "relative_luminance_Y": {
+        "p10": 0.015944922753740515,
+        "p50": 0.06439418107265175,
+        "p90": 0.1577931682658941
+      }
+    },
+    {
+      "image_id": "dota2-02",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.25587659664154316,
+        "p50": 0.4423155334818271,
+        "p90": 0.6900495549538866
+      },
+      "OKLCH_C": {
+        "p10": 0.01353802450869773,
+        "p50": 0.04318043695192603,
+        "p90": 0.09807178725992492
+      },
+      "relative_luminance_Y": {
+        "p10": 0.01691743937869134,
+        "p50": 0.08830810859379074,
+        "p90": 0.3295215723828616
+      }
+    },
+    {
+      "image_id": "stardew-valley-00",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.3206668043014545,
+        "p50": 0.6307592157822688,
+        "p90": 0.8134278293826582
+      },
+      "OKLCH_C": {
+        "p10": 0.050794398078113555,
+        "p50": 0.14275576382537108,
+        "p90": 0.1910514471512533
+      },
+      "relative_luminance_Y": {
+        "p10": 0.032279073276589854,
+        "p50": 0.24493505762081447,
+        "p90": 0.527976580653004
+      }
+    },
+    {
+      "image_id": "stardew-valley-00",
+      "region_id": "ochre-ground",
+      "description": "黄土地矩形，含少量石与草；不是原始地面贴图。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0.21,
+        0.435,
+        0.14,
+        0.12
+      ],
+      "pixel_box_xyxy": [
+        403,
+        469,
+        672,
+        600
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        403,
+        469
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 578,
+      "OKLCH_L": {
+        "p10": 0.7113213188472142,
+        "p50": 0.8040949481899891,
+        "p90": 0.8309256176448748
+      },
+      "OKLCH_C": {
+        "p10": 0.1470344362611528,
+        "p50": 0.1653968280742321,
+        "p90": 0.16852605330030077
+      },
+      "relative_luminance_Y": {
+        "p10": 0.350443944330747,
+        "p50": 0.5083709183936532,
+        "p90": 0.5638898765170544
+      }
+    },
+    {
+      "image_id": "stardew-valley-00",
+      "region_id": "player-bbox",
+      "description": "角色外接矩形，含背景；不得作为纯角色mask。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0.484,
+        0.486,
+        0.031,
+        0.111
+      ],
+      "pixel_box_xyxy": [
+        929,
+        524,
+        989,
+        645
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        929,
+        524
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 128,
+      "OKLCH_L": {
+        "p10": 0.30658728396709195,
+        "p50": 0.6999012343685436,
+        "p90": 0.8454201479477002
+      },
+      "OKLCH_C": {
+        "p10": 0.06305411381068872,
+        "p50": 0.14124159059004285,
+        "p90": 0.192920603593219
+      },
+      "relative_luminance_Y": {
+        "p10": 0.026191145989404536,
+        "p50": 0.3354648887494999,
+        "p90": 0.5977722879778994
+      }
+    },
+    {
+      "image_id": "stardew-valley-01",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.0,
+        "p50": 0.08334846609075898,
+        "p90": 0.3275863420144427
+      },
+      "OKLCH_C": {
+        "p10": 0.0,
+        "p50": 0.026609301244510695,
+        "p90": 0.05680072077111161
+      },
+      "relative_luminance_Y": {
+        "p10": 0.0,
+        "p50": 0.0005397316821465428,
+        "p90": 0.03425176314667142
+      }
+    },
+    {
+      "image_id": "stardew-valley-02",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.3078861251955412,
+        "p50": 0.5841329999646622,
+        "p90": 0.7835135564378336
+      },
+      "OKLCH_C": {
+        "p10": 0.05491813431237679,
+        "p50": 0.14899063513289545,
+        "p90": 0.19236129721695114
+      },
+      "relative_luminance_Y": {
+        "p10": 0.030335827522138502,
+        "p50": 0.2089429314710946,
+        "p90": 0.4727702077073138
+      }
+    },
+    {
+      "image_id": "monument-valley-00",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.38594194677129184,
+        "p50": 0.39096798216987094,
+        "p90": 0.7044089368616144
+      },
+      "OKLCH_C": {
+        "p10": 0.07234664224268225,
+        "p50": 0.10138344094227904,
+        "p90": 0.10138344094227904
+      },
+      "relative_luminance_Y": {
+        "p10": 0.05463167387755112,
+        "p50": 0.05672434432605098,
+        "p90": 0.36587936555697365
+      }
+    },
+    {
+      "image_id": "monument-valley-00",
+      "region_id": "background",
+      "description": "紫色空域，避开月牙与主体塔；保留画面本身的渐变。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0.06,
+        0.25,
+        0.27,
+        0.35
+      ],
+      "pixel_box_xyxy": [
+        115,
+        270,
+        634,
+        648
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        115,
+        270
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 3120,
+      "OKLCH_L": {
+        "p10": 0.39096798216987094,
+        "p50": 0.39096798216987094,
+        "p90": 0.39096798216987094
+      },
+      "OKLCH_C": {
+        "p10": 0.10138344094227904,
+        "p50": 0.10138344094227904,
+        "p90": 0.10138344094227904
+      },
+      "relative_luminance_Y": {
+        "p10": 0.05672434432605098,
+        "p50": 0.05672434432605098,
+        "p90": 0.05672434432605098
+      }
+    },
+    {
+      "image_id": "monument-valley-00",
+      "region_id": "cyan-wall",
+      "description": "塔的青色立面局部矩形；不反推材质基色或shader。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0.45,
+        0.61,
+        0.035,
+        0.1
+      ],
+      "pixel_box_xyxy": [
+        864,
+        658,
+        932,
+        767
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        864,
+        658
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 126,
+      "OKLCH_L": {
+        "p10": 0.6429143419956704,
+        "p50": 0.7822129092452549,
+        "p90": 0.7822129092452549
+      },
+      "OKLCH_C": {
+        "p10": 0.09070032047785039,
+        "p50": 0.09540316761556837,
+        "p90": 0.09540316761556837
+      },
+      "relative_luminance_Y": {
+        "p10": 0.25833713714746975,
+        "p50": 0.49240813295706487,
+        "p90": 0.49240813295706487
+      }
+    },
+    {
+      "image_id": "monument-valley-01",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.3134930691725054,
+        "p50": 0.5740817439424583,
+        "p90": 0.7455045597963915
+      },
+      "OKLCH_C": {
+        "p10": 0.032759737692340765,
+        "p50": 0.09218927634940209,
+        "p90": 0.13596239358013712
+      },
+      "relative_luminance_Y": {
+        "p10": 0.03292110848438212,
+        "p50": 0.19786857297097277,
+        "p90": 0.42839483327003963
+      }
+    },
+    {
+      "image_id": "monument-valley-02",
+      "region_id": "full-frame",
+      "description": "整张已发布JPEG，包括可见UI；不是资产色板。",
+      "source_mode": "RGB",
+      "icc_present": false,
+      "color_preparation": {
+        "policy": "untagged_assumed_sRGB",
+        "profile_name": null,
+        "intent": null
+      },
+      "normalized_roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "pixel_box_xyxy": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sampling_stride_px": 8,
+      "sampling_origin_px": [
+        0,
+        0
+      ],
+      "sampling_grid": "ROI upper-left anchored; x/y increase by stride; upper bounds excluded",
+      "sample_count": 32400,
+      "OKLCH_L": {
+        "p10": 0.7718160256025939,
+        "p50": 0.8765196578031776,
+        "p90": 0.9236684160495883
+      },
+      "OKLCH_C": {
+        "p10": 0.016754436227938697,
+        "p50": 0.031174051075112837,
+        "p90": 0.057362044056973864
+      },
+      "relative_luminance_Y": {
+        "p10": 0.4546610722308595,
+        "p50": 0.6804187077928568,
+        "p90": 0.7949754051960737
+      }
+    }
+  ]
+}

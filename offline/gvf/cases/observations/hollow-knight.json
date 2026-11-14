@@ -1,0 +1,2531 @@
+{
+  "document_type": "visual_observation",
+  "schema_version": "0.2.0",
+  "framework_version": "0.2.0",
+  "catalog_version": "0.2.0",
+  "id": "hollow-knight",
+  "title": "Hollow Knight / 空洞骑士：三张官方截图观察",
+  "game": {
+    "id": "hollow-knight",
+    "title": "Hollow Knight / 空洞骑士",
+    "official_url": "https://www.teamcherry.com.au/games"
+  },
+  "scope": {
+    "description": "2026-10-21选择官方Steam图库索引0/1/2，三张均实际查看。发布方提供的游戏内截图，非本次自行录制；build、拍摄日期、图形设置未知。仅限所选样本与ROI。",
+    "coverage": "selected_official_stills",
+    "claims_scope": "sample_only",
+    "excluded": [
+      "不代表全部游戏、区域、人物、皮肤、配置或最新客户端。",
+      "不验证玩家辨识率、FPS、性能、完整动画或可访问性通过。",
+      "不从JPEG反演源色板、具体shader、材质输入、相机数值或源工艺。",
+      "未出现不等于NA；观察表不是可直接生产的profile。"
+    ]
+  },
+  "images": [
+    {
+      "id": "hollow-knight-00",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_5384f9f8b96a0b9934b2bc35a4058376211636d2.1920x1080.jpg?t=1776125684",
+      "source_page_url": "https://store.steampowered.com/app/367520/?l=english",
+      "local_path": "cases/images/hollow-knight-00.jpg",
+      "width_px": 1920,
+      "height_px": 1080,
+      "format": "jpeg",
+      "origin": "official_store",
+      "inspected": true,
+      "rights_note": "游戏画面版权归各权利人；本地研究与分析引用，不构成游戏素材再利用授权。"
+    },
+    {
+      "id": "hollow-knight-01",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_d5b6edd94e77ba6db31c44d8a3c09d807ab27751.1920x1080.jpg?t=1776125684",
+      "source_page_url": "https://store.steampowered.com/app/367520/?l=english",
+      "local_path": "cases/images/hollow-knight-01.jpg",
+      "width_px": 1920,
+      "height_px": 1080,
+      "format": "jpeg",
+      "origin": "official_store",
+      "inspected": true,
+      "rights_note": "游戏画面版权归各权利人；本地研究与分析引用，不构成游戏素材再利用授权。"
+    },
+    {
+      "id": "hollow-knight-02",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_a81e4231cc8d55f58b51a4a938898af46503cae5.1920x1080.jpg?t=1776125684",
+      "source_page_url": "https://store.steampowered.com/app/367520/?l=english",
+      "local_path": "cases/images/hollow-knight-02.jpg",
+      "width_px": 1920,
+      "height_px": 1080,
+      "format": "jpeg",
+      "origin": "official_store",
+      "inspected": true,
+      "rights_note": "游戏画面版权归各权利人；本地研究与分析引用，不构成游戏素材再利用授权。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "R01",
+      "url": "https://store.steampowered.com/app/367520/?l=english",
+      "title": "Hollow Knight — Steam official store and screenshot gallery",
+      "publisher": "Team Cherry / Steam",
+      "note": "本案例采用该商店图库顺序0、1、2的三张发布方截图。 限度：属于官方发布的游戏内画面，不是本次实机录制；截图build、拍摄日期、运行设置未知，三张不代表全游戏。"
+    },
+    {
+      "id": "R02",
+      "url": "https://www.teamcherry.com.au/games",
+      "title": "Games — Team Cherry",
+      "publisher": "Team Cherry",
+      "note": "开发者把Hollow Knight的表现称为手绘二维风格。 限度：是高层风格描述，不提供轮廓宽度、色板或每张截图的制作设置。"
+    },
+    {
+      "id": "R03",
+      "url": "https://unity.com/made-with-unity/hollow-knight",
+      "title": "Hollow Knight — Made with Unity",
+      "publisher": "Unity / Team Cherry case study",
+      "note": "该制作回顾介绍手绘二维资产、三维空间中的分层和透明柔形光照。 限度：支持历史制作方法的背景信息；不识别本次截图的build、相机投影、确切shader、曝光或材质数值。"
+    },
+    {
+      "id": "R04",
+      "url": "https://www.teamcherry.com.au/blog/introducing-hollow-knight",
+      "title": "Introducing Hollow Knight",
+      "publisher": "Team Cherry; Ari Gibson",
+      "note": "早期开发介绍曾把外观概括为简洁、接近单色，并强调传统二维动画。 限度：正文明确处于早期阶段；不能当作最终全游戏的单色约束，更不能覆盖本次三图中的青绿、橙光和红紫变化。"
+    }
+  ],
+  "observations": [
+    {
+      "parameter_id": "representation.mode",
+      "status": "observed",
+      "method": "source_document",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "source_id": "R03",
+          "note": "官方制作回顾：二维资产分层置于三维环境。"
+        }
+      ],
+      "explanation": "依据官方制作背景，符合字典2.5d限定定义。",
+      "limitation": "不是由透视外观猜测；未核验历史说明与本截图build的一致性。",
+      "value": "2.5d"
+    },
+    {
+      "parameter_id": "representation.recognizability",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        }
+      ],
+      "explanation": "虫形角色、武器、桥台和建筑部件可辨类别。",
+      "limitation": "没有无标签受众测试，不等于怪物身份/功能正确识别。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：多数对象可辨认，语义需语境；75：对象身份清楚，细节简化。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "representation.depth_cues",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "遮挡、明暗、远层柔化和多层重叠提供深度。",
+      "limitation": "深度外观不能证明相机投影或关卡维数。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：含层级、缩放或少量阴影；75：多种一致深度线索。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "representation.abstraction_strategy",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        }
+      ],
+      "explanation": "角色简化夸张、背景装饰与图形高亮共存。",
+      "limitation": "只作样本外观分类，不反推完整创作方法。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "representation.source_medium",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "官方确认手绘数字资产，但枚举无直接hand_drawn，不能强指定ink、paint或mixed。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "representation.semantic_load",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        }
+      ],
+      "explanation": "角色外形较直接，资源图标和状态意义依赖约定。",
+      "limitation": "未测新手理解负担或识别率。",
+      "range": {
+        "min": 25,
+        "max": 50
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：少量通用图形约定；50：需要简短图例。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "form.naturalism",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        }
+      ],
+      "explanation": "小身体、大面部、双角及非自然虫形结构主导角色。",
+      "limitation": "相对常见昆虫/人形参照，不评价幻想设定合理性。",
+      "range": {
+        "min": 0,
+        "max": 25
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：0：形体结构与比例完全服从自有规则；25：可辨对象的极简变形。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "form.proportion_exaggeration",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        }
+      ],
+      "explanation": "本组没有指定可复核的现实或设计比例基准；幻想造型、头部简化或装备轮廓不能独立证明相对该基准的比例夸张。",
+      "limitation": "保留人物形状的可见证据，但不赋予比例夸张档位；需先指定对象、对应部位及获准基准再比较。"
+    },
+    {
+      "parameter_id": "form.shape_language",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        }
+      ],
+      "explanation": "圆面/眼、有机壳体与尖角、竖柱、平台直线并存。",
+      "limitation": "形状不自动决定友善或危险。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "form.edge_roundness",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        }
+      ],
+      "explanation": "角色多圆滑曲线，角与武器仍尖锐。",
+      "limitation": "描述可见转角，不反推几何倒角半径。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：明显圆角与棱角并存；75：以圆润转角为主。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "form.silhouette_complexity",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        }
+      ],
+      "explanation": "主要角色大形较少，以角、披风、肢体提供识别。",
+      "limitation": "仅看角色，桥栏与观众整体复杂度更高。",
+      "range": {
+        "min": 25,
+        "max": 50
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：少量大型转折；50：多级清晰形块。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "form.scale_consistency",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有同类人物、门、道具的批准尺度表与同条件视图，无法给一致度评分。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "form.anatomy_strategy",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        }
+      ],
+      "explanation": "保留头身肢体线索并显著改变现实比例。",
+      "limitation": "不据此覆盖全部NPC和过场。",
+      "value": "exaggerated"
+    },
+    {
+      "parameter_id": "line.usage",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        }
+      ],
+      "explanation": "角色及近景有内外线；远景、白色效果、柔光采用其他边界。",
+      "limitation": "不是全局同宽描边shader；背景也有锐利构件。",
+      "value": "selective"
+    },
+    {
+      "parameter_id": "line.width_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未按统一协议沿轮廓法线逐像素取样；JPEG重采样/软边影响线宽，不能凭观看填精确px。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "line.weight_variation",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        }
+      ],
+      "explanation": "主轮廓、部分内线、近景装饰及HUD有粗细差别。",
+      "limitation": "没有逐像素取样，区间不能当制作线宽。",
+      "range": {
+        "min": 25,
+        "max": 50
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：少量轻微变化；50：轮廓与内线明显分级。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "line.edge_regularity",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        }
+      ],
+      "explanation": "角色和桥栏边界连续明确，背景存在柔化和绘画式变化。",
+      "limitation": "不包含跨帧抖动判断。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：有控制的不规则；75：接近规则，保留少量扰动。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "line.color_mode",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        },
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.46,
+            0.3,
+            0.43,
+            0.51
+          ],
+          "note": "白色大形状、光点与橙光占据较大区域。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.32,
+            0.25,
+            0.48,
+            0.68
+          ],
+          "note": "青绿背景光和小型光点；本帧无相同白色大爆发。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.61,
+            0.56,
+            0.19,
+            0.21
+          ],
+          "note": "局部红粉效果有柔边扩散。"
+        }
+      ],
+      "explanation": "深色主线、受区域色影响的远景线与高亮边界共存。",
+      "limitation": "无描边白色效果不能写作白色人物描边。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "line.inner_density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        }
+      ],
+      "explanation": "主角内线少，桥栏、衣褶和观众更密。",
+      "limitation": "宽区间保留对象差异，不表示全屏平均。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：仅关键结构；50：结构和少量表面线；75：大量结构与排线。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "surface.material_physicality",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺少同表面的多视角、多光照与实测材质参照；单帧不能验证反射/透射响应。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "surface.detail_density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        }
+      ],
+      "explanation": "简洁人物填色与较密建筑、衣褶、观众并存。",
+      "limitation": "可见信息不等于纹理分辨率。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：少量大尺度细节；50：大中小细节分层；75：大量可见小细节。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "surface.texture_mode",
+      "status": "observed",
+      "method": "source_document",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "source_id": "R03",
+          "note": "官方制作回顾说明手绘美术在Photoshop制作并保存为PNG。"
+        }
+      ],
+      "explanation": "官方文档支持手绘资产的制作背景。",
+      "limitation": "不识别每个资产，也未核验历史流程与截图build关联。",
+      "value": "hand_painted"
+    },
+    {
+      "parameter_id": "surface.brush_visibility",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "不能可靠区分笔触、纹理图案、光照与JPEG压缩；不把全部细节当笔刷痕迹。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "surface.brush_scale_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有可稳定辨认并量取的笔触集合；屏幕纹理尺度不等于源笔刷宽度。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "surface.roughness",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "需要源材质/着色器定义；单帧高光不能唯一反演PBR粗糙度输入。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "surface.metallic",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺少源材质或明确技术资料；颜色和高亮不能唯一确定金属度输入。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_mode",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未取得源色板及用途分工合同；最终场景色彩关系不能直接等同受控配色策略。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_colors",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有原始受控色板；JPEG、光照和渐变中的像素色数不等于色板色数。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.saturation",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "00较柔多色配高亮，01青绿鲜明，02红紫突出。",
+      "limitation": "最终鲜艳感不是HSV/HSL S或源色板C。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：低鲜艳度，明显灰化；50：中等鲜艳度；75：鲜明高色度为主。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "color.value_range",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有关键区域遮罩与OKLCH采样协议，也未实际计算明度跨度；不凭观看猜数。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_lightness",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有源色板，JPEG亮暗不等于主色板OKLCH L。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_chroma",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有源色板和颜色管理条件，鲜艳感不等于主色板OKLCH C。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_hue",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有主色选择规则与源色板，三帧区域变化不能压成精确主色相角。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.accent_area",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未定义强调色掩码、阈值和分母；光晕/渐变/UI未形成面积测量。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.temperature_bias",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "三图分别呈暖/冷混合、青绿和红紫气氛。",
+      "limitation": "不把区域底色升格为全游戏固定冷暖。",
+      "value": "contextual"
+    },
+    {
+      "parameter_id": "light.physicality",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺少现实光照参照及多条件测试；有阴影/亮光不能证明物理一致性。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "light.model",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "多种方法能实现相同明暗；没有这些截图使用的着色/灯光配置。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "light.shadow_hardness",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "暗部混合描线、画入阴影和柔光，未分离出可独立量判的投射阴影过渡。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "light.contrast",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.46,
+            0.3,
+            0.43,
+            0.51
+          ],
+          "note": "白色大形状、光点与橙光占据较大区域。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.32,
+            0.25,
+            0.48,
+            0.68
+          ],
+          "note": "青绿背景光和小型光点；本帧无相同白色大爆发。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.61,
+            0.56,
+            0.19,
+            0.21
+          ],
+          "note": "局部红粉效果有柔边扩散。"
+        }
+      ],
+      "explanation": "白面部和高亮效果对深色前景形成显著明暗组织。",
+      "limitation": "没有测曝光、亮度比或动态适应。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：清楚而温和的明暗；75：强烈明暗分组。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "light.exposure_ev",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺场景曝光基线、色调映射与源HDR数据；JPEG不能提供EV补偿。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "light.emissive_prominence",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.46,
+            0.3,
+            0.43,
+            0.51
+          ],
+          "note": "白色大形状、光点与橙光占据较大区域。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.32,
+            0.25,
+            0.48,
+            0.68
+          ],
+          "note": "青绿背景光和小型光点；本帧无相同白色大爆发。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.61,
+            0.56,
+            0.19,
+            0.21
+          ],
+          "note": "局部红粉效果有柔边扩散。"
+        }
+      ],
+      "explanation": "01亮点局部，00白形和02红粉效果对注意力影响更大。",
+      "limitation": "只评发光样外观，不证明材质自发光输入。",
+      "range": {
+        "min": 25,
+        "max": 100
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：零星弱自发光；50：局部自发光可辨；75：自发光明显引导注意；100：发光成为画面主导。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "light.ambient_occlusion",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "暗缝/接触暗部可能来自贴图、灯光或后期，不能区分AO贡献。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.projection",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "不同场景的单视图不能唯一标定投影矩阵；侧看/俯看不等于正交或透视。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.elevation_deg",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺少场景坐标、相机姿态和校准几何，不能给精确俯仰角。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.vertical_fov_deg",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有相机标定、投影类型与参照尺寸，不能推垂直视场角。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.distance_m",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有世界单位、主体尺寸和相机配置，像素占高不能换算米。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.movement",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "三张不是连续时间序列，无法区分固定、跟随、自由或脚本运动。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.distortion",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有已知直线/成像参照；未见明显畸变不能填0。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "composition.focal_hierarchy",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.46,
+            0.3,
+            0.43,
+            0.51
+          ],
+          "note": "白色大形状、光点与橙光占据较大区域。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.32,
+            0.25,
+            0.48,
+            0.68
+          ],
+          "note": "青绿背景光和小型光点；本帧无相同白色大爆发。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.61,
+            0.56,
+            0.19,
+            0.21
+          ],
+          "note": "局部红粉效果有柔边扩散。"
+        }
+      ],
+      "explanation": "白面、对手与效果成为焦点；02复杂背景增加竞争。",
+      "limitation": "没有任务/注视实验，不声称实战读取速度。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：一个主要焦点可辨；75：主次层级明确。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "composition.negative_space",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未声明留白/有效视觉空间的遮罩和分母；低细节不等于空白面积。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "composition.depth_layers",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "虽可见遮挡，但未定义离散层计数协议；可见层不是引擎图层数。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "composition.density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "三图有层叠装饰；01上部较疏，02观众与近景更密。",
+      "limitation": "整帧平均会遮蔽区域差异。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：元素适中并有分组；75：元素密集且细节多。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "composition.alignment",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "水平行走面、竖向建筑、02中央轴线和斜向效果并存。",
+      "limitation": "不推断关卡网格或所有镜头。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "composition.subject_separation",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        }
+      ],
+      "explanation": "00/01白色角色较突出，02深色小形象与近景/效果叠加。",
+      "limitation": "不是可读性通过判定，未测试最低分辨率。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：仅少量线索分离；50：多数情况下可辨；75：主要镜头稳定清晰。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "motion.naturalism",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "静帧不包含时序、速度、受力与惯性，姿态不能替代运动观察。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.timing",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "不是连续回放，不能区分插值、保持、跳变或混合时间组织。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.animation_fps",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "截图没有姿态更新的时间戳序列；交付图尺寸不说明动作/渲染FPS。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.squash_stretch",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有同对象基准形和连续动作，不能证明动态挤压拉伸幅度。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.anticipation_ms",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺主动作及预备阶段的逐帧时间证据，不能填写毫秒。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.secondary_motion",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺主体/附属部件的连续相位关系，不能判断跟随运动显著度。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "vfx.density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.46,
+            0.3,
+            0.43,
+            0.51
+          ],
+          "note": "白色大形状、光点与橙光占据较大区域。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.32,
+            0.25,
+            0.48,
+            0.68
+          ],
+          "note": "青绿背景光和小型光点；本帧无相同白色大爆发。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.61,
+            0.56,
+            0.19,
+            0.21
+          ],
+          "note": "局部红粉效果有柔边扩散。"
+        }
+      ],
+      "explanation": "白色攻击样形、红粉效果与光点占据不同范围。",
+      "limitation": "只比较所列静帧中相对整帧的空间占据与同时可见叠层；局部ROI只定位证据，其内部占比不直接等于全帧占比。无动态证据，不推发生频率、持续时间、时间峰值或性能；区间数值保留不代表已重新校准。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "目录0.2.0静态空间锚点：25=少量孤立特效，整帧占据范围小且叠层少；50=若干局部有明显特效，或局部可见中等叠层；75=特效占据整帧较大范围，或多个局部可见显著叠层。保留原粗区间，仅同步语义边界，未重新开展项目或跨评审校准；不是面积百分比、生产值或游戏官方分数。"
+    },
+    {
+      "parameter_id": "vfx.bloom",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.46,
+            0.3,
+            0.43,
+            0.51
+          ],
+          "note": "白色大形状、光点与橙光占据较大区域。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.32,
+            0.25,
+            0.48,
+            0.68
+          ],
+          "note": "青绿背景光和小型光点；本帧无相同白色大爆发。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.61,
+            0.56,
+            0.19,
+            0.21
+          ],
+          "note": "局部红粉效果有柔边扩散。"
+        }
+      ],
+      "explanation": "亮区周围有软扩散；00/02较明显，01多局部光点。",
+      "limitation": "描述辉光外观，不断言后处理Bloom实现。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：极轻光晕；50：局部可见光晕；75：明显扩散光晕。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "vfx.motion_blur_shutter",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "条带/软形/拖尾可由绘画、粒子或后期生成，不能反推快门角。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "vfx.screen_shake_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有前后帧稳定参照，不包含相机震动位移序列。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "vfx.hit_flash_ms",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有命中事件及前后时间轴，亮白区域不证明受击闪白或时长。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "vfx.semantic_color",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "单帧不足确定跨技能、阵营和状态的稳定颜色语义映射。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "ui.integration",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        }
+      ],
+      "explanation": "左上HUD与场景深度/区域底色分开保持位置。",
+      "limitation": "只覆盖所见HUD，未涵盖菜单、地图与对话。",
+      "value": "overlay"
+    },
+    {
+      "parameter_id": "ui.typography",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        }
+      ],
+      "explanation": "资源数字可见细粗变化与衬线式字形。",
+      "limitation": "字样有限，未识别字体文件或全部语言。",
+      "value": "serif"
+    },
+    {
+      "parameter_id": "ui.min_font_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未量可见字身像素高度，也未覆盖所有关键文字，不能报最小字号。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "ui.text_contrast",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有选前景/背景采样对和线性化亮度计算；眼看清楚不是对比比率。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "ui.information_density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        }
+      ],
+      "explanation": "常驻信息集中角落，世界画面占大部分。",
+      "limitation": "没出现的菜单不能判稀疏或NA。",
+      "range": {
+        "min": 25,
+        "max": 50
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：少量大分组；50：适中信息分组。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "ui.component_shape",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.04,
+            0.04,
+            0.37,
+            0.18
+          ],
+          "note": "左上圆表计、面具状图标和数字；三图数量及数字不同。"
+        }
+      ],
+      "explanation": "圆表计、面具状图标、尖弧装饰和数字并列。",
+      "limitation": "不是统一圆角矩形组件库。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "presentation.resolution_strategy",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "JPEG尺寸不是内部渲染、动态分辨率或整数放大策略。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.pixel_grid_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有源逻辑网格与缩放链，最终像素不能反推底层网格。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.antialiasing",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "平滑可来自源图、缩放、压缩或多种抗锯齿，没有底层设置资料。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.grain",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "JPEG噪声、表面信息与绘画痕迹难分，无连续/无压缩参照确认颗粒。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.chromatic_aberration_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺成像标定和通道位移测量；彩色效果边缘不自动等于镜头色差。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.vignette",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "周边/前景较暗，01中心亮，02底边深色形体框景。",
+      "limitation": "仅暗边外观，无法分离遮挡、画入暗色和后处理。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：极轻边缘暗化；50：明确边缘暗化；75：强暗角引导中心。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "camera.view_orientation",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "角色和行走面以侧向横截面观看。",
+      "limitation": "侧向不等于正交或精确俯角。",
+      "value": "side"
+    },
+    {
+      "parameter_id": "light.shading_appearance",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.414,
+            0.452,
+            0.065,
+            0.14
+          ],
+          "note": "白色面部、双角与深色身体有清楚曲线。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.48,
+            0.57,
+            0.075,
+            0.13
+          ],
+          "note": "小型角色轮廓邻接柔化远景。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.26,
+            0.46,
+            0.22,
+            0.37
+          ],
+          "note": "较大角色有明确轮廓和衣褶。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.18,
+            0.69,
+            0.58,
+            0.1
+          ],
+          "note": "桥栏有密集清楚内线，背景并非一概软化。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.35,
+            0.48,
+            0.48,
+            0.25
+          ],
+          "note": "中景观众仍保留轮廓和纹样。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.44,
+            0.73,
+            0.2,
+            0.14
+          ],
+          "note": "低处小型深色形象有模糊/拖尾外观。"
+        },
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0.46,
+            0.3,
+            0.43,
+            0.51
+          ],
+          "note": "白色大形状、光点与橙光占据较大区域。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0.32,
+            0.25,
+            0.48,
+            0.68
+          ],
+          "note": "青绿背景光和小型光点；本帧无相同白色大爆发。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0.61,
+            0.56,
+            0.19,
+            0.21
+          ],
+          "note": "局部红粉效果有柔边扩散。"
+        }
+      ],
+      "explanation": "人物色块、结构暗部、背景连续柔光与扩散共存。",
+      "limitation": "可见外观不同于cel/Lambert/PBR技术模型。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "representation.spatial_logic",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "hollow-knight-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "hollow-knight-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "本组平台、立柱与遮挡可按常规层叠空间解释。",
+      "limitation": "只指可见样本，不证明全游戏拓扑或碰撞逻辑。",
+      "value": "euclidean"
+    }
+  ],
+  "scoped_observations": [
+    {
+      "scope": {
+        "image_id": "hollow-knight-00",
+        "roi": [
+          0.414,
+          0.452,
+          0.065,
+          0.14
+        ],
+        "label": "主角：面部大色块与少量结构"
+      },
+      "observation": {
+        "parameter_id": "surface.detail_density",
+        "status": "observed",
+        "method": "visual_ordinal",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "image_id": "hollow-knight-00",
+            "roi": [
+              0.414,
+              0.452,
+              0.065,
+              0.14
+            ],
+            "note": "主角：面部大色块与少量结构"
+          }
+        ],
+        "explanation": "主角：面部大色块与少量结构",
+        "limitation": "本矩形含少量背景；只比较该发布图显示尺度的可见信息，不推源贴图。",
+        "range": {
+          "min": 0,
+          "max": 25
+        },
+        "anchor_basis": "使用0.2.0目录语义锚点：0=纯净大色块；25=少量大尺度细节。区间是本次样本的解释性候选，未完成独立双评审校准，非面积百分比或置信区间。"
+      }
+    },
+    {
+      "scope": {
+        "image_id": "hollow-knight-00",
+        "roi": [
+          0.19,
+          0.913,
+          0.4,
+          0.08
+        ],
+        "label": "前景平台：多层边线与重复装饰"
+      },
+      "observation": {
+        "parameter_id": "surface.detail_density",
+        "status": "observed",
+        "method": "visual_ordinal",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "image_id": "hollow-knight-00",
+            "roi": [
+              0.19,
+              0.913,
+              0.4,
+              0.08
+            ],
+            "note": "前景平台：多层边线与重复装饰"
+          }
+        ],
+        "explanation": "前景平台：多层边线与重复装饰",
+        "limitation": "不据局部高细节推断全部背景；靠近图底边仅覆盖平台可见部分。",
+        "range": {
+          "min": 50,
+          "max": 75
+        },
+        "anchor_basis": "使用0.2.0目录语义锚点：50=大中小细节分层；75=大量可见小细节。区间是本次样本的解释性候选，未完成独立双评审校准，非面积百分比或置信区间。"
+      }
+    },
+    {
+      "scope": {
+        "image_id": "hollow-knight-00",
+        "roi": [
+          0.19,
+          0.913,
+          0.4,
+          0.08
+        ],
+        "label": "平台：内外线同时可见"
+      },
+      "observation": {
+        "parameter_id": "line.usage",
+        "status": "observed",
+        "method": "visual_category",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "image_id": "hollow-knight-00",
+            "roi": [
+              0.19,
+              0.913,
+              0.4,
+              0.08
+            ],
+            "note": "平台：内外线同时可见"
+          }
+        ],
+        "explanation": "平台：内外线同时可见",
+        "limitation": "只描述此平台，排除后方光斑与远景；不判断描边实现。",
+        "value": "outer_and_inner"
+      }
+    }
+  ]
+}

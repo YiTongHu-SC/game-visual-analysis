@@ -1,0 +1,2982 @@
+{
+  "document_type": "visual_observation",
+  "schema_version": "0.2.0",
+  "framework_version": "0.2.0",
+  "catalog_version": "0.2.0",
+  "id": "dota2",
+  "title": "Dota 2：三张官方截图观察",
+  "game": {
+    "id": "dota2",
+    "title": "Dota 2",
+    "official_url": "https://www.dota2.com/"
+  },
+  "scope": {
+    "description": "2026-10-21选择官方Steam图库索引0/1/2，三张均实际查看。发布方提供的游戏内截图，非本次自行录制；build、拍摄日期、图形设置未知。仅限所选样本与ROI。",
+    "coverage": "selected_official_stills",
+    "claims_scope": "sample_only",
+    "excluded": [
+      "不代表全部游戏、区域、人物、皮肤、配置或最新客户端。",
+      "不验证玩家辨识率、FPS、性能、完整动画或可访问性通过。",
+      "不从JPEG反演源色板、具体shader、材质输入、相机数值或源工艺。",
+      "未出现不等于NA；观察表不是可直接生产的profile。"
+    ]
+  },
+  "images": [
+    {
+      "id": "dota2-00",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_ad8eee787704745ccdecdfde3a5cd2733704898d.1920x1080.jpg?t=1791407503",
+      "source_page_url": "https://store.steampowered.com/app/570/?l=english",
+      "local_path": "cases/images/dota2-00.jpg",
+      "width_px": 1920,
+      "height_px": 1080,
+      "format": "jpeg",
+      "origin": "official_store",
+      "inspected": true,
+      "rights_note": "游戏画面版权归各权利人；本地研究与分析引用，不构成游戏素材再利用授权。"
+    },
+    {
+      "id": "dota2-01",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_7ab506679d42bfc0c0e40639887176494e0466d9.1920x1080.jpg?t=1791407503",
+      "source_page_url": "https://store.steampowered.com/app/570/?l=english",
+      "local_path": "cases/images/dota2-01.jpg",
+      "width_px": 1920,
+      "height_px": 1080,
+      "format": "jpeg",
+      "origin": "official_store",
+      "inspected": true,
+      "rights_note": "游戏画面版权归各权利人；本地研究与分析引用，不构成游戏素材再利用授权。"
+    },
+    {
+      "id": "dota2-02",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_c9118375a2400278590f29a3537769c986ef6e39.1920x1080.jpg?t=1791407503",
+      "source_page_url": "https://store.steampowered.com/app/570/?l=english",
+      "local_path": "cases/images/dota2-02.jpg",
+      "width_px": 1920,
+      "height_px": 1080,
+      "format": "jpeg",
+      "origin": "official_store",
+      "inspected": true,
+      "rights_note": "游戏画面版权归各权利人；本地研究与分析引用，不构成游戏素材再利用授权。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "R05",
+      "url": "https://store.steampowered.com/app/570/?l=english",
+      "title": "Dota 2 — Steam official store and screenshot gallery",
+      "publisher": "Valve / Steam",
+      "note": "本案例采用该商店图库顺序0、1、2的三张发布方截图。 限度：不等于当前客户端或最新地图的录屏；版本、皮肤、具体运行参数及截图日期未知。"
+    },
+    {
+      "id": "R06",
+      "url": "https://help.steampowered.com/en/faqs/view/0688-7692-4D5A-1935",
+      "title": "Dota 2 Workshop — Character Art Guide",
+      "publisher": "Valve / Steam Support",
+      "note": "指南允许默认剪影和色彩改变，前提是身份识别仍成立，并要求在实际游戏尺寸检查细节。 限度：是角色物品设计指南，不是三张截图中所有角色、地图、UI和技能的统一shader或配色规范；不据此反推生产参数。"
+    },
+    {
+      "id": "R07",
+      "url": "https://www.dota2.com/workshop/build/references?l=english",
+      "title": "Dota 2 Item Workshop — Guidelines Homepage",
+      "publisher": "Valve",
+      "note": "官方工坊把三维模型物品、二维图像、角色、特效与其他素材分成不同提交/制作类别。 限度：支持实际三维资产工作流的背景说明；本案例仍不从静帧推断相机数值、渲染管线或图中每个物件的源文件结构。"
+    }
+  ],
+  "observations": [
+    {
+      "parameter_id": "representation.mode",
+      "status": "observed",
+      "method": "source_document",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "source_id": "R07",
+          "note": "官方工坊说明三维模型物品。"
+        },
+        {
+          "source_id": "R06",
+          "note": "角色指南涉及mesh、skeleton和animations。"
+        }
+      ],
+      "explanation": "官方资产工作流支持三维角色资产制作背景。",
+      "limitation": "不是从俯视外观猜测；不识别截图build和所有UI资产维度。",
+      "value": "3d"
+    },
+    {
+      "parameter_id": "representation.recognizability",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        }
+      ],
+      "explanation": "人物/怪物、武器、树、道路和建筑可辨类别。",
+      "limitation": "未做无标签测试，不声称准确命名所有英雄和技能。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：多数对象可辨认，语义需语境；75：对象身份清楚，细节简化。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "representation.depth_cues",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        }
+      ],
+      "explanation": "俯看、遮挡、台阶高差、接地阴影和体积明暗提供深度。",
+      "limitation": "体积外观不证明投影类型或物理光照。",
+      "range": {
+        "min": 75,
+        "max": 100
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：75：多种一致深度线索；100：透视、遮挡、光照、运动深度线索充分。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "representation.abstraction_strategy",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "夸张人物、概括地图物件、图形技能与写实线索共存。",
+      "limitation": "不把所有资产归成相同简化方式。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "representation.source_medium",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "官方三维模型工作流不指明本图人物/地图/效果/UI的媒介母题，不能以3D直接填paint。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "representation.semantic_load",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        }
+      ],
+      "explanation": "技能、物品、地图符号、状态词和资源条要求约定知识。",
+      "limitation": "没有新手理解时长数据。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：需要简短图例；75：需学习多项游戏内约定。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "form.naturalism",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        }
+      ],
+      "explanation": "身体/装备可辨，但大体型、面部和武器比例明显重构。",
+      "limitation": "幻想生物没有统一现实基准。",
+      "range": {
+        "min": 25,
+        "max": 50
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：可辨对象的极简变形；50：明显风格化，主要结构保留。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "form.proportion_exaggeration",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        }
+      ],
+      "explanation": "本组没有指定可复核的现实或设计比例基准；幻想造型、头部简化或装备轮廓不能独立证明相对该基准的比例夸张。",
+      "limitation": "保留人物形状的可见证据，但不赋予比例夸张档位；需先指定对象、对应部位及获准基准再比较。"
+    },
+    {
+      "parameter_id": "form.shape_language",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "有机人物/植物、方块阶梯/建筑与圆形/多边形效果共存。",
+      "limitation": "选择圈和技能几何不能当人物母题。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "form.edge_roundness",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        }
+      ],
+      "explanation": "人物/植被有曲线，岩块/建筑/阶梯保留棱角。",
+      "limitation": "不反演模型倒角；宽区间保留对象差异。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：仅微小倒角；50：明显圆角与棱角并存；75：以圆润转角为主。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "form.silhouette_complexity",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        }
+      ],
+      "explanation": "装备、武器、身体与附属形体带来多处外形变化。",
+      "limitation": "不把树冠或技能球算作人物剪影。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：多级清晰形块；75：许多小尺度转折。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "form.scale_consistency",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有人物、野怪、商店和建筑的批准尺度表；不同体型不自动是不一致。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "form.anatomy_strategy",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        }
+      ],
+      "explanation": "人形与怪物身体关系可辨，同时采用不同程度夸张。",
+      "limitation": "一个英雄的结构约定不能覆盖全体英雄。",
+      "value": "hybrid"
+    },
+    {
+      "parameter_id": "line.usage",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "面板、条、地面圈、链与技能网线各有用途，未见统一人物黑外线。",
+      "limitation": "不是全局none；圈和边缘强调不等于主体描边。",
+      "value": "selective"
+    },
+    {
+      "parameter_id": "line.width_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未按统一协议沿轮廓法线逐像素取样；JPEG重采样/软边影响线宽，不能凭观看填精确px。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "line.weight_variation",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "圈、面板、条和技能线功能不同，缺同类线比较与取样，不能合成全局线宽变化分。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "line.edge_regularity",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "HUD和技能几何较规则，叶片/岩块边界更不规则。",
+      "limitation": "不评跨帧稳定性。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：有控制的不规则；75：接近规则，保留少量扰动。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "line.color_mode",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "地面圈、状态条、灰黑面板和紫色网线颜色不同。",
+      "limitation": "不暗示所有物体有彩色轮廓shader。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "line.inner_density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "面板/图标和技能网线密度不同，地裂不能全当结构线。",
+      "limitation": "不对全屏计算平均线长/占比。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：仅关键结构；50：结构和少量表面线；75：大量结构与排线。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "surface.material_physicality",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺少同表面的多视角、多光照与实测材质参照；单帧不能验证反射/透射响应。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "surface.detail_density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        }
+      ],
+      "explanation": "裂纹、叶片、装备和肖像有小尺度信息，大球遮蔽部分地图。",
+      "limitation": "不等于原贴图大小、面数或质量。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：大中小细节分层；75：大量可见小细节。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "surface.texture_mode",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "官方模型说明未提供本图地图/皮肤贴图的完整生成方法，不能由绘画感断言全体手绘。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "surface.brush_visibility",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "不能可靠区分笔触、纹理图案、光照与JPEG压缩；不把全部细节当笔刷痕迹。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "surface.brush_scale_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有可稳定辨认并量取的笔触集合；屏幕纹理尺度不等于源笔刷宽度。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "surface.roughness",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "需要源材质/着色器定义；单帧高光不能唯一反演PBR粗糙度输入。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "surface.metallic",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺少源材质或明确技术资料；颜色和高亮不能唯一确定金属度输入。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_mode",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未取得源色板及用途分工合同；最终场景色彩关系不能直接等同受控配色策略。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_colors",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有原始受控色板；JPEG、光照和渐变中的像素色数不等于色板色数。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.saturation",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "00紫蓝技能强烈，01灰地较柔，02绿植和人物更鲜明。",
+      "limitation": "最终鲜艳感不是源色板或HSV S。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：低鲜艳度，明显灰化；50：中等鲜艳度；75：鲜明高色度为主。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "color.value_range",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有关键区域遮罩与OKLCH采样协议，也未实际计算明度跨度；不凭观看猜数。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_lightness",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有源色板，JPEG亮暗不等于主色板OKLCH L。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_chroma",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有源色板和颜色管理条件，鲜艳感不等于主色板OKLCH C。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.palette_hue",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有主色选择规则与源色板，三帧区域变化不能压成精确主色相角。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.accent_area",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未定义强调色掩码、阈值和分母；光晕/渐变/UI未形成面积测量。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "color.temperature_bias",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "紫/暖建筑、冷灰和绿黄环境变化，HUD另有稳定色块。",
+      "limitation": "不确定地区、皮肤、天气、版本差异各占多少。",
+      "value": "contextual"
+    },
+    {
+      "parameter_id": "light.physicality",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺少现实光照参照及多条件测试；有阴影/亮光不能证明物理一致性。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "light.model",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "多种方法能实现相同明暗；没有这些截图使用的着色/灯光配置。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "light.shadow_hardness",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        }
+      ],
+      "explanation": "02局部细杆/物件影较清楚，树影与其他环境过渡更宽。",
+      "limitation": "不反演光源大小或阴影渲染设置。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：软过渡；50：中等软硬；75：明显硬边。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "light.contrast",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "00技能局部强对比，01灰场与02普通地图组织不同。",
+      "limitation": "不是固定曝光/同地点对照，不能转全局灯光值。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：轻微明暗层次；50：清楚而温和的明暗；75：强烈明暗分组。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "light.exposure_ev",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺场景曝光基线、色调映射与源HDR数据；JPEG不能提供EV补偿。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "light.emissive_prominence",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "小火焰/亮点与00大面积高亮技能影响跨度大。",
+      "limitation": "不证明自发光材质或能量单位。",
+      "range": {
+        "min": 25,
+        "max": 100
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：零星弱自发光；50：局部自发光可辨；75：自发光明显引导注意；100：发光成为画面主导。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "light.ambient_occlusion",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "暗缝/接触暗部可能来自贴图、灯光或后期，不能区分AO贡献。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.projection",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "不同场景的单视图不能唯一标定投影矩阵；侧看/俯看不等于正交或透视。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.elevation_deg",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺少场景坐标、相机姿态和校准几何，不能给精确俯仰角。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.vertical_fov_deg",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有相机标定、投影类型与参照尺寸，不能推垂直视场角。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.distance_m",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有世界单位、主体尺寸和相机配置，像素占高不能换算米。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.movement",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "三张不是连续时间序列，无法区分固定、跟随、自由或脚本运动。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.distortion",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有已知直线/成像参照；未见明显畸变不能填0。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "composition.focal_hierarchy",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        }
+      ],
+      "explanation": "三帧由大球、链钩/人物、选中单位等形成不同焦点。",
+      "limitation": "没有任务与注视测试，显眼不等于玩法层级正确。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：一个主要焦点可辨；75：主次层级明确。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "composition.negative_space",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未声明留白/有效视觉空间的遮罩和分母；低细节不等于空白面积。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "composition.depth_layers",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "虽可见遮挡，但未定义离散层计数协议；可见层不是引擎图层数。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "composition.density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "植被/人物/界面同时有信息；00球体遮挡环境，01道路较空。",
+      "limitation": "密度不等于噪声失败或质量。",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：50：元素适中并有分组；75：元素密集且细节多。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "composition.alignment",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        }
+      ],
+      "explanation": "通路/台阶斜向展开，HUD横排/格状，小地图独立组织。",
+      "limitation": "不证明世界坐标网格。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "composition.subject_separation",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "01浅色大单位易分，02绿装与草色近，00强效果包围部分单位。",
+      "limitation": "选择圈不是描边；未测实战识别率。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：仅少量线索分离；50：多数情况下可辨；75：主要镜头稳定清晰。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "motion.naturalism",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "静帧不包含时序、速度、受力与惯性，姿态不能替代运动观察。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.timing",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "不是连续回放，不能区分插值、保持、跳变或混合时间组织。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.animation_fps",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "截图没有姿态更新的时间戳序列；交付图尺寸不说明动作/渲染FPS。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.squash_stretch",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有同对象基准形和连续动作，不能证明动态挤压拉伸幅度。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.anticipation_ms",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺主动作及预备阶段的逐帧时间证据，不能填写毫秒。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "motion.secondary_motion",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺主体/附属部件的连续相位关系，不能判断跟随运动显著度。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "vfx.density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "从局部火焰/线形效果到大球，范围和遮挡明显不同。",
+      "limitation": "只比较所列静帧中相对整帧的空间占据与同时可见叠层；局部ROI只定位证据，其内部占比不直接等于全帧占比。无动态证据，不推发生频率、持续时间、时间峰值或性能；区间数值保留不代表已重新校准。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "目录0.2.0静态空间锚点：25=少量孤立特效，整帧占据范围小且叠层少；50=若干局部有明显特效，或局部可见中等叠层；75=特效占据整帧较大范围，或多个局部可见显著叠层。保留原粗区间，仅同步语义边界，未重新开展项目或跨评审校准；不是面积百分比、生产值或游戏官方分数。"
+    },
+    {
+      "parameter_id": "vfx.bloom",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        }
+      ],
+      "explanation": "大球亮边扩散显著，其他帧主要局部火焰光晕。",
+      "limitation": "不反推引擎Bloom强度/阈值。",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：25：极轻光晕；50：局部可见光晕；75：明显扩散光晕。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "vfx.motion_blur_shutter",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "条带/软形/拖尾可由绘画、粒子或后期生成，不能反推快门角。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "vfx.screen_shake_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有前后帧稳定参照，不包含相机震动位移序列。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "vfx.hit_flash_ms",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有命中事件及前后时间轴，亮白区域不证明受击闪白或时长。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "vfx.semantic_color",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "单帧不足确定跨技能、阵营和状态的稳定颜色语义映射。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "ui.integration",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        }
+      ],
+      "explanation": "底部/顶部/小地图为屏幕HUD，单位上方文字和条附着世界位置。",
+      "limitation": "未证明血条是世界内实体；只描述画面关系。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "ui.typography",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        }
+      ],
+      "explanation": "截图中可见文字较少且字形较小，没有足够清晰的跨字体类型证据；字号、粗细或倾斜的差异不能独立证明mixed字体类型。",
+      "limitation": "未识别字体文件、正文及全部语言；需要清晰字样或明确官方规范后再判断字体类型。"
+    },
+    {
+      "parameter_id": "ui.min_font_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "未量可见字身像素高度，也未覆盖所有关键文字，不能报最小字号。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "ui.text_contrast",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有选前景/背景采样对和线性化亮度计算；眼看清楚不是对比比率。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "ui.information_density",
+      "status": "observed",
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        }
+      ],
+      "explanation": "肖像、技能、物品、资源、顶部信息、小地图和状态同时可见。",
+      "limitation": "不评玩家理解能力或菜单复杂度。",
+      "range": {
+        "min": 75,
+        "max": 100
+      },
+      "anchor_basis": "采用0.2.0目录语义锚点：75：多组件持续显示；100：高密度数据和控制组件。未制作项目批准校准片；区间仅是本样本的人工解释，非百分比、生产值或商业游戏官方分数。"
+    },
+    {
+      "parameter_id": "ui.component_shape",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        }
+      ],
+      "explanation": "矩形面板/格、横条、圆按钮和地面圈共存。",
+      "limitation": "圆形选择标记不证明人物有圆形外描边。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "presentation.resolution_strategy",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "JPEG尺寸不是内部渲染、动态分辨率或整数放大策略。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.pixel_grid_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "没有源逻辑网格与缩放链，最终像素不能反推底层网格。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.antialiasing",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "平滑可来自源图、缩放、压缩或多种抗锯齿，没有底层设置资料。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.grain",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "JPEG噪声、表面信息与绘画痕迹难分，无连续/无压缩参照确认颗粒。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.chromatic_aberration_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "缺成像标定和通道位移测量；彩色效果边缘不自动等于镜头色差。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "presentation.vignette",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [],
+      "explanation": "边缘暗部混有树影、地图雾与遮挡，未分离出全屏暗角的稳定外观。",
+      "limitation": "本项保留unknown；不把未显现、未采样或源工程未知解释成不适用或0。"
+    },
+    {
+      "parameter_id": "camera.view_orientation",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "整帧比较，只指这组图像；不是源色板采样或全游戏证明。"
+        }
+      ],
+      "explanation": "可见物体顶部、侧面与地面高差，呈斜向俯看。",
+      "limitation": "不能推出精确俯角、正交、透视或等距。",
+      "value": "elevated_oblique"
+    },
+    {
+      "parameter_id": "light.shading_appearance",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.395,
+            0.205,
+            0.078,
+            0.18
+          ],
+          "note": "单位、上方条形UI、下方地面圈可分开辨认。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.61,
+            0.57,
+            0.11,
+            0.21
+          ],
+          "note": "大体型人物、装备、链钩与条形UI并存。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.6,
+            0.33,
+            0.12,
+            0.19
+          ],
+          "note": "绿色着装单位处于绿色植被边缘。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.45,
+            0.18,
+            0.42,
+            0.69
+          ],
+          "note": "紫蓝球、几何分块与亮边占大片画面并包围单位。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.405,
+            0.43,
+            0.28,
+            0.23
+          ],
+          "note": "细长链钩穿过道路，范围小于大球。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.23,
+            0.38,
+            0.4,
+            0.25
+          ],
+          "note": "局部火焰仍在；没有00的大球不代表效果关闭。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.31,
+            0.85,
+            0.38,
+            0.15
+          ],
+          "note": "底部肖像、技能、物品、条形资源和数字密集排列。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0,
+            0.74,
+            0.15,
+            0.26
+          ],
+          "note": "左下小地图的图标/队色不同于世界纹理。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.601,
+            0.428,
+            0.07,
+            0.084
+          ],
+          "note": "绿色地面选择圈不是人物轮廓描线。"
+        },
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.627,
+            0.19,
+            0.075,
+            0.058
+          ],
+          "note": "单位上方STUNNED及条形状态信息。"
+        }
+      ],
+      "explanation": "世界连续体积明暗、技能亮边/透明几何与平面HUD共存。",
+      "limitation": "外观不等于PBR、Lambert或手绘贴图实现。",
+      "value": "mixed"
+    },
+    {
+      "parameter_id": "representation.spatial_logic",
+      "status": "observed",
+      "method": "visual_category",
+      "confidence": "low",
+      "evidence": [
+        {
+          "image_id": "dota2-00",
+          "roi": [
+            0.01,
+            0.14,
+            0.36,
+            0.57
+          ],
+          "note": "石地、台阶、树和建筑有连续色调。"
+        },
+        {
+          "image_id": "dota2-01",
+          "roi": [
+            0.43,
+            0.09,
+            0.45,
+            0.43
+          ],
+          "note": "冷灰道路、树根和岩面。"
+        },
+        {
+          "image_id": "dota2-02",
+          "roi": [
+            0.265,
+            0.46,
+            0.34,
+            0.24
+          ],
+          "note": "台阶、道路与投影提供高度及接地线索。"
+        }
+      ],
+      "explanation": "本组三帧道路、台阶、建筑与遮挡可用常规空间解释。",
+      "limitation": "不证明完整地图拓扑与单位移动规则。",
+      "value": "euclidean"
+    }
+  ],
+  "scoped_observations": [
+    {
+      "scope": {
+        "image_id": "dota2-00",
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "label": "00整帧：大型球形效果与亮边"
+      },
+      "observation": {
+        "parameter_id": "vfx.density",
+        "status": "observed",
+        "method": "visual_ordinal",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "image_id": "dota2-00",
+            "roi": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "note": "00整帧：大型球形效果与亮边"
+          }
+        ],
+        "explanation": "00整帧：大型球形效果与亮边",
+        "limitation": "参照整帧并包括HUD；范围解释空间占据，不估持续时间、最大并发或局部ROI面积占比。",
+        "range": {
+          "min": 50,
+          "max": 75
+        },
+        "anchor_basis": "使用0.2.0目录语义锚点：50=若干局部有明显特效，或局部可见中等叠层；75=特效占据整帧较大范围，或多个局部可见显著叠层。区间是本次样本的解释性候选，未完成独立双评审校准，非面积百分比或置信区间。"
+      }
+    },
+    {
+      "scope": {
+        "image_id": "dota2-02",
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "label": "02整帧：局部火焰和选择附近光效"
+      },
+      "observation": {
+        "parameter_id": "vfx.density",
+        "status": "observed",
+        "method": "visual_ordinal",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "image_id": "dota2-02",
+            "roi": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "note": "02整帧：局部火焰和选择附近光效"
+          }
+        ],
+        "explanation": "02整帧：局部火焰和选择附近光效",
+        "limitation": "选择圈属于语义覆盖标记，不当角色描边；此区间不代表关闭特效或全作战斗峰值。",
+        "range": {
+          "min": 0,
+          "max": 25
+        },
+        "anchor_basis": "使用0.2.0目录语义锚点：0=无可见特效；25=少量孤立特效，整帧占据范围小且叠层少。区间是本次样本的解释性候选，未完成独立双评审校准，非面积百分比或置信区间。"
+      }
+    }
+  ]
+}

@@ -4,7 +4,20 @@
 
 这是一份可由 AI 助手加载的独立技能。它要求先检视真实材料，再区分观察、推断、评价与建议。随附 Python 工具只查询本地定义、核对数据快照，不自动分析图片或给画面打分。
 
-## 使用
+## 查看离线框架
+
+直接说“查看gvf”“查看框架”或“打开GVF”，助手会返回并打开本包的 [GVF 离线网页](offline/gvf/index.html)。完整网页、案例和附件约 26.7 MB，已随技能安装，无需访问原项目、启动服务器或登录网站。
+
+也可双击 HTML，或运行：
+
+```text
+python -B scripts/open_framework.py
+python -B scripts/open_framework.py --print-path
+```
+
+第二条只返回路径与文件 URL，供宿主浏览器使用。网页支持阅读、参数/术语检索、四游戏样本分析和参数草稿导出；外部来源链接需联网。草稿刷新前请先导出。
+
+## 分析游戏画面
 
 安装后向支持技能的助手提供截图、录像或可访问的材料，并说明希望了解的问题：
 
@@ -33,17 +46,19 @@ python -B -X utf8 <yts.py> status game-visual-analysis
 
 仅在预览没有冲突时执行实际安装。已有同名技能时先保留原件，按 yts 的迁移流程处理。安装依赖 Python 3.11+ 与 Git；本公开仓库无需私人仓库访问权限。
 
-也可将完整仓库放入宿主支持的技能目录，保留根目录 [SKILL.md](SKILL.md)、`references/` 和 `scripts/` 的相对关系；具体发现方式以宿主说明为准。
+也可将完整仓库放入宿主支持的技能目录，保留根目录 [SKILL.md](SKILL.md)、`references/`、`scripts/` 和 `offline/` 的相对关系；具体发现方式以宿主说明为准。
 
 ## 依赖与文件
 
 - 视觉分析需要能查看图片或相关视频片段的助手/宿主，以及用户提供或授权访问的材料。未能打开材料时不能声称已经检视。
-- 查询与快照检查使用 Python 3.10+ 标准库，无第三方 Python 包、API 密钥、特定引擎或网络依赖。没有 Python 时可按需读取 JSON。
+- 离线网页可直接由浏览器打开。可选打开脚本、查询与快照检查使用 Python 3.10+ 标准库，无第三方 Python 包、API 密钥、特定引擎或网络依赖。没有 Python 时可按需读取 JSON。
 - 网络只在检索外部作品、来源或下载安装时按任务使用。包内没有上传、遥测或凭据处理。
 
 | 入口 | 内容 |
 | --- | --- |
 | [SKILL.md](SKILL.md) | 触发条件、分析流程与证据边界 |
+| [离线 GVF](offline/gvf/index.html) | 完整网页、研究说明、案例与附件 |
+| [离线包维护](offline/README.md) | 快照清单、离线使用与第三方材料 |
 | [分析框架](references/analysis-framework.md) | 12 个视觉域、对象、尺度与关系 |
 | [证据与测量](references/evidence-and-measurement.md) | ROI、量化、动态证据及格式限制 |
 | [输出模式](references/report-patterns.md) | 单作品、对比与诊断报告 |
@@ -68,4 +83,4 @@ python -B -m unittest discover -s tests -p "test_*.py" -v
 
 本仓库是技能唯一维护源。作者模式可用 `yts link` 接入 Git 工作目录，修改、验证及提交后用 `yts refresh game-visual-analysis` 更新宿主副本；不要直接编辑部署目录。
 
-作者：胡一统（yitong）。本项目采用 [MIT 许可证](LICENSE)。第三方来源的标题、链接及归属保留在来源账本中；MIT 不扩展到链接目标、第三方游戏素材或商标。本仓库不包含第三方游戏截图、视频或网页全文。GVF 是操作性分析框架，不是行业统一标准；默认报告不宣称符合原 GVF 的正式交换 schema。
+作者：胡一统（yitong）。本项目采用 [MIT 许可证](LICENSE)。第三方来源的标题、链接及归属保留在来源账本中；MIT 不扩展到链接目标、第三方游戏素材或商标。包内包含用于研究的 12 张官方游戏截图，原权利人及来源见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)；这些截图及其内嵌副本不受 MIT 许可覆盖。未打包游戏视频或第三方网页全文。GVF 是操作性分析框架，不是行业统一标准；默认报告不宣称符合原 GVF 的正式交换 schema。

@@ -1,0 +1,597 @@
+{
+  "schema_version": "0.2.0",
+  "framework_version": "0.2.0",
+  "catalog_version": "0.2.0",
+  "id": "pixel-topdown",
+  "title": "苔光回收港：像素俯视",
+  "status": "draft_unvalidated",
+  "preset": "production_2d",
+  "intent": {
+    "experience": "在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。",
+    "keywords": [
+      "像素网格",
+      "大色块分组",
+      "冷底暖点"
+    ],
+    "avoid": [
+      "平滑渐变",
+      "非整数缩放",
+      "发光遮住道具"
+    ]
+  },
+  "scope": {
+    "target": "原创假想游戏的代表性主玩法镜头、主体资产和覆盖UI；不是实际游戏分析结果。",
+    "context": {
+      "dimension": "2d",
+      "render_pipeline": "flat",
+      "camera_projection": "orthographic",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 60,
+      "working_color_space": "sRGB",
+      "output_color_space": "sRGB",
+      "tone_mapping": "无HDR色调映射；像素/平面直出",
+      "display_target": "SDR桌面显示器，参考输出1920×1080；观看距离需项目校准。"
+    }
+  },
+  "references": [
+    {
+      "id": "anchor-plan",
+      "kind": "anchor_sheet",
+      "uri": "pending:anchor-sheet/pixel-topdown",
+      "description": "待制作的五级锚点片与动作/渲染参考计划；当前无已核验图像证据。",
+      "verified": false
+    }
+  ],
+  "parameters": {
+    "representation.mode": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "2d",
+      "calibration_ref": "anchor-plan"
+    },
+    "representation.recognizability": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "representation.depth_cues": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "representation.abstraction_strategy": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "reductive"
+    },
+    "representation.source_medium": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "pixel"
+    },
+    "representation.semantic_load": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.naturalism": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.proportion_exaggeration": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.shape_language": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "rectilinear"
+    },
+    "form.edge_roundness": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.silhouette_complexity": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.scale_consistency": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.anatomy_strategy": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "simplified"
+    },
+    "line.usage": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "selective",
+      "calibration_ref": "anchor-plan"
+    },
+    "line.width_px": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 3,
+      "calibration_ref": "anchor-plan"
+    },
+    "line.weight_variation": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "line.edge_regularity": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 100,
+      "calibration_ref": "anchor-plan"
+    },
+    "line.color_mode": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "tinted_dark"
+    },
+    "line.inner_density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.material_physicality": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.detail_density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.texture_mode": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "flat_blocks"
+    },
+    "surface.brush_visibility": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.brush_scale_px": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "像素网格不作为笔触尺度。"
+    },
+    "surface.roughness": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "无PBR着色器。"
+    },
+    "surface.metallic": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "无金属度工作流。"
+    },
+    "color.palette_mode": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "limited_roles"
+    },
+    "color.palette_colors": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "四个命名基础色token；光照、渐变和抗锯齿派生色不计入，初始假设尚未视觉验证。",
+      "value": 4
+    },
+    "color.saturation": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "color.value_range": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0.65
+    },
+    "color.palette_lightness": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "尚未正式指定主色token及其测量条件；不得把色板样例或未经计算的L/C/h当作已测量指令。"
+    },
+    "color.palette_chroma": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "尚未正式指定主色token及其测量条件；不得把色板样例或未经计算的L/C/h当作已测量指令。"
+    },
+    "color.palette_hue": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "尚未正式指定主色token及其测量条件；不得把色板样例或未经计算的L/C/h当作已测量指令。"
+    },
+    "color.accent_area": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 8
+    },
+    "color.temperature_bias": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "split"
+    },
+    "light.physicality": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.model": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "unlit"
+    },
+    "light.shadow_hardness": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "场景采用无光照色块，未模拟投影。"
+    },
+    "light.contrast": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.exposure_ev": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "无基于曝光的渲染管线。"
+    },
+    "light.emissive_prominence": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.ambient_occlusion": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "camera.projection": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "orthographic",
+      "calibration_ref": "anchor-plan"
+    },
+    "camera.elevation_deg": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 60
+    },
+    "camera.vertical_fov_deg": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "正交镜头不使用FOV。"
+    },
+    "camera.distance_m": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "纯2D以像素单位组织空间。"
+    },
+    "camera.movement": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "fixed"
+    },
+    "camera.distortion": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "composition.focal_hierarchy": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "composition.negative_space": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25
+    },
+    "composition.depth_layers": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 3
+    },
+    "composition.density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "composition.alignment": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "organic"
+    },
+    "composition.subject_separation": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "motion.naturalism": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "motion.timing": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "stepped"
+    },
+    "motion.animation_fps": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 12
+    },
+    "motion.squash_stretch": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "motion.anticipation_ms": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 120
+    },
+    "motion.secondary_motion": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "vfx.density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。 0.2迁移复核：此原有数值尚未按收窄后的静帧空间占据/同帧叠层锚点重校准；不得沿用旧时间频率解释。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "vfx.bloom": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "vfx.motion_blur_shutter": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "vfx.screen_shake_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "vfx.hit_flash_ms": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "vfx.semantic_color": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "danger_based"
+    },
+    "ui.integration": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "overlay"
+    },
+    "ui.typography": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "pixel"
+    },
+    "ui.min_font_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 24
+    },
+    "ui.text_contrast": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 7
+    },
+    "ui.information_density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "ui.component_shape": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "square"
+    },
+    "presentation.resolution_strategy": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "integer_scaled",
+      "calibration_ref": "anchor-plan"
+    },
+    "presentation.pixel_grid_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 3
+    },
+    "presentation.antialiasing": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": "nearest",
+      "calibration_ref": "anchor-plan"
+    },
+    "presentation.grain": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "presentation.chromatic_aberration_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "presentation.vignette": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在俯视小港口里快速辨认可回收物，视觉温暖而紧凑。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "camera.view_orientation": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "0.2.0新增独立参数；原方案未明确此项，迁移时不自动推断。"
+    },
+    "light.shading_appearance": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "0.2.0新增独立参数；原方案未明确此项，迁移时不自动推断。"
+    },
+    "representation.spatial_logic": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "0.2.0新增独立参数；原方案未明确此项，迁移时不自动推断。"
+    }
+  },
+  "overrides": [],
+  "exceptions": [],
+  "review": {
+    "visual_status": "not_reviewed",
+    "notes": "所有风格数值、颜色、时间与对比度均为原创示例初始假设，尚未生成样张、测量或进行视觉验证；verified=false不得解释为已校准。"
+  },
+  "palette": [
+    {
+      "id": "deep",
+      "color": "#183B45",
+      "color_space": "sRGB",
+      "role": "background",
+      "usage": "低噪声港口底色；初始设计假设，未验证对比度和色域映射。"
+    },
+    {
+      "id": "moss",
+      "color": "#6F9C76",
+      "color_space": "sRGB",
+      "role": "surface",
+      "usage": "可回收地面对象；初始设计假设，未验证对比度和色域映射。"
+    },
+    {
+      "id": "lamp",
+      "color": "#F3BD63",
+      "color_space": "sRGB",
+      "role": "accent",
+      "usage": "交互与引导；初始设计假设，未验证对比度和色域映射。"
+    },
+    {
+      "id": "text",
+      "color": "#F5F0D8",
+      "color_space": "sRGB",
+      "role": "text",
+      "usage": "深底关键文字；初始设计假设，未验证对比度和色域映射。"
+    }
+  ],
+  "document_type": "design_profile"
+}

@@ -1,0 +1,603 @@
+{
+  "schema_version": "0.2.0",
+  "framework_version": "0.2.0",
+  "catalog_version": "0.2.0",
+  "id": "observational-3d",
+  "title": "雨后维修站：观察式三维",
+  "status": "draft_unvalidated",
+  "preset": "production_3d",
+  "intent": {
+    "experience": "近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。",
+    "keywords": [
+      "观察比例",
+      "受控PBR",
+      "潮湿漫反射"
+    ],
+    "avoid": [
+      "夸张人体比例",
+      "统一黑描边",
+      "无来源强发光"
+    ]
+  },
+  "scope": {
+    "target": "原创假想游戏的代表性主玩法镜头、主体资产和覆盖UI；不是实际游戏分析结果。",
+    "context": {
+      "dimension": "3d",
+      "render_pipeline": "pbr",
+      "camera_projection": "perspective",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 60,
+      "working_color_space": "linear-sRGB",
+      "output_color_space": "sRGB",
+      "tone_mapping": "示例占位：需固定引擎tone mapper、自动曝光与曝光基线后复核",
+      "display_target": "SDR桌面显示器，参考输出1920×1080；观看距离需项目校准。"
+    }
+  },
+  "references": [
+    {
+      "id": "anchor-plan",
+      "kind": "anchor_sheet",
+      "uri": "pending:anchor-sheet/observational-3d",
+      "description": "待制作的五级锚点片与动作/渲染参考计划；当前无已核验图像证据。",
+      "verified": false
+    }
+  ],
+  "parameters": {
+    "representation.mode": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "3d",
+      "calibration_ref": "anchor-plan"
+    },
+    "representation.recognizability": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 100,
+      "calibration_ref": "anchor-plan"
+    },
+    "representation.depth_cues": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 100,
+      "calibration_ref": "anchor-plan"
+    },
+    "representation.abstraction_strategy": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "observational"
+    },
+    "representation.source_medium": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "photographic"
+    },
+    "representation.semantic_load": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.naturalism": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 100,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.proportion_exaggeration": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.shape_language": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "mixed"
+    },
+    "form.edge_roundness": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.silhouette_complexity": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.scale_consistency": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 100,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.anatomy_strategy": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "observational"
+    },
+    "line.usage": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "none",
+      "calibration_ref": "anchor-plan"
+    },
+    "line.width_px": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "line.weight_variation": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "本方案不画描边。"
+    },
+    "line.edge_regularity": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "line.color_mode": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "本方案不画描边。"
+    },
+    "line.inner_density": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "本方案不画结构内线。"
+    },
+    "surface.material_physicality": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 100,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.detail_density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.texture_mode": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "mixed"
+    },
+    "surface.brush_visibility": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.brush_scale_px": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "不表达可见笔触。"
+    },
+    "surface.roughness": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "range": {
+        "min": 0.2,
+        "max": 0.7
+      }
+    },
+    "surface.metallic": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "range": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "color.palette_mode": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "limited_roles"
+    },
+    "color.palette_colors": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "四个命名基础色token；光照、渐变和抗锯齿派生色不计入，初始假设尚未视觉验证。",
+      "value": 4
+    },
+    "color.saturation": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "color.value_range": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0.65
+    },
+    "color.palette_lightness": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "尚未正式指定主色token及其测量条件；不得把色板样例或未经计算的L/C/h当作已测量指令。"
+    },
+    "color.palette_chroma": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "尚未正式指定主色token及其测量条件；不得把色板样例或未经计算的L/C/h当作已测量指令。"
+    },
+    "color.palette_hue": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "尚未正式指定主色token及其测量条件；不得把色板样例或未经计算的L/C/h当作已测量指令。"
+    },
+    "color.accent_area": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 8
+    },
+    "color.temperature_bias": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "split"
+    },
+    "light.physicality": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 100,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.model": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "pbr"
+    },
+    "light.shadow_hardness": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.contrast": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.exposure_ev": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "引擎tone mapper、自动曝光状态与曝光基线尚未固定；确定基线后再记录EV补偿，未定不等于NA或0。"
+    },
+    "light.emissive_prominence": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.ambient_occlusion": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "camera.projection": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "perspective",
+      "calibration_ref": "anchor-plan"
+    },
+    "camera.elevation_deg": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "camera.vertical_fov_deg": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 55
+    },
+    "camera.distance_m": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 3
+    },
+    "camera.movement": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "free"
+    },
+    "camera.distortion": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "composition.focal_hierarchy": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "composition.negative_space": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25
+    },
+    "composition.depth_layers": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 3
+    },
+    "composition.density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "composition.alignment": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "organic"
+    },
+    "composition.subject_separation": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "motion.naturalism": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 100,
+      "calibration_ref": "anchor-plan"
+    },
+    "motion.timing": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "continuous"
+    },
+    "motion.animation_fps": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 60
+    },
+    "motion.squash_stretch": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "motion.anticipation_ms": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 180
+    },
+    "motion.secondary_motion": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "vfx.density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。 0.2迁移复核：此原有数值尚未按收窄后的静帧空间占据/同帧叠层锚点重校准；不得沿用旧时间频率解释。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "vfx.bloom": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "vfx.motion_blur_shutter": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 90
+    },
+    "vfx.screen_shake_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "vfx.hit_flash_ms": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "vfx.semantic_color": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "danger_based"
+    },
+    "ui.integration": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "overlay"
+    },
+    "ui.typography": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "sans"
+    },
+    "ui.min_font_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 24
+    },
+    "ui.text_contrast": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 7
+    },
+    "ui.information_density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "ui.component_shape": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "square"
+    },
+    "presentation.resolution_strategy": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "native",
+      "calibration_ref": "anchor-plan"
+    },
+    "presentation.pixel_grid_px": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "原生高清三维无像素美术网格。"
+    },
+    "presentation.antialiasing": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": "taa",
+      "calibration_ref": "anchor-plan"
+    },
+    "presentation.grain": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "presentation.chromatic_aberration_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "presentation.vignette": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“近距离检查雨后维修站的工具与设备，通过真实材质差异辨认可操作物。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "camera.view_orientation": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "0.2.0新增独立参数；原方案未明确此项，迁移时不自动推断。"
+    },
+    "light.shading_appearance": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "0.2.0新增独立参数；原方案未明确此项，迁移时不自动推断。"
+    },
+    "representation.spatial_logic": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "0.2.0新增独立参数；原方案未明确此项，迁移时不自动推断。"
+    }
+  },
+  "overrides": [],
+  "exceptions": [],
+  "review": {
+    "visual_status": "not_reviewed",
+    "notes": "所有风格数值、颜色、时间与对比度均为原创示例初始假设，尚未生成样张、测量或进行视觉验证；verified=false不得解释为已校准。"
+  },
+  "palette": [
+    {
+      "id": "steel",
+      "color": "#6A7279",
+      "color_space": "sRGB",
+      "role": "surface",
+      "usage": "涂装钢材平均色；初始设计假设，未验证对比度和色域映射。"
+    },
+    {
+      "id": "wall",
+      "color": "#A2A292",
+      "color_space": "sRGB",
+      "role": "background",
+      "usage": "低色度墙面；初始设计假设，未验证对比度和色域映射。"
+    },
+    {
+      "id": "switch",
+      "color": "#E4AC38",
+      "color_space": "sRGB",
+      "role": "accent",
+      "usage": "可交互开关；初始设计假设，未验证对比度和色域映射。"
+    },
+    {
+      "id": "text",
+      "color": "#F3F3E8",
+      "color_space": "sRGB",
+      "role": "text",
+      "usage": "深底文字；初始设计假设，未验证对比度和色域映射。"
+    }
+  ],
+  "document_type": "design_profile"
+}

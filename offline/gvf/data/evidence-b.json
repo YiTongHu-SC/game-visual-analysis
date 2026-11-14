@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "accessed": "2026-10-20",
+  "scope": "参数化、颜色、观察条件、校准与游戏视觉验收。文档中的风格锚点、采样数、校准阈值及治理流程为本框架提案，不冒充这些来源给出的行业统一标准。",
+  "sources": [
+    {
+      "id": "B01",
+      "title": "CSS Color Module Level 4",
+      "url": "https://www.w3.org/TR/css-color-4/",
+      "publisher": "W3C CSS Working Group",
+      "accessed": "2026-10-20",
+      "kind": "standards_draft",
+      "claims": [
+        {
+          "id": "B01-C1",
+          "claim": "OKLCH 是 Oklab 的极坐标形式，以 L、C、h 表示明度、色度与色相。",
+          "support": "实际打开正文，§9.2 Oklab and OkLCh、§9.4 Specifying Oklab and OkLCh；相关分量定义及无彩色附近色相处理。",
+          "limits": "核验日页面为 2026-10-20 Candidate Recommendation Draft，仍是草案；不是游戏风格量表。L/C/h 不等于 HSL 或 HSV 的同名字母。"
+        },
+        {
+          "id": "B01-C2",
+          "claim": "语法有效的颜色仍可能超出目标输出设备色域，需区分色值表达与输出色域映射。",
+          "support": "§2 Color Terminology 对 valid/out of gamut 的区分，§14 Gamut Mapping。",
+          "limits": "不能从分量各自落在独立范围内推断组合可显示；不将 C=0.4 当作所有情况的科学上限。"
+        }
+      ]
+    },
+    {
+      "id": "B02",
+      "title": "A perceptual color space for image processing",
+      "url": "https://bottosson.github.io/posts/oklab/",
+      "publisher": "Björn Ottosson（Oklab 作者）",
+      "accessed": "2026-10-20",
+      "kind": "original_technical_publication",
+      "claims": [
+        {
+          "id": "B02-C1",
+          "claim": "固定 HSV S/V 的色相渐变仍有明显明度不均；Oklab 旨在更好地预测明度、色度与色相。",
+          "support": "实际打开作者原文，Comparing Oklab to HSV 的图示解释和 Motivation and derivation。",
+          "limits": "作者说明其观察条件假设，部分训练／比较数据由颜色外观模型生成；不能当作对所有观察条件与 HDR 显示的全面验证。"
+        },
+        {
+          "id": "B02-C2",
+          "claim": "Oklab/OKLCH 具有明确转换，色度可由 a/b 的向量长度求得，h 为极角。",
+          "support": "The Oklab color space 的 C、h 公式及 Converting from linear sRGB to Oklab；作者标注矩阵 2021-01-25 更新。",
+          "limits": "公式输入为相应线性 sRGB／D65 条件，不能直接把 gamma 编码的 RGB 通道代入；未将任何通用风格饱和度评分等同此公式。"
+        }
+      ]
+    },
+    {
+      "id": "B03",
+      "title": "Understanding SC 1.4.3: Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "publisher": "W3C Web Accessibility Initiative",
+      "accessed": "2026-10-20",
+      "kind": "official_standards_explanation",
+      "claims": [
+        {
+          "id": "B03-C1",
+          "claim": "WCAG 文字通常采用至少 4.5:1 对比，符合大文字定义时采用至少 3:1，并存在适用例外。",
+          "support": "实际打开 Success Criterion 正文、大文字／附带／标志等例外、阈值不得四舍五入的说明。",
+          "limits": "属于 Web 内容规则，不能作为全屏游戏场景逐像素门槛；大文字须按来源定义，不能把设计软件字号随意移植至游戏。"
+        },
+        {
+          "id": "B03-C2",
+          "claim": "名义色值的对比合格不必然保证细字体实际观感清晰，抗锯齿与字体特征仍会影响呈现。",
+          "support": "SC 后的 Note 讨论抗锯齿和细／特殊字体，使显示的文字比定义的前景色更淡。",
+          "limits": "该说明不提供通用的游戏最小字体像素数，也不替代真实观看与用户检查。"
+        }
+      ]
+    },
+    {
+      "id": "B04",
+      "title": "Understanding SC 1.4.11: Non-text Contrast",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "publisher": "W3C Web Accessibility Initiative",
+      "accessed": "2026-10-20",
+      "kind": "official_standards_explanation",
+      "claims": [
+        {
+          "id": "B04-C1",
+          "claim": "必要的 UI 组件／状态视觉信息及必要图形部分一般需与相邻颜色形成至少 3:1 对比，存在非活动组件和本质表现等例外。",
+          "support": "实际打开 SC、User Interface Components、Graphical Objects、Essential exception 与 Testing principles。",
+          "limits": "不是每个装饰边框、照片或现实场景都必须满足 3:1；也不是要求控件不同且不相邻的状态彼此达到 3:1。"
+        }
+      ]
+    },
+    {
+      "id": "B05",
+      "title": "Xbox Accessibility Guideline 102: Contrast",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/102",
+      "publisher": "Microsoft Game Dev / Xbox",
+      "accessed": "2026-10-20",
+      "kind": "official_game_accessibility_guideline",
+      "claims": [
+        {
+          "id": "B05-C1",
+          "claim": "XAG 102 对游戏标准／大文字和视觉元素、高对比模式给出不同建议，并按平台定义大文字。",
+          "support": "实际打开 Implementation guidelines 与 Contrast ratio summary chart，列有 4.5:1、3:1、7:1 及平台尺寸条件。",
+          "limits": "是游戏开发指南而非本文已完成的认证；不可将所有门槛无差别施加于场景所有像素。"
+        },
+        {
+          "id": "B05-C2",
+          "claim": "复杂背景上的文字要考虑最低对比背景区域；XAG 对不可交互元素中的文字也有建议。",
+          "support": "Implementation guidelines 中 non-solid color background 和 inactive elements 条目。",
+          "limits": "XAG 的禁用元素建议与 WCAG 的例外范围不同，项目需明确采纳来源，不能拼成无出处的一套规则。"
+        }
+      ]
+    },
+    {
+      "id": "B06",
+      "title": "Xbox Accessibility Guideline 103: Additional channels for visual and audio cues",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/103",
+      "publisher": "Microsoft Game Dev / Xbox",
+      "accessed": "2026-10-20",
+      "kind": "official_game_accessibility_guideline",
+      "claims": [
+        {
+          "id": "B06-C1",
+          "claim": "关键提示宜通过多个感官渠道呈现，并考虑色觉差异，以减少单一视觉／听觉通道造成的信息障碍。",
+          "support": "实际打开 Goal、Overview、Options for multisensory communication of information；包含文字、形状、视觉／声音等提示讨论。",
+          "limits": "本文将其转为语义 token 与冗余提示设计；具体组合仍需按玩法和玩家验证，色觉模拟不等于玩家测试。"
+        }
+      ]
+    },
+    {
+      "id": "B07",
+      "title": "Xbox Accessibility Guideline 117: Visual distractions and motion settings",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/117",
+      "publisher": "Microsoft Game Dev / Xbox",
+      "accessed": "2026-10-20",
+      "kind": "official_game_accessibility_guideline",
+      "claims": [
+        {
+          "id": "B07-C1",
+          "claim": "指南涵盖文字 UI 周围的动态内容控制，以及相机摇晃／晃动、模糊、视场和相机移动设置。",
+          "support": "实际打开 Implementation guidelines，含关闭或暂停 UI 动态内容、关闭相机／模糊行为、调整 FOV 等条目及范围说明。",
+          "limits": "某些 UI 动态条目不要求关闭作为核心玩法的一切背景运动；本文不声称某个 FOV 能对所有人保证舒适。"
+        }
+      ]
+    },
+    {
+      "id": "B08",
+      "title": "Xbox Accessibility Guideline 118: Photosensitivity",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/118",
+      "publisher": "Microsoft Game Dev / Xbox",
+      "accessed": "2026-10-20",
+      "kind": "official_game_accessibility_guideline",
+      "claims": [
+        {
+          "id": "B08-C1",
+          "claim": "指南要求所有游戏检查光敏触发因素，涉及亮度闪烁、红闪烁与空间图案，优先消除问题内容。",
+          "support": "实际打开 Scoping questions、Luminance flash failure、Red flash failure、Spatial pattern failure；页面注明 2026-03-04 更新。",
+          "limits": "不能只检频率、只看静帧或以开场警告证明安全；本文没有执行光敏专项分析，也不复述成简化的安全保证。"
+        }
+      ]
+    },
+    {
+      "id": "B09",
+      "title": "OpenColorIO — Overview",
+      "url": "https://opencolorio.readthedocs.io/en/latest/concepts/overview/overview.html",
+      "publisher": "OpenColorIO / Academy Software Foundation",
+      "accessed": "2026-10-20",
+      "kind": "official_documentation",
+      "claims": [
+        {
+          "id": "B09-C1",
+          "claim": "OCIO 是颜色管理库，其变换含义由所用配置定义，可描述颜色空间和变换流程。",
+          "support": "实际打开导言与 Configs、ColorSpaces、Transforms 章节；原文区分库和 config 中定义的颜色科学。",
+          "limits": "使用 OCIO 本身不指定某一美术风格或强制 ACES；页面中的历史示例配置不能不加版本限定地复制为当前项目管线。"
+        }
+      ]
+    },
+    {
+      "id": "B10",
+      "title": "ACES Documentation — Output Transforms",
+      "url": "https://docs.acescentral.com/system-components/output-transforms/",
+      "publisher": "Academy Color Encoding System / Academy of Motion Picture Arts and Sciences",
+      "accessed": "2026-10-20",
+      "kind": "official_documentation",
+      "claims": [
+        {
+          "id": "B10-C1",
+          "claim": "ACES 输出变换把场景参照图像转换为适合特定设备和观察条件显示的状态，输出与显示编码条件相关。",
+          "support": "实际打开 What Is An Output Transform?、Overall Structure 与 ACES 1 vs ACES 2 说明；页面日期 2025-09-10。",
+          "limits": "仅写 ACES 不能确定版本、工作空间、look 和输出；ACES 不作为风格量表，也不保证不同不受控显示器外观完全一致。"
+        }
+      ]
+    },
+    {
+      "id": "B11",
+      "title": "Physically Based Materials in Unreal Engine",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/physically-based-materials-in-unreal-engine",
+      "publisher": "Epic Games",
+      "accessed": "2026-10-20",
+      "kind": "official_engine_documentation",
+      "claims": [
+        {
+          "id": "B11-C1",
+          "claim": "Unreal 的 PBR 材料包含 Base Color、Roughness、Metallic、Specular 等控制；PBR 也适用于非写实渲染。",
+          "support": "实际打开 What Does Physically Based Mean?、PBR Material Attributes 与对应属性章节。",
+          "limits": "属性语义和数值应绑定 Unreal 工作流；并非所有引擎的 roughness／specular 输入可直接互换，也不是写实总分。"
+        },
+        {
+          "id": "B11-C2",
+          "claim": "Roughness 影响反射的清晰／模糊表现；纯金属与非金属表面的 Metallic 通常按二元处理。",
+          "support": "Roughness、Metallic 章节，包含混合／腐蚀／蒙尘表面的限定。",
+          "limits": "不可把引擎控制量的倍数当作知觉倍数，不将混合像素与纯物质的规则混为一谈。"
+        }
+      ]
+    },
+    {
+      "id": "B12",
+      "title": "Blender Manual — Cameras",
+      "url": "https://docs.blender.org/manual/en/latest/render/cameras.html",
+      "publisher": "Blender Foundation",
+      "accessed": "2026-10-20",
+      "kind": "official_engine_documentation",
+      "retrieval_note": "web open 抓取失败；用本机 PowerShell Invoke-WebRequest 实际取得 HTTP 200 并读取 article 正文中 Focal Length、Lens Unit、Orthographic、Orthographic Scale、Sensor Size 等段落。未以搜索摘要代替正文。",
+      "claims": [
+        {
+          "id": "B12-C1",
+          "claim": "透视相机可用焦距或 FOV 描述，正交模式以 Orthographic Scale 控制大小且不发生随距离的透视缩小。",
+          "support": "Cameras > Lens 中 Perspective、Lens Unit 与 Orthographic 段落；Sensor Size 另说明画幅与视角关系。",
+          "limits": "latest 为滚动页面；框架中的 ortho_view_height_world 是自有清晰语义，不假定各引擎参数名称完全等价。"
+        }
+      ]
+    },
+    {
+      "id": "B13",
+      "title": "Blender Manual — Freestyle Render Properties",
+      "url": "https://docs.blender.org/manual/en/latest/render/freestyle/render.html",
+      "publisher": "Blender Foundation",
+      "accessed": "2026-10-20",
+      "kind": "official_engine_documentation",
+      "retrieval_note": "web open 抓取失败；本机 PowerShell Invoke-WebRequest 实际取得 HTTP 200，并读取 article 的 Line Thickness Mode、Absolute、Relative 正文。",
+      "claims": [
+        {
+          "id": "B13-C1",
+          "claim": "Freestyle 支持按像素的 Absolute 与随纵向分辨率变化的 Relative 基础线宽模式。",
+          "support": "Render Properties > Line Thickness Mode；原文 Relative 使用相对 480 px 纵向分辨率的比值。",
+          "limits": "本文 px1080 是本框架另定义的跨工具约定，不是 Blender 自带 Relative 的基准；latest 页面需在工具适配时重新核对。"
+        }
+      ]
+    },
+    {
+      "id": "B14",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2 — Relative luminance",
+      "url": "https://www.w3.org/TR/WCAG22/#dfn-relative-luminance",
+      "publisher": "W3C Accessibility Guidelines Working Group",
+      "accessed": "2026-10-20",
+      "kind": "standard",
+      "claims": [
+        {
+          "id": "B14-C1",
+          "claim": "WCAG sRGB 相对亮度由线性化 RGB 的加权值定义，不能用 OKLCH L 或直接用编码 RGB 的均值替代。",
+          "support": "实际打开 WCAG 2.2 正文定义：相对亮度系数 0.2126、0.7152、0.0722；sRGB 分段线性化阈值 0.04045。",
+          "limits": "用于该标准指定条件中的相对亮度／对比计算；不是 HDR 显示亮度 cd/m² 的仪器测量，也不是完整可读性模型。"
+        }
+      ]
+    }
+  ]
+}

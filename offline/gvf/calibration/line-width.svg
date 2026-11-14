@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="atlas-title atlas-desc" lang="zh-CN" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif">
+  <title id="atlas-title">线宽标尺：同一对象，仅改变描边宽度</title>
+  <desc id="atlas-desc">原创回收扫描器五格对照，描边为0、1、2、4、8个SVG基准像素。基准画布1200乘460，缩放会改变实际屏幕像素，仅作术语与控制量示意。</desc>
+  <rect width="1200" height="460" fill="#f4f6f2" />
+  <text x="40" y="44" font-size="28" font-weight="700" fill="#263b45" text-anchor="start">线宽标尺：同一对象，仅改变描边宽度</text>
+  <text x="40" y="76" font-size="16" font-weight="400" fill="#263b45" text-anchor="start">基准画布 1200 × 460；对象、填色与构图保持相同；数值表示描边宽度，不表示好坏。</text>
+  <g data-panel="outline-0">
+    <rect x="40" y="106" width="208" height="274" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <g transform="translate(144 224)" data-role="tool" data-outline-width="0" stroke="#263b45" stroke-width="0" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+    </g>
+    <text x="144" y="352" font-size="23" font-weight="700" fill="#263b45" text-anchor="middle">0 基准 px</text>
+    <text x="144" y="374" font-size="14" font-weight="400" fill="#566b70" text-anchor="middle">无显式描边</text>
+  </g>
+  <g data-panel="outline-1">
+    <rect x="268" y="106" width="208" height="274" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <g transform="translate(372 224)" data-role="tool" data-outline-width="1" stroke="#263b45" stroke-width="1" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+    </g>
+    <text x="372" y="352" font-size="23" font-weight="700" fill="#263b45" text-anchor="middle">1 基准 px</text>
+    <text x="372" y="374" font-size="14" font-weight="400" fill="#566b70" text-anchor="middle">描边宽度</text>
+  </g>
+  <g data-panel="outline-2">
+    <rect x="496" y="106" width="208" height="274" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <g transform="translate(600 224)" data-role="tool" data-outline-width="2" stroke="#263b45" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+    </g>
+    <text x="600" y="352" font-size="23" font-weight="700" fill="#263b45" text-anchor="middle">2 基准 px</text>
+    <text x="600" y="374" font-size="14" font-weight="400" fill="#566b70" text-anchor="middle">描边宽度</text>
+  </g>
+  <g data-panel="outline-4">
+    <rect x="724" y="106" width="208" height="274" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <g transform="translate(828 224)" data-role="tool" data-outline-width="4" stroke="#263b45" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+    </g>
+    <text x="828" y="352" font-size="23" font-weight="700" fill="#263b45" text-anchor="middle">4 基准 px</text>
+    <text x="828" y="374" font-size="14" font-weight="400" fill="#566b70" text-anchor="middle">描边宽度</text>
+  </g>
+  <g data-panel="outline-8">
+    <rect x="952" y="106" width="208" height="274" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <g transform="translate(1056 224)" data-role="tool" data-outline-width="8" stroke="#263b45" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+    </g>
+    <text x="1056" y="352" font-size="23" font-weight="700" fill="#263b45" text-anchor="middle">8 基准 px</text>
+    <text x="1056" y="374" font-size="14" font-weight="400" fill="#566b70" text-anchor="middle">描边宽度</text>
+  </g>
+  <text x="40" y="412" font-size="16" font-weight="400" fill="#263b45" text-anchor="start">这里 1 个基准 px = 1 个 SVG 用户单位；仅在画布按基准尺寸显示时对应 1 个 CSS px。</text>
+  <text x="40" y="440" font-size="15" font-weight="400" fill="#263b45" text-anchor="start">缩放、设备像素比与截图重采样会改变屏幕 px；这是教学示意，不是项目批准锚点，也不是 0–100 主观量表。</text>
+</svg>

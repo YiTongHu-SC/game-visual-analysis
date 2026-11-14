@@ -1,0 +1,1214 @@
+{
+  "version": "0.2.0",
+  "language": "zh-CN",
+  "updated": "2026-10-21",
+  "note": "industry表示依据所列一手来源的简明释义；framework表示本框架的操作性限定，不声称该词由本项目首创。source_ids为空表示没有把该定义冒称为外部行业标准。近义词仍须按上下文判断；术语表不等于所有概念均已实现为软件参数。",
+  "terms": [
+    {
+      "id": "visual_style",
+      "zh": "视觉风格／画风",
+      "en": "Visual style",
+      "definition": "作品在指定观看与交互条件下反复采用的视觉取舍、组织关系和变化规律。",
+      "not_to_confuse": [
+        "题材",
+        "单一渲染技术",
+        "质量等级"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "visual_language",
+      "zh": "视觉语言",
+      "en": "Visual language",
+      "definition": "用于表达和理解视觉决定的共享词汇、符号、组合方式及语义约定。",
+      "not_to_confuse": [
+        "仅有形容词的标签集",
+        "只描述颜色的色板"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "art_direction",
+      "zh": "美术指导／视觉方向",
+      "en": "Art direction",
+      "definition": "把体验目标转化为视觉取舍、生产优先级、参考和评审判断的决策活动。",
+      "not_to_confuse": [
+        "某一种绘画手法",
+        "资产数量清单"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "visual_profile",
+      "zh": "视觉画像",
+      "en": "Visual profile",
+      "definition": "记录一个项目或范围的视觉属性、规则、例外和参考的结构化描述。",
+      "not_to_confuse": [
+        "单张参考图",
+        "生成器提示词本身"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "visual_domain",
+      "zh": "视觉域",
+      "en": "Visual domain",
+      "definition": "按观察责任组织概念的分类入口；本版使用12域，允许概念跨域关联。",
+      "not_to_confuse": [
+        "资产类型",
+        "互斥审美流派"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "scope",
+      "zh": "作用范围",
+      "en": "Scope",
+      "definition": "规则适用的项目、对象集合、状态、时间片段或显示配置。",
+      "not_to_confuse": [
+        "几何尺寸",
+        "未声明的自动继承"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "rule",
+      "zh": "视觉规则",
+      "en": "Visual rule",
+      "definition": "对指定范围和条件提出的可观察要求，并附偏差与验证方式。",
+      "not_to_confuse": [
+        "所有作品通用的艺术定律",
+        "一句无边界的偏好"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "anchor",
+      "zh": "量表锚点",
+      "en": "Scale anchor",
+      "definition": "让某个量表位置具有共同含义的说明、样例及观察条件。",
+      "not_to_confuse": [
+        "计量单位",
+        "未经校准的50分"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "reference",
+      "zh": "视觉参考",
+      "en": "Visual reference",
+      "definition": "用于说明某项取舍的可追溯样例，须指明借用特征与不借用部分。",
+      "not_to_confuse": [
+        "整幅照搬的授权",
+        "自动证明所有属性合格"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "exception",
+      "zh": "规则例外",
+      "en": "Exception",
+      "definition": "在明确条件内主动偏离默认规则，并记录理由、范围和保留要求。",
+      "not_to_confuse": [
+        "漏填",
+        "未知",
+        "无记录的风格漂移"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "unknown",
+      "zh": "未知／未定",
+      "en": "Unknown",
+      "definition": "尚无足够证据或决定赋值；需要保留待决问题。",
+      "not_to_confuse": [
+        "数值0",
+        "中间值50",
+        "不适用"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "not_applicable",
+      "zh": "不适用",
+      "en": "Not applicable",
+      "definition": "某概念在当前范围或实现中不成立，并有可说明的理由。 某张截图没显示UI或某效果，不足以证明它在游戏中不适用。",
+      "not_to_confuse": [
+        "未知",
+        "效果弱",
+        "明确关闭"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "subject_matter",
+      "zh": "题材",
+      "en": "Subject matter",
+      "definition": "作品表现的对象、事件、时代或世界内容。",
+      "not_to_confuse": [
+        "画法",
+        "表现技术",
+        "情绪目标"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "medium",
+      "zh": "媒介",
+      "en": "Medium",
+      "definition": "承载或模拟视觉表达的材料与形式；实际制作媒介和模拟母题须分开。",
+      "not_to_confuse": [
+        "文件扩展名",
+        "引擎名称",
+        "完整画风"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "technique",
+      "zh": "制作技术",
+      "en": "Production technique",
+      "definition": "生成、处理或运行画面的具体方法及工具流程。",
+      "not_to_confuse": [
+        "目标外观",
+        "风格相似度",
+        "作品质量"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "quality",
+      "zh": "表现质量",
+      "en": "Visual quality",
+      "definition": "在既定目标下，画面完成要求、稳定运行并避免缺陷的程度。",
+      "not_to_confuse": [
+        "照片写实程度",
+        "多边形数量",
+        "个人喜欢程度"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "abstraction",
+      "zh": "抽象",
+      "en": "Abstraction",
+      "definition": "选择性简化、概括、变形或移除具体对象线索的策略集合。",
+      "not_to_confuse": [
+        "只能是不可辨认图形",
+        "固定等于低写实"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "recognizability",
+      "zh": "对象可辨识度",
+      "en": "Object recognizability",
+      "definition": "观看者能否从视觉形式辨认其所指对象；需声明对象和观察条件。",
+      "not_to_confuse": [
+        "角色身份唯一性",
+        "照片真实感",
+        "玩法可读性全部"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "naturalism",
+      "zh": "自然度",
+      "en": "Naturalism (operational)",
+      "definition": "指定域与指定现实参考在结构、比例、光学或运动规律上的符合程度。",
+      "not_to_confuse": [
+        "总风格评分",
+        "是否使用三维",
+        "是否有自然题材"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "stylization",
+      "zh": "风格化",
+      "en": "Stylization",
+      "definition": "为表达目标而选择、强调或改造视觉特征的过程；可同时保留现实线索。",
+      "not_to_confuse": [
+        "卡通的同义词",
+        "低质量",
+        "写实的严格反义词"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "shape",
+      "zh": "形／二维形状",
+      "en": "Shape",
+      "definition": "具有宽高的二维区域或图形。",
+      "not_to_confuse": [
+        "有体积的form",
+        "外描边本身"
+      ],
+      "source_ids": [
+        "A01"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "form",
+      "zh": "体／三维形体",
+      "en": "Form",
+      "definition": "具有宽、高、深的体积形态；画面也可表现体积幻觉。",
+      "not_to_confuse": [
+        "二维shape",
+        "文件表单"
+      ],
+      "source_ids": [
+        "A01"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "silhouette",
+      "zh": "剪影／整体外形",
+      "en": "Silhouette",
+      "definition": "忽略内部细节时可见的整体外形，常用于判断身份和朝向。",
+      "not_to_confuse": [
+        "黑色外描边",
+        "实体碰撞范围"
+      ],
+      "source_ids": [
+        "A04"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "proportion",
+      "zh": "比例",
+      "en": "Proportion",
+      "definition": "一个部分相对其他部分或整体的大小关系。",
+      "not_to_confuse": [
+        "单独绝对尺寸",
+        "相机距离"
+      ],
+      "source_ids": [
+        "A02"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "shape_language",
+      "zh": "形状语言／形状母题",
+      "en": "Shape language",
+      "definition": "在对象族中重复采用的几何倾向及其组合关系。",
+      "not_to_confuse": [
+        "圆形必然友善的普适定律",
+        "仅统计圆形数量"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "line",
+      "zh": "线",
+      "en": "Line",
+      "definition": "可辨认的路径，具有方向、长度和可变化的宽度。",
+      "not_to_confuse": [
+        "全部边界都必须有线",
+        "形体"
+      ],
+      "source_ids": [
+        "A01"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "outline",
+      "zh": "外描边",
+      "en": "Outline",
+      "definition": "沿对象外边界呈现的显式笔画，可独立规定宽度、颜色和连续性。 可见外缘可由描绘线或像素簇组织，术语本身不限定矢量描边技术。",
+      "not_to_confuse": [
+        "剪影",
+        "没有笔画的色块边缘"
+      ],
+      "source_ids": [
+        "A11"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "contour",
+      "zh": "轮廓线／等形线",
+      "en": "Contour",
+      "definition": "描述对象边界或表面形态的路径；使用时注明外轮廓还是内部结构线。",
+      "not_to_confuse": [
+        "仅指外描边",
+        "只有黑线才能构成轮廓"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "edge",
+      "zh": "边缘",
+      "en": "Edge",
+      "definition": "图像或形体中区域发生转换的边界，可硬、软、断续或隐没。",
+      "not_to_confuse": [
+        "显式描边",
+        "几何网格边的唯一含义"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "line_weight",
+      "zh": "线宽／线条粗细",
+      "en": "Line weight",
+      "definition": "笔画的宽度及其沿路径的变化；须附输出或空间单位。",
+      "not_to_confuse": [
+        "线条颜色深浅",
+        "几何尺寸"
+      ],
+      "source_ids": [
+        "A11"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "brushstroke",
+      "zh": "笔触",
+      "en": "Brushstroke",
+      "definition": "可见的笔刷施画痕迹或其模拟，包括方向、尺度、边缘和重复方式。",
+      "not_to_confuse": [
+        "所有纹理",
+        "PBR粗糙度"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "texture",
+      "zh": "肌理／视觉纹理",
+      "en": "Texture",
+      "definition": "视觉上表现表面触感和组织的特征。",
+      "not_to_confuse": [
+        "纹理贴图文件本身",
+        "材质的全部属性"
+      ],
+      "source_ids": [
+        "A01"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "material",
+      "zh": "材质",
+      "en": "Material",
+      "definition": "定义表面如何着色和响应光线的一组属性或程序。",
+      "not_to_confuse": [
+        "一张基色贴图",
+        "整幅画的风格"
+      ],
+      "source_ids": [
+        "A08"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "base_color",
+      "zh": "基色",
+      "en": "Base color",
+      "definition": "材质模型中的基础颜色输入，和光照后的屏幕颜色分开。",
+      "not_to_confuse": [
+        "最终像素颜色",
+        "画面平均色"
+      ],
+      "source_ids": [
+        "A08"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "roughness",
+      "zh": "PBR粗糙度",
+      "en": "PBR roughness",
+      "definition": "指定材质模型中影响微表面反射分布的输入参数。",
+      "not_to_confuse": [
+        "可见斑点密度",
+        "笔触粗粝感",
+        "所有引擎一致的刻度"
+      ],
+      "source_ids": [
+        "A08"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "metallic",
+      "zh": "PBR金属度",
+      "en": "PBR metallic",
+      "definition": "指定材质模型中控制金属与非金属响应的输入。",
+      "not_to_confuse": [
+        "亮度",
+        "光泽总量",
+        "金属题材占比"
+      ],
+      "source_ids": [
+        "A08"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "hue",
+      "zh": "色相",
+      "en": "Hue",
+      "definition": "在指定色彩模型中描述红、绿、蓝等颜色类别的坐标。",
+      "not_to_confuse": [
+        "明度",
+        "无色灰也有稳定可感色相"
+      ],
+      "source_ids": [
+        "A14"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "saturation",
+      "zh": "饱和度",
+      "en": "Saturation",
+      "definition": "描述色彩鲜艳程度的概念；数值必须指明HSL、HSV或锚定评价等定义。",
+      "not_to_confuse": [
+        "OkLCh色度C",
+        "曝光",
+        "跨模型可互换百分比"
+      ],
+      "source_ids": [
+        "A14"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "chroma",
+      "zh": "色度",
+      "en": "Chroma",
+      "definition": "指定色彩空间中的彩色程度坐标；本框架色板优先明确是否使用OkLCh的C。",
+      "not_to_confuse": [
+        "HSV的S",
+        "所有颜色相同的色域上限"
+      ],
+      "source_ids": [
+        "A14"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "lightness",
+      "zh": "明度",
+      "en": "Lightness",
+      "definition": "颜色相对明暗的坐标或知觉属性；本框架数值须标记空间，如OkLCh的L。",
+      "not_to_confuse": [
+        "HSL的L与OkLCh的L等值",
+        "物理光强"
+      ],
+      "source_ids": [
+        "A14"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "value",
+      "zh": "明暗值／素描明度",
+      "en": "Value",
+      "definition": "美术分析中不依赖色相来讨论对象或画面的明暗分布。",
+      "not_to_confuse": [
+        "HSV的V自动等于知觉明度",
+        "材质基色"
+      ],
+      "source_ids": [
+        "A04"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "relative_luminance",
+      "zh": "相对亮度",
+      "en": "Relative luminance",
+      "definition": "用于特定对比计算的线性化颜色加权量，须采用指定公式和颜色空间。",
+      "not_to_confuse": [
+        "HSL明度",
+        "主观亮感评分",
+        "绝对亮度单位cd/m²"
+      ],
+      "source_ids": [
+        "A15"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "palette",
+      "zh": "调色板／色板",
+      "en": "Palette",
+      "definition": "某范围采用的受控颜色集合及其角色、占比或搭配约束。 原资产/设计色板不同于最终帧的采样颜色分布。",
+      "not_to_confuse": [
+        "全图平均色",
+        "显示设备全部色域"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "accent_color",
+      "zh": "强调色",
+      "en": "Accent color",
+      "definition": "相对主色系统，用于局部强调或语义提示的颜色角色。",
+      "not_to_confuse": [
+        "任何高饱和颜色",
+        "固定必须最亮"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "temperature_bias",
+      "zh": "冷暖倾向",
+      "en": "Color temperature bias (artistic)",
+      "definition": "在给定参考和配色关系下对画面偏暖或偏冷的判断。",
+      "not_to_confuse": [
+        "光源相关色温K",
+        "红色永远只能表示温暖"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "contrast",
+      "zh": "对比",
+      "en": "Contrast",
+      "definition": "指定对象间在某属性上的差异；必须说明比较对象、通道和条件。",
+      "not_to_confuse": [
+        "唯一的全画面对比总分",
+        "只指文字相对亮度比"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "shading",
+      "zh": "明暗塑形／着色",
+      "en": "Shading",
+      "definition": "借助明暗和颜色变化表现形态与表面的过程或结果，可手绘或计算生成。",
+      "not_to_confuse": [
+        "仅指投射阴影",
+        "必须符合物理"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "lighting",
+      "zh": "光照",
+      "en": "Lighting",
+      "definition": "画面中光源、环境光、表面受光及其组织方式。",
+      "not_to_confuse": [
+        "最终明度全部由光源决定",
+        "曝光滑杆本身"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "cel_shading",
+      "zh": "赛璐璐式分段着色",
+      "en": "Cel shading",
+      "definition": "以离散明暗色块组织表面着色的一类方法，具体分段与阈值须另定。",
+      "not_to_confuse": [
+        "一定有描边",
+        "全部动漫风",
+        "只有固定两档明暗"
+      ],
+      "source_ids": [
+        "A07"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "rim_light",
+      "zh": "边缘光",
+      "en": "Rim light",
+      "definition": "在对象轮廓附近形成的亮部，可用于强调外形。",
+      "not_to_confuse": [
+        "黑色外描边",
+        "必然由场景真实背光产生"
+      ],
+      "source_ids": [
+        "A03"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "shadow_hardness",
+      "zh": "阴影边缘硬度",
+      "en": "Shadow-edge hardness",
+      "definition": "阴影到受光区域的过渡集中或扩散程度，按指定尺度判断。",
+      "not_to_confuse": [
+        "阴影颜色深浅",
+        "模型转角锐利度"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "projection",
+      "zh": "投影",
+      "en": "Projection",
+      "definition": "把三维场景映射为画面的方法；常见类别有透视和正交。",
+      "not_to_confuse": [
+        "相机俯仰角",
+        "世界是否由三维资产制作"
+      ],
+      "source_ids": [
+        "A09"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "perspective",
+      "zh": "透视投影",
+      "en": "Perspective projection",
+      "definition": "使同等大小物体随距离增大而在画面中变小的投影。",
+      "not_to_confuse": [
+        "只指第一人称",
+        "所有深度线索"
+      ],
+      "source_ids": [
+        "A09"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "orthographic",
+      "zh": "正交投影",
+      "en": "Orthographic projection",
+      "definition": "不因到相机的距离而改变对象投影尺度的投影。",
+      "not_to_confuse": [
+        "等距投影的充分条件",
+        "俯视角",
+        "二维制作技术"
+      ],
+      "source_ids": [
+        "A09"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "field_of_view",
+      "zh": "视场角",
+      "en": "Field of view (FOV)",
+      "definition": "镜头覆盖的角度范围，赋值时说明水平或垂直方向及画幅。",
+      "not_to_confuse": [
+        "焦距可脱离传感器或画幅直接互换",
+        "相机俯仰"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "composition",
+      "zh": "构图",
+      "en": "Composition",
+      "definition": "画面中元素的位置、大小、方向、间距和层次关系的组织。",
+      "not_to_confuse": [
+        "只用三分法",
+        "仅固定相机的静帧布局"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "negative_space",
+      "zh": "负空间／留白",
+      "en": "Negative space",
+      "definition": "主要对象周围或之间的空间，可有形状且不必是白色。",
+      "not_to_confuse": [
+        "只有纯白背景",
+        "没有任何设计内容"
+      ],
+      "source_ids": [
+        "A01"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "focal_point",
+      "zh": "视觉焦点",
+      "en": "Focal point",
+      "definition": "通过视觉组织被强调、吸引观看注意的位置或对象。",
+      "not_to_confuse": [
+        "画面几何中心",
+        "始终只允许一个焦点"
+      ],
+      "source_ids": [
+        "A02"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "visual_hierarchy",
+      "zh": "视觉读取层级",
+      "en": "Visual hierarchy",
+      "definition": "画面信息在辨认顺序和显著程度上的组织关系。",
+      "not_to_confuse": [
+        "场景树层级",
+        "所有信息同等突出"
+      ],
+      "source_ids": [
+        "A03"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "salience",
+      "zh": "显著性／突出程度",
+      "en": "Visual salience",
+      "definition": "对象在给定画面和任务中吸引或保持注意的相对程度。",
+      "not_to_confuse": [
+        "只由饱和度决定",
+        "必然等于玩法重要性"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "figure_ground",
+      "zh": "主体背景分离",
+      "en": "Figure–ground separation",
+      "definition": "观看者把目标对象从相邻背景中分辨出来的程度。",
+      "not_to_confuse": [
+        "只需增加描边",
+        "深度图必然可区分"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "detail_density",
+      "zh": "细节密度",
+      "en": "Detail density",
+      "definition": "指定观察尺度和区域中可辨认细小变化的密集程度。",
+      "not_to_confuse": [
+        "多边形数量",
+        "纹理文件分辨率",
+        "质量高低"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "spatial_frequency",
+      "zh": "空间频率",
+      "en": "Spatial frequency (visual analysis)",
+      "definition": "图像变化在空间中重复或起伏的尺度；本框架分析须指定区域和像素尺度。",
+      "not_to_confuse": [
+        "动画帧率",
+        "未定义算法的自动噪声分数"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "rhythm",
+      "zh": "节奏",
+      "en": "Rhythm",
+      "definition": "通过视觉元素的重复与变化形成的组织感；可指静态或时间形式。",
+      "not_to_confuse": [
+        "必须等间距重复",
+        "动作速度本身"
+      ],
+      "source_ids": [
+        "A02"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "timing",
+      "zh": "时间控制",
+      "en": "Timing",
+      "definition": "动作或视觉事件发生的时间、持续长度与相互安排。",
+      "not_to_confuse": [
+        "帧率",
+        "相邻姿态间的空间距离"
+      ],
+      "source_ids": [
+        "A12"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "spacing",
+      "zh": "姿态间距",
+      "en": "Spacing",
+      "definition": "相邻采样时刻中对象位置、姿态或形态的变化量。",
+      "not_to_confuse": [
+        "动作总时长",
+        "UI元素间距"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "easing",
+      "zh": "缓动／缓入缓出",
+      "en": "Easing",
+      "definition": "通过速度变化组织动作开始、进行和结束的方式。",
+      "not_to_confuse": [
+        "低输出帧率",
+        "只允许一种平滑曲线"
+      ],
+      "source_ids": [
+        "A12"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "anticipation",
+      "zh": "预备动作",
+      "en": "Anticipation",
+      "definition": "在主动作前引导观看者预期的动作准备。",
+      "not_to_confuse": [
+        "全部攻击提示",
+        "输入延迟"
+      ],
+      "source_ids": [
+        "A12"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "squash_stretch",
+      "zh": "挤压与伸展",
+      "en": "Squash and stretch",
+      "definition": "以压缩、拉伸形态表达重量、弹性或动作效果的动画手段。",
+      "not_to_confuse": [
+        "必须对每个物体使用",
+        "单纯错误缩放"
+      ],
+      "source_ids": [
+        "A12"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "follow_through",
+      "zh": "跟随动作",
+      "en": "Follow through",
+      "definition": "主体停止或改变运动后，附属部分继续运动的表现。",
+      "not_to_confuse": [
+        "与主体完全同步",
+        "只有物理模拟才能实现"
+      ],
+      "source_ids": [
+        "A12"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "animation_sampling",
+      "zh": "动作采样频率",
+      "en": "Animation sampling rate",
+      "definition": "单位时间内呈现不同动作姿态的次数或计划，不等于最终画面刷新次数。",
+      "not_to_confuse": [
+        "游戏模拟频率",
+        "渲染帧率",
+        "单纯性能掉帧"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "feedback",
+      "zh": "视觉反馈",
+      "en": "Visual feedback",
+      "definition": "对玩家操作或游戏事件给出的视觉状态变化，需描述内容、位置、时机与强度。",
+      "not_to_confuse": [
+        "只有粒子特效",
+        "越强越清楚"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "telegraph",
+      "zh": "攻击预告／预警",
+      "en": "Attack telegraph",
+      "definition": "在伤害或行为执行前传递范围、方向、时机或危险程度的线索。",
+      "not_to_confuse": [
+        "碰撞体本身",
+        "无须对照实际生效时刻"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "visual_noise",
+      "zh": "视觉噪声",
+      "en": "Visual noise",
+      "definition": "使玩家难以识别、理解或响应关键信息的视觉竞争与干扰。",
+      "not_to_confuse": [
+        "所有颗粒纹理",
+        "所有高细节",
+        "只靠像素方差判断"
+      ],
+      "source_ids": [
+        "A05"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "typography",
+      "zh": "文字编排／字体表现",
+      "en": "Typography",
+      "definition": "对字形、粗细、字高、间距、对齐和层级等文字视觉属性的组织。",
+      "not_to_confuse": [
+        "仅选择一个字体文件",
+        "标称字号等于可见字高"
+      ],
+      "source_ids": [
+        "A18"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "pixel_grid",
+      "zh": "像素网格",
+      "en": "Pixel grid",
+      "definition": "用于约束图形采样、对齐和缩放的逻辑网格；与显示像素映射需另定。 发布JPEG的台阶边缘只能支持可见像素组织；原生网格及整数放大倍率需额外证据。",
+      "not_to_confuse": [
+        "降低分辨率必然像素风",
+        "显示像素与逻辑像素始终一一对应"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "tone_mapping",
+      "zh": "色调映射／显示变换",
+      "en": "Tone mapping / view transform",
+      "definition": "把渲染颜色变换到目标显示范围的处理；两术语在具体软件中范围可能不同。",
+      "not_to_confuse": [
+        "只改材质基色",
+        "不影响风格的透明步骤"
+      ],
+      "source_ids": [
+        "A10"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "consistency",
+      "zh": "视觉一致性",
+      "en": "Visual consistency",
+      "definition": "跨对象、场景、时间和配置保留约定特征、关系或意义的程度。",
+      "not_to_confuse": [
+        "所有资产完全相同",
+        "禁止局部变化"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "semantic_role",
+      "zh": "视觉语义角色",
+      "en": "Visual semantic role",
+      "definition": "某视觉属性或元素承担的意义，如危险、友军、可交互或装饰。",
+      "not_to_confuse": [
+        "某个固定色值",
+        "只由色相传递意义"
+      ],
+      "source_ids": [],
+      "origin": "framework"
+    },
+    {
+      "id": "color_space",
+      "zh": "色彩空间",
+      "en": "Color space",
+      "definition": "以明确坐标与转换规则描述颜色的系统，如sRGB、Oklab或OkLCh。",
+      "not_to_confuse": [
+        "调色板",
+        "所有RGB值跨空间相同"
+      ],
+      "source_ids": [
+        "A14"
+      ],
+      "origin": "industry"
+    },
+    {
+      "id": "design_prescription",
+      "zh": "设计处方 / 制作规范",
+      "en": "Design prescription",
+      "definition": "对未来制作结果提出的目标与限制，可含硬约束、软目标和批准例外。",
+      "not_to_confuse": "从既有截图得到的描述性观察",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "visual_observation",
+      "zh": "视觉观察记录",
+      "en": "Visual observation",
+      "definition": "对指定证据中可见现象的描述，保留方法、区间、置信度和未知；本版不是生产profile。",
+      "not_to_confuse": "制作目标；游戏完整美术设定；自动质量认证",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "sample_bound_claim",
+      "zh": "样本范围陈述",
+      "en": "Sample-bound claim",
+      "definition": "只对列出的画面、裁切和观察条件成立的结论，不自动推广到整款游戏、所有关卡或版本。",
+      "not_to_confuse": "全作品风格定论",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "observability",
+      "zh": "可观测性",
+      "en": "Observability",
+      "definition": "某字段能由当前证据直接观察、只能借助外部来源判断，或仍无法确定的边界。",
+      "not_to_confuse": "图中暂未出现；参数已经明确为零",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "view_orientation",
+      "zh": "可见观察方向",
+      "en": "View orientation",
+      "definition": "从侧面、近顶面或倾斜俯视等视觉线索描述观看姿态，不直接给出投影算法和相机角度。",
+      "not_to_confuse": "正交投影；真实俯仰角与FOV",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "shading_appearance",
+      "zh": "可见明暗组织",
+      "en": "Shading appearance",
+      "definition": "依据画面观察平涂、连续过渡、分段或混合的明暗组织，不据此反推着色器。",
+      "not_to_confuse": "light.model技术流程；实时灯光实现",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "spatial_logic",
+      "zh": "空间逻辑",
+      "en": "Spatial logic",
+      "definition": "记录对象连接与可通行关系遵循常规空间、利用视觉幻象或混合的组织方式，需相应画面或官方证据。",
+      "not_to_confuse": "几何简化；形体自然度；单纯透视视角",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "pixel_cluster_contour",
+      "zh": "像素簇轮廓",
+      "en": "Pixel-cluster contour",
+      "definition": "以离散像素簇、阶梯边缘和颜色邻接组织的可见边界，可承担外轮廓和内部结构作用。",
+      "not_to_confuse": "已证明的矢量描边宽度；JPEG压缩噪声",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "semantic_overlay",
+      "zh": "语义覆盖标记",
+      "en": "Semantic overlay",
+      "definition": "服务状态或操作意义的圆环、选择圈、生命条等覆盖图形；可位于世界或屏幕空间。",
+      "not_to_confuse": "角色描边；对象本身的剪影",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "region_of_interest",
+      "zh": "观察区域 / ROI",
+      "en": "Region of interest",
+      "definition": "在指定图像上用归一化矩形登记的观察区域；矩形可能包含背景、特效和UI。",
+      "not_to_confuse": "语义分割mask；纯资产颜色",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "source_palette",
+      "zh": "源色板",
+      "en": "Source palette",
+      "definition": "制作时明确指定的命名颜色及其角色；须有源文件、规范或可追溯说明，不能从压缩截图唯一恢复。",
+      "not_to_confuse": "截图出现的全部颜色；全帧直方图",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "frame_color_distribution",
+      "zh": "最终帧颜色分布",
+      "en": "Frame color distribution",
+      "definition": "按声明的解码、色彩解释、ROI和采样规则得到的最终图像颜色统计。",
+      "not_to_confuse": "源调色板；整体鲜艳感的0–100评价",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "evidence_confidence",
+      "zh": "证据置信等级",
+      "en": "Evidence confidence",
+      "definition": "对当前结论的证据充分程度所做的低/中/高判断；本版不是经统计校准的概率。",
+      "not_to_confuse": "美感分数；模型自信即真实性",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    },
+    {
+      "id": "scoped_observation",
+      "zh": "局部观察",
+      "en": "Scoped observation",
+      "definition": "绑定单张已检图、明确矩形和标签的观察，不隐含继承，也不自动聚合为作品全局值。",
+      "not_to_confuse": "生产overrides；对全游戏数值的覆盖",
+      "source_ids": [
+        "framework"
+      ],
+      "origin": "framework"
+    }
+  ]
+}

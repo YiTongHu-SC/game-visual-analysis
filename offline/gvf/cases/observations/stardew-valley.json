@@ -1,0 +1,2243 @@
+{
+  "document_type": "visual_observation",
+  "schema_version": "0.2.0",
+  "framework_version": "0.2.0",
+  "catalog_version": "0.2.0",
+  "id": "stardew-valley",
+  "title": "Stardew Valley：三张官方Steam静帧观察",
+  "game": {
+    "id": "stardew-valley",
+    "title": "Stardew Valley",
+    "official_url": "https://store.steampowered.com/app/413150/?l=english"
+  },
+  "scope": {
+    "description": "2026-10-21实际打开并查看Steam图库索引0、1、2的原始JPG；只有选定静帧，未运行游戏。归一化ROI为定位矩形，不自动等于对象遮罩。",
+    "coverage": "selected_official_stills",
+    "claims_scope": "sample_only",
+    "excluded": [
+      "未识别截图构建号、拍摄日期或采集设备；URL缓存时间不是拍摄日期。",
+      "没有运行性能、动画时序、玩家识别测试或人工跨评审校准。",
+      "没有源工程、原生色板、纹理文件、相机矩阵和shader参数。",
+      "不将观察转换为hard/soft生产要求；不声称三图穷尽游戏所有画面或平台。"
+    ]
+  },
+  "images": [
+    {
+      "id": "stardew-valley-00",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_b887651a93b0525739049eb4194f633de2df75be.1920x1080.jpg?t=1786554168",
+      "source_page_url": "https://store.steampowered.com/app/413150/?l=english",
+      "local_path": "cases/images/stardew-valley-00.jpg",
+      "width_px": 1920,
+      "height_px": 1080,
+      "format": "jpeg",
+      "origin": "official_store",
+      "inspected": true,
+      "rights_note": "游戏画面版权归各权利人；本地研究与分析引用，不构成游戏素材再利用授权。"
+    },
+    {
+      "id": "stardew-valley-01",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_9ac899fe2cda15d48b0549bba77ef8c4a090a71c.1920x1080.jpg?t=1786554168",
+      "source_page_url": "https://store.steampowered.com/app/413150/?l=english",
+      "local_path": "cases/images/stardew-valley-01.jpg",
+      "width_px": 1920,
+      "height_px": 1080,
+      "format": "jpeg",
+      "origin": "official_store",
+      "inspected": true,
+      "rights_note": "游戏画面版权归各权利人；本地研究与分析引用，不构成游戏素材再利用授权。"
+    },
+    {
+      "id": "stardew-valley-02",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_4fa0866709ede3753fdf2745349b528d5e8c4054.1920x1080.jpg?t=1786554168",
+      "source_page_url": "https://store.steampowered.com/app/413150/?l=english",
+      "local_path": "cases/images/stardew-valley-02.jpg",
+      "width_px": 1920,
+      "height_px": 1080,
+      "format": "jpeg",
+      "origin": "official_store",
+      "inspected": true,
+      "rights_note": "游戏画面版权归各权利人；本地研究与分析引用，不构成游戏素材再利用授权。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "R11",
+      "url": "https://store.steampowered.com/app/413150/?l=english",
+      "title": "Stardew Valley on Steam",
+      "publisher": "ConcernedApe / Steam",
+      "note": "核验2026-10-21；确认App身份与商店图库来源；用户标签不作为底层资产工艺证明。"
+    },
+    {
+      "id": "R12",
+      "url": "https://www.stardewvalley.net/press/",
+      "title": "Stardew Valley — Official Press",
+      "publisher": "ConcernedApe",
+      "note": "核验2026-10-21；页面区分PC与移动版UI；没有给这三张Steam图的拍摄日期、构建号或原生像素倍率。"
+    }
+  ],
+  "observations": [
+    {
+      "parameter_id": "representation.mode",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "可见二维图像不唯一确定底层2D/2.5D/3D资产与空间组织；商店标签或3D设计灵感也不等于源工程证据。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "representation.recognizability",
+      "status": "observed",
+      "range": {
+        "min": 75,
+        "max": 100
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.529,
+            0.446,
+            0.314,
+            0.19
+          ],
+          "note": "路径横穿画面，两个人形与地面相接。"
+        }
+      ],
+      "explanation": "人物、房屋、动物、栅栏及植物具有清楚具象指涉。",
+      "limitation": "不等于首次玩家识别正确率，极小对象的确切身份仍可能需语境。",
+      "anchor_basis": "字典0.2.0锚点：75=对象身份清楚，细节简化；100=指定对象及关键部位明确可辨。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "representation.depth_cues",
+      "status": "observed",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.308,
+            0.635,
+            0.346,
+            0.365
+          ],
+          "note": "屋顶和树冠遮挡下方地面，层次由遮挡表达。"
+        }
+      ],
+      "explanation": "顶面/立面、遮挡与对象脚下暗部建立深度，屏幕中不只是一层平面符号。",
+      "limitation": "此区间描述可见线索，不能推出底层3D结构或准确图层数量。",
+      "anchor_basis": "字典0.2.0锚点：25=主要依靠前后遮挡；75=多种一致深度线索。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "representation.abstraction_strategy",
+      "status": "observed",
+      "value": "reductive",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.484,
+            0.486,
+            0.031,
+            0.111
+          ],
+          "note": "草帽人物轮廓与简化衣身，人物框含背景。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        }
+      ],
+      "explanation": "保留对象类别和关键结构，用较少人体部位与像素块删减细节。",
+      "limitation": "只是形体删减策略的观察，不把像素媒介直接等同全部抽象方式。"
+    },
+    {
+      "parameter_id": "representation.source_medium",
+      "status": "observed",
+      "value": "pixel",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.484,
+            0.486,
+            0.031,
+            0.111
+          ],
+          "note": "草帽人物轮廓与简化衣身，人物框含背景。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.516,
+            0.704,
+            0.299,
+            0.279
+          ],
+          "note": "作物和喷灌装置呈重复行列，地面仍有可见细节。"
+        }
+      ],
+      "explanation": "阶梯状边缘和离散色块使像素媒介联想明确。",
+      "limitation": "只认外观，不证明源图尺寸、软件、整数放大或真实制作工艺。"
+    },
+    {
+      "parameter_id": "representation.semantic_load",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有首次接触玩家的任务、图例和测试，不能仅由图中符号数量推定理解所需约定负荷。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "form.naturalism",
+      "status": "observed",
+      "range": {
+        "min": 25,
+        "max": 50
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.484,
+            0.486,
+            0.031,
+            0.111
+          ],
+          "note": "草帽人物轮廓与简化衣身，人物框含背景。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.529,
+            0.446,
+            0.314,
+            0.19
+          ],
+          "note": "路径横穿画面，两个人形与地面相接。"
+        }
+      ],
+      "explanation": "人形结构与服装被明显简化，建筑仍保留门窗、屋顶和支承等关系。",
+      "limitation": "没有现实测量基准；自然度与对象是否能认出来分开。",
+      "anchor_basis": "字典0.2.0锚点：25=可辨对象的极简变形；50=明显风格化，主要结构保留。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "form.proportion_exaggeration",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有指定现实或设计基准比例；画面风格化或空间幻视不能直接充当比例夸张的参照。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "form.shape_language",
+      "status": "observed",
+      "value": "mixed",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.308,
+            0.635,
+            0.346,
+            0.365
+          ],
+          "note": "屋顶和树冠遮挡下方地面，层次由遮挡表达。"
+        }
+      ],
+      "explanation": "建筑和栅栏偏矩形，树冠/动物偏圆润有机。",
+      "limitation": "是样本中形状分工，不声称只有一种基础形状。"
+    },
+    {
+      "parameter_id": "form.edge_roundness",
+      "status": "observed",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.484,
+            0.486,
+            0.031,
+            0.111
+          ],
+          "note": "草帽人物轮廓与简化衣身，人物框含背景。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        }
+      ],
+      "explanation": "屋顶、门窗和栅栏有硬转角，人物和树冠形成相对圆润外形。",
+      "limitation": "跨对象差异大；像素阶梯不被直接当作尖锐形体。",
+      "anchor_basis": "字典0.2.0锚点：25=仅微小倒角；75=以圆润转角为主。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "form.silhouette_complexity",
+      "status": "observed",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.484,
+            0.486,
+            0.031,
+            0.111
+          ],
+          "note": "草帽人物轮廓与简化衣身，人物框含背景。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.308,
+            0.635,
+            0.346,
+            0.365
+          ],
+          "note": "屋顶和树冠遮挡下方地面，层次由遮挡表达。"
+        }
+      ],
+      "explanation": "小人物外轮廓简洁，树冠与成组建筑的边界层次较多。",
+      "limitation": "相对主体屏幕尺寸尚未统一，区间用于保留对象差异。",
+      "anchor_basis": "字典0.2.0锚点：25=少量大型转折；75=许多小尺度转折。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "form.scale_consistency",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有对象类别尺度表、尺寸基准及跨资产对应关系；相邻物件看似协调不等于已测尺寸一致度。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "form.anatomy_strategy",
+      "status": "observed",
+      "value": "simplified",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.484,
+            0.486,
+            0.031,
+            0.111
+          ],
+          "note": "草帽人物轮廓与简化衣身，人物框含背景。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.529,
+            0.446,
+            0.314,
+            0.19
+          ],
+          "note": "路径横穿画面，两个人形与地面相接。"
+        }
+      ],
+      "explanation": "人形保留头、躯干和四肢的主要辨识线索，细部省略。",
+      "limitation": "不据单帧判断骨骼、关节实现或运动自然度。"
+    },
+    {
+      "parameter_id": "line.usage",
+      "status": "observed",
+      "value": "outer_and_inner",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.516,
+            0.704,
+            0.299,
+            0.279
+          ],
+          "note": "作物和喷灌装置呈重复行列，地面仍有可见细节。"
+        }
+      ],
+      "explanation": "深色轮廓与窗框、板缝、屋瓦、栅栏内结构边界同时可见。",
+      "limitation": "仅指当前可见资产的边缘组织，不认定引擎描边技术。"
+    },
+    {
+      "parameter_id": "line.width_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "未对指定轮廓进行法向像素测量；JPG缩放和压缩会影响边缘，不能凭印象填1px或3px。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "line.weight_variation",
+      "status": "observed",
+      "range": {
+        "min": 0,
+        "max": 50
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.484,
+            0.486,
+            0.031,
+            0.111
+          ],
+          "note": "草帽人物轮廓与简化衣身，人物框含背景。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        }
+      ],
+      "explanation": "人物与建筑边界大多紧凑，但拐角、阴影块与结构边宽度不同。",
+      "limitation": "尚未区分线条像素与阴影边，未测实际法向宽度。",
+      "anchor_basis": "字典0.2.0锚点：0=完全等宽；50=轮廓与内线明显分级。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "line.edge_regularity",
+      "status": "observed",
+      "range": {
+        "min": 75,
+        "max": 100
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.516,
+            0.704,
+            0.299,
+            0.279
+          ],
+          "note": "作物和喷灌装置呈重复行列，地面仍有可见细节。"
+        }
+      ],
+      "explanation": "重复物件与像素阶梯呈较稳定的离散边缘组织。",
+      "limitation": "规整外观不证明原生像素格倍率；JPG仍可能影响亚像素边缘。",
+      "anchor_basis": "字典0.2.0锚点：75=接近规则，保留少量扰动；100=几何精确或像素网格严格一致。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "line.color_mode",
+      "status": "observed",
+      "value": "tinted_dark",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.308,
+            0.635,
+            0.346,
+            0.365
+          ],
+          "note": "屋顶和树冠遮挡下方地面，层次由遮挡表达。"
+        }
+      ],
+      "explanation": "建筑的暗棕边、植物的深绿边会随局部对象颜色变化。",
+      "limitation": "不声称每条边都使用统一调色公式；暗边也可能包含材质与阴影。"
+    },
+    {
+      "parameter_id": "line.inner_density",
+      "status": "observed",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.516,
+            0.704,
+            0.299,
+            0.279
+          ],
+          "note": "作物和喷灌装置呈重复行列，地面仍有可见细节。"
+        }
+      ],
+      "explanation": "屋瓦、木板、栅栏和植被内部有丰富结构边，小人物内部线索较少。",
+      "limitation": "应在以后按对象类别分别校准，不代表全帧所有像素都是线。",
+      "anchor_basis": "字典0.2.0锚点：25=仅关键结构；75=大量结构与排线。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "surface.material_physicality",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "静帧没有同材质在受控光照和视角下的响应对照；颜色块或高光形状不能唯一确定材质物理一致性。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "surface.detail_density",
+      "status": "observed",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.516,
+            0.704,
+            0.299,
+            0.279
+          ],
+          "note": "作物和喷灌装置呈重复行列，地面仍有可见细节。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.308,
+            0.635,
+            0.346,
+            0.365
+          ],
+          "note": "屋顶和树冠遮挡下方地面，层次由遮挡表达。"
+        }
+      ],
+      "explanation": "屋瓦、木板、草、土点和叶簇包含多尺度可见信息。",
+      "limitation": "高密度像素细节不等于写实材质；正常游戏缩放与这份JPG未证实一致。",
+      "anchor_basis": "字典0.2.0锚点：50=大中小细节分层；75=大量可见小细节。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "surface.texture_mode",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "截图显示表面外观，但无法证明其信息由手绘、程序、照片或混合工艺生成。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "surface.brush_visibility",
+      "status": "observed",
+      "range": {
+        "min": 0,
+        "max": 25
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.308,
+            0.635,
+            0.346,
+            0.365
+          ],
+          "note": "屋顶和树冠遮挡下方地面，层次由遮挡表达。"
+        }
+      ],
+      "explanation": "主要可辨组织是像素块与结构纹理，没有清楚成串的方向性笔触。",
+      "limitation": "低笔触可见性不证明没有手工绘制；不能量化原始笔刷。",
+      "anchor_basis": "字典0.2.0锚点：0=不可辨笔触；25=仔细观察可见。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "surface.brush_scale_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有可靠分割为笔触的对象与短轴测量；不能把像素格、铺面纹样或JPG颗粒自动当作笔触。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "surface.roughness",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有PBR着色器、贴图通道及参数映射资料；即使表面看似哑光也不能反算粗糙度输入。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "surface.metallic",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有金属度工作流与区域材质文件；静态图中的颜色和亮部不能唯一确定输入值。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "color.palette_mode",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "能描述最终像素中的颜色关系，但没有源色板或设计意图，不能确认调色板组织策略。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "color.palette_colors",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "最终JPG的RGB种类包含压缩、渐变和光照；没有设计师命名的源token清单，不能数出源色板色数。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "color.saturation",
+      "status": "observed",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.606,
+            0.305,
+            0.064,
+            0.112
+          ],
+          "note": "灯具亮点和周边连续变暗的墙面。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.529,
+            0.446,
+            0.314,
+            0.19
+          ],
+          "note": "路径横穿画面，两个人形与地面相接。"
+        }
+      ],
+      "explanation": "昼景黄绿红棕较鲜明，洞窟大面积暗色与局部灯色改变整体鲜艳感。",
+      "limitation": "是跨场景宽区间，不能解释为HSL S或OKLCH C；不应平均成全作单值。",
+      "anchor_basis": "字典0.2.0锚点：25=低鲜艳度，明显灰化；75=鲜明高色度为主。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "color.value_range",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "未预先锁定关键区域、遮罩和分位数测量口径；本条不把整帧统计或目测跨度伪装成已测值。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "color.palette_lightness",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有指定源主色token及其原始色值；截图JPG的L分布不是源色板L。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "color.palette_chroma",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有指定源主色token；最终像素的C会混入光照、输出处理与压缩，不能当作设计色板C。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "color.palette_hue",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有指定源主色token与无彩色判定；不把整图平均色相当作设计主色相。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "color.accent_area",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "未定义功能性强调色映射、颜色分类阈值和有效画面遮罩；不能从醒目色块直接给出面积百分比。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "color.temperature_bias",
+      "status": "observed",
+      "value": "split",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.606,
+            0.305,
+            0.064,
+            0.112
+          ],
+          "note": "灯具亮点和周边连续变暗的墙面。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.529,
+            0.446,
+            0.314,
+            0.19
+          ],
+          "note": "路径横穿画面，两个人形与地面相接。"
+        }
+      ],
+      "explanation": "黄土、木屋与暖灯和较冷的绿/青植被、生物形成相对冷暖分工。",
+      "limitation": "冷暖是相对关系，不是Kelvin色温，也不代表每个画面同等偏暖。"
+    },
+    {
+      "parameter_id": "light.physicality",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有与真实光源/参考场景的受控对照；局部明暗关系不能证明整幅画面的光传输规律。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "light.model",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "可见明暗可能来自绘制、贴图、几何、照明或后期；不能由分面色块推断unlit、cel或PBR实现。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "light.shadow_hardness",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "未建立指定投影、光源和相同屏幕尺度的比较；暗斑、分面和局部渐变不一定都是投影。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "light.contrast",
+      "status": "observed",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.489,
+            0.48,
+            0.158,
+            0.186
+          ],
+          "note": "人物、白色挥击弧、绿色生物和黄色数字5。"
+        }
+      ],
+      "explanation": "洞窟的黑区与局部亮提示形成强分区，日景保留不同明暗层级。",
+      "limitation": "没有把全图直方图或平均对比度当作该感知评分，更不是UI WCAG比值。",
+      "anchor_basis": "字典0.2.0锚点：50=清楚而温和的明暗；75=强烈明暗分组。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "light.exposure_ev",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有曝光管线及基准资料，无法把画面明暗反推EV；缺失基准是unknown，不是0。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "light.emissive_prominence",
+      "status": "observed",
+      "range": {
+        "min": 25,
+        "max": 50
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.606,
+            0.305,
+            0.064,
+            0.112
+          ],
+          "note": "灯具亮点和周边连续变暗的墙面。"
+        },
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.489,
+            0.48,
+            0.158,
+            0.186
+          ],
+          "note": "人物、白色挥击弧、绿色生物和黄色数字5。"
+        }
+      ],
+      "explanation": "洞窟灯亮点及周边亮部可辨，日景中没有同样占主导的发光外观。",
+      "limitation": "只评价可见明亮/发光线索，无法判断是否真由emission材质或灯实现。",
+      "anchor_basis": "字典0.2.0锚点：25=零星弱自发光；50=局部自发光可辨。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "light.ambient_occlusion",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "暗角/接触暗化也可由纹理、投影或绘制产生；没有有无AO对照，不能归因AO或给强度分数。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "camera.projection",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "轴测式或平行边的外观不是正交矩阵的证明；单帧不能排除透视、斜投影、绘制或局部变形。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "camera.elevation_deg",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "可以描述观看方向，但没有世界竖轴、相机位置及目标点，不能填精确俯仰角。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "camera.vertical_fov_deg",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有投影矩阵、虚拟画幅或FOV定义；不能把可见画幅或轴测外观转换为垂直视场角。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "camera.distance_m",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有米制世界单位与主体锚点；屏幕占比不能唯一确定世界距离。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "camera.movement",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "三张不同场景的静帧不是连续镜头记录；不能确认固定、跟随、自由或脚本移动。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "camera.distortion",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有测试网格、未变形参照或实现说明，不能将风格化空间当作镜头畸变并量化。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "composition.focal_hierarchy",
+      "status": "observed",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.516,
+            0.704,
+            0.299,
+            0.279
+          ],
+          "note": "作物和喷灌装置呈重复行列，地面仍有可见细节。"
+        },
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.489,
+            0.48,
+            0.158,
+            0.186
+          ],
+          "note": "人物、白色挥击弧、绿色生物和黄色数字5。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.529,
+            0.446,
+            0.314,
+            0.19
+          ],
+          "note": "路径横穿画面，两个人形与地面相接。"
+        }
+      ],
+      "explanation": "作物行列、道路与局部挥击弧组织注意，但农场环境也有大量竞争细节。",
+      "limitation": "没有玩家限时识别测试，不能保证主角总是第一焦点。",
+      "anchor_basis": "字典0.2.0锚点：50=一个主要焦点可辨；75=主次层级明确。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "composition.negative_space",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "可以指出低信息区域，但尚无统一低信息定义和全帧mask，不能报可复算的面积百分比。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "composition.depth_layers",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "可见遮挡不等于已定义前中后景层mask，更不等于引擎图层数；本组未执行一致的分层计数。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "composition.density",
+      "status": "observed",
+      "range": {
+        "min": 25,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.489,
+            0.48,
+            0.158,
+            0.186
+          ],
+          "note": "人物、白色挥击弧、绿色生物和黄色数字5。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.308,
+            0.635,
+            0.346,
+            0.365
+          ],
+          "note": "屋顶和树冠遮挡下方地面，层次由遮挡表达。"
+        }
+      ],
+      "explanation": "农场与树屋区域信息密集，洞窟的黑区降低全帧可见内容占据。",
+      "limitation": "区间反映三图及ROI差异，不将黑区自动当成设计留白百分比。",
+      "anchor_basis": "字典0.2.0锚点：25=少量元素且间距大；75=元素密集且细节多。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "composition.alignment",
+      "status": "observed",
+      "value": "grid",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.516,
+            0.704,
+            0.299,
+            0.279
+          ],
+          "note": "作物和喷灌装置呈重复行列，地面仍有可见细节。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        }
+      ],
+      "explanation": "作物、栅栏和房屋板块具有明显行列与重复间隔。",
+      "limitation": "描述可见构图，不证明底层tile尺寸或所有道路严格对齐同网格。"
+    },
+    {
+      "parameter_id": "composition.subject_separation",
+      "status": "observed",
+      "range": {
+        "min": 50,
+        "max": 75
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.484,
+            0.486,
+            0.031,
+            0.111
+          ],
+          "note": "草帽人物轮廓与简化衣身，人物框含背景。"
+        },
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.489,
+            0.48,
+            0.158,
+            0.186
+          ],
+          "note": "人物、白色挥击弧、绿色生物和黄色数字5。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.529,
+            0.446,
+            0.314,
+            0.19
+          ],
+          "note": "路径横穿画面，两个人形与地面相接。"
+        }
+      ],
+      "explanation": "以人物为识别主体时，白弧/服装与地面形成局部分离，但人物很小且环境颜色复杂。",
+      "limitation": "与中央建筑是否显眼不是同一任务；未验证识别速度或无障碍效果。",
+      "anchor_basis": "字典0.2.0锚点：50=多数情况下可辨；75=主要镜头稳定清晰。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "motion.naturalism",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "静帧没有同动作、同速度的连续时序与现实参照，不能判断运动自然度。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "motion.timing",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "静帧不能区分连续、抽帧、停帧或snappy节奏，姿态不同不构成时间采样证据。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "motion.animation_fps",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "JPG没有姿态更新时间戳；下载尺寸和商店描述均不能证明动作采样率或运行FPS。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "motion.squash_stretch",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有同一对象中性姿态到动作姿态的时间对照，不能将简化造型误判为动态挤压拉伸。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "motion.anticipation_ms",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有预备动作开始和主动作启动两个时间标记，无法给出毫秒值。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "motion.secondary_motion",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "单个姿态不能揭示衣物、附属物相对于主运动的时间变化；不因看不到而标NA。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "vfx.density",
+      "status": "observed",
+      "range": {
+        "min": 0,
+        "max": 25
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.489,
+            0.48,
+            0.158,
+            0.186
+          ],
+          "note": "人物、白色挥击弧、绿色生物和黄色数字5。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        }
+      ],
+      "explanation": "被截取的一次白色挥击弧和局部亮提示面积较小，样本未展示峰值叠加。",
+      "limitation": "只比较所列静帧中相对整帧的空间占据与同时可见叠层；局部ROI只定位证据，其内部占比不直接等于全帧占比。无动态证据，不推发生频率、持续时间、时间峰值或性能；区间数值保留不代表已重新校准。",
+      "anchor_basis": "目录0.2.0静态空间锚点：0=无可见特效；25=少量孤立特效，整帧占据范围小且叠层少。保留原粗区间，仅同步语义边界，未重新开展项目或跨评审校准；不是面积百分比、生产值或游戏官方分数。"
+    },
+    {
+      "parameter_id": "vfx.bloom",
+      "status": "observed",
+      "range": {
+        "min": 0,
+        "max": 50
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.606,
+            0.305,
+            0.064,
+            0.112
+          ],
+          "note": "灯具亮点和周边连续变暗的墙面。"
+        },
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.489,
+            0.48,
+            0.158,
+            0.186
+          ],
+          "note": "人物、白色挥击弧、绿色生物和黄色数字5。"
+        }
+      ],
+      "explanation": "局部灯周围软亮部可见，白弧边缘和其他日景并非普遍大范围光晕。",
+      "limitation": "此处bloom仅作外观描述；不是证实后期节点或量化引擎强度。",
+      "anchor_basis": "字典0.2.0锚点：0=禁用或不可见；50=局部可见光晕。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "vfx.motion_blur_shutter",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有输出fps、曝光时段或渲染实现；单帧轮廓/轨迹也不能唯一决定快门角。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "vfx.screen_shake_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有同事件的稳定镜头基准和时间窗口；不能因单帧静止或有动作就给0或震动幅度。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "vfx.hit_flash_ms",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有受击事件到恢复的连续帧；当前亮部不证明是否受击替色，更不能测持续时间。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "vfx.semantic_color",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有颜色与元素/阵营/危险等级的可靠映射；视觉强调不能独自确定其语义。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "ui.integration",
+      "status": "observed",
+      "value": "spatial",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.489,
+            0.48,
+            0.158,
+            0.186
+          ],
+          "note": "人物、白色挥击弧、绿色生物和黄色数字5。"
+        }
+      ],
+      "explanation": "黄色数字5位于角色/生物附近，是与世界对象邻近的可见信息。",
+      "limitation": "仅归类这个浮动数字，不能据此排除未显示的屏幕HUD、菜单或其他UI承载。"
+    },
+    {
+      "parameter_id": "ui.typography",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "本组没有足够的成套文字、字体文件或菜单样本；一个数字或无正文的图标不能定义全套字体类型。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "ui.min_font_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有明确关键文字集合、UI缩放和字形度量，不能把一个局部字形的bbox高度当作最小字号。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "ui.text_contrast",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有指定关键文字-背景对、合成条件与最不利状态；此处未计算，不从整体明暗推UI对比度。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "ui.information_density",
+      "status": "observed",
+      "range": {
+        "min": 0,
+        "max": 25
+      },
+      "method": "visual_ordinal",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.489,
+            0.48,
+            0.158,
+            0.186
+          ],
+          "note": "人物、白色挥击弧、绿色生物和黄色数字5。"
+        },
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.484,
+            0.486,
+            0.031,
+            0.111
+          ],
+          "note": "草帽人物轮廓与简化衣身，人物框含背景。"
+        }
+      ],
+      "explanation": "三张样本的可见界面信息很少，主要为局部浮字或图样，没有完整面板。",
+      "limitation": "只评价这些被选择的静帧，缺席的菜单/HUD仍未知，不作全游戏低密度结论。",
+      "anchor_basis": "字典0.2.0锚点：0=极少信息组件；25=少量大分组。本次为未跨评审校准的粗区间，不作等距或比例解释。"
+    },
+    {
+      "parameter_id": "ui.component_shape",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有足以归类的界面组件样本；场景物件或浮字本身不自动等于按钮和面板。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "presentation.resolution_strategy",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "1920x1080是下载JPG尺寸，不能证明内部渲染分辨率、动态比例或整数放大策略。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "presentation.pixel_grid_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "看到阶梯边缘不等于知道原生逻辑像素与输出的对应倍率；需要无损源图或渲染规格。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "presentation.antialiasing",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "截图不能唯一确认nearest、TAA、SMAA等实际采样或抗锯齿算法，尤其经过JPG和可能缩放。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "presentation.grain",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有无压缩对照与颗粒的时间信息，不能将素材纹理、像素块或JPG噪声归成叠加grain。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "presentation.chromatic_aberration_px",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "没有规定位置的白线测试图及通道分离测量，不能量化有意色差位移。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "presentation.vignette",
+      "status": "unknown",
+      "method": "not_observable",
+      "confidence": "not_rated",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "note": "证据范围为已查看静帧；缺少本项所需的工程、任务或时间条件。"
+        }
+      ],
+      "explanation": "外围暗化可能来自场景边界、遮挡、雾或构图；没有同背景/曝光对照，不归因后期暗角。",
+      "limitation": "unknown描述证据不足，不表示参数关闭或该游戏不存在此表现。"
+    },
+    {
+      "parameter_id": "camera.view_orientation",
+      "status": "observed",
+      "value": "elevated_oblique",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.529,
+            0.446,
+            0.314,
+            0.19
+          ],
+          "note": "路径横穿画面，两个人形与地面相接。"
+        }
+      ],
+      "explanation": "可以同时看见地面/屋顶与物体立面，属于高位斜看外观。",
+      "limitation": "不把俗称俯视2D等同正俯视90度，也不据此判断相机矩阵。"
+    },
+    {
+      "parameter_id": "light.shading_appearance",
+      "status": "observed",
+      "value": "mixed",
+      "method": "visual_category",
+      "confidence": "high",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-01",
+          "roi": [
+            0.606,
+            0.305,
+            0.064,
+            0.112
+          ],
+          "note": "灯具亮点和周边连续变暗的墙面。"
+        }
+      ],
+      "explanation": "分立像素明暗、局部块面与灯周围的连续衰减同时出现。",
+      "limitation": "只描述外观，不证明cel、PBR、真实点光或特定shader。"
+    },
+    {
+      "parameter_id": "representation.spatial_logic",
+      "status": "observed",
+      "value": "euclidean",
+      "method": "visual_category",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "image_id": "stardew-valley-00",
+          "roi": [
+            0.282,
+            0.031,
+            0.542,
+            0.626
+          ],
+          "note": "木屋/顶面、人物、动物、地面和栅栏均可辨。"
+        },
+        {
+          "image_id": "stardew-valley-02",
+          "roi": [
+            0.529,
+            0.446,
+            0.314,
+            0.19
+          ],
+          "note": "路径横穿画面，两个人形与地面相接。"
+        }
+      ],
+      "explanation": "样本以连续地面、常规遮挡和方向一致的道路/栅栏组织空间。",
+      "limitation": "只说这三图的可见空间表现，不证明全作几何或运行中的所有连通规则。"
+    }
+  ],
+  "scoped_observations": [
+    {
+      "scope": {
+        "image_id": "stardew-valley-00",
+        "roi": [
+          0.21,
+          0.435,
+          0.14,
+          0.12
+        ],
+        "label": "地面：大色区与零散草石"
+      },
+      "observation": {
+        "parameter_id": "surface.detail_density",
+        "status": "observed",
+        "method": "visual_ordinal",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "image_id": "stardew-valley-00",
+            "roi": [
+              0.21,
+              0.435,
+              0.14,
+              0.12
+            ],
+            "note": "地面：大色区与零散草石"
+          }
+        ],
+        "explanation": "地面：大色区与零散草石",
+        "limitation": "矩形包含草簇和小石，不是纯材质mask；可见离散噪点不证明任何源笔刷。",
+        "range": {
+          "min": 0,
+          "max": 25
+        },
+        "anchor_basis": "使用0.2.0目录语义锚点：0=纯净大色块；25=少量大尺度细节。区间是本次样本的解释性候选，未完成独立双评审校准，非面积百分比或置信区间。"
+      }
+    },
+    {
+      "scope": {
+        "image_id": "stardew-valley-00",
+        "roi": [
+          0.301,
+          0.018,
+          0.145,
+          0.185
+        ],
+        "label": "屋顶：重复瓦片与深浅分块"
+      },
+      "observation": {
+        "parameter_id": "surface.detail_density",
+        "status": "observed",
+        "method": "visual_ordinal",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "image_id": "stardew-valley-00",
+            "roi": [
+              0.301,
+              0.018,
+              0.145,
+              0.185
+            ],
+            "note": "屋顶：重复瓦片与深浅分块"
+          }
+        ],
+        "explanation": "屋顶：重复瓦片与深浅分块",
+        "limitation": "只对固定文件尺度的可见细节判读；不从发布JPEG推原生像素网格。",
+        "range": {
+          "min": 50,
+          "max": 75
+        },
+        "anchor_basis": "使用0.2.0目录语义锚点：50=大中小细节分层；75=大量可见小细节。区间是本次样本的解释性候选，未完成独立双评审校准，非面积百分比或置信区间。"
+      }
+    }
+  ]
+}

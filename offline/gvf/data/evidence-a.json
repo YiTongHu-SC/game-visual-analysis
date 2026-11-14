@@ -1,0 +1,222 @@
+[
+  {
+    "id": "A01",
+    "title": "Understanding Formal Analysis: Elements of Art",
+    "url": "https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html",
+    "publisher": "J. Paul Getty Museum",
+    "accessed": "2026-10-20",
+    "kind": "museum_education",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A01-C1","claim":"形式分析可以把作品拆为线、形、体、空间、色彩和肌理等要素。","support":"页面逐项解释视觉要素，区分二维shape与三维form。","limits":"美术教育词汇；不覆盖游戏交互、渲染实现与所有文化中的术语差异。"}
+    ]
+  },
+  {
+    "id": "A02",
+    "title": "Understanding Formal Analysis: Principles of Design",
+    "url": "https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html",
+    "publisher": "J. Paul Getty Museum",
+    "accessed": "2026-10-20",
+    "kind": "museum_education",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A02-C1","claim":"设计原则描述要素如何组织，包括平衡、强调、运动、节奏、统一与变化等。","support":"页面用馆藏实例说明要素间的组织关系。","limits":"其中movement可以指视线的移动；不能直接等同游戏动画。原则不是固定配方或审美评分标准。"}
+    ]
+  },
+  {
+    "id": "A03",
+    "title": "Illustrative Rendering in Team Fortress 2",
+    "url": "https://steamcdn-a.akamaihd.net/apps/valve/2007/NPAR07_IllustrativeRenderingInTeamFortress2_Slides.pdf",
+    "publisher": "Valve; Jason Mitchell, Moby Francke, Dhabih Eng",
+    "accessed": "2026-10-20",
+    "kind": "developer_conference_slides",
+    "verification": "web_open_pdf_57_pages",
+    "claims": [
+      {"id":"A03-C1","claim":"TF2将队伍、职业、所持武器分成读取层级，并用色彩、剪影和对比支持识别。","support":"PDF第22页（从1起）列出read hierarchy。","limits":"来自2007年的特定多人对战游戏；不代表所有游戏应沿用其配色与明暗梯度。"},
+      {"id":"A03-C2","claim":"插画外观可同时使用三维技术、手绘纹理和为目标外观定制的光照处理。","support":"PDF第8、16页介绍世界渲染和选取的插画惯例。","limits":"是该项目的实现选择，不是插画风的充分必要条件。"}
+    ]
+  },
+  {
+    "id": "A04",
+    "title": "Dota 2 Workshop - Character Art Guide",
+    "url": "https://help.steampowered.com/en/faqs/view/0688-7692-4D5A-1935",
+    "publisher": "Valve / Steam Support",
+    "accessed": "2026-10-20",
+    "kind": "official_game_art_guide",
+    "verification": "web_search_full_index_and_direct_http_200_html_embedded_article",
+    "claims": [
+      {"id":"A04-C1","claim":"Dota允许物品改变默认剪影或颜色，但要保持角色识别；某通道的变化可由其他熟悉线索补偿。","support":"当前英文指南的Silhouette与Summary段。","limits":"有绑定、骨架和玩法视角等上下文；不可简化为任意变化都能自动相互抵消。"},
+      {"id":"A04-C2","claim":"细节效果取决于角色在游戏里的实际尺寸；细节区需要休息区形成对照。","support":"Areas of Rest and Detail段要求在游戏视角反复检查。","limits":"不提供可移植到任何项目的细节百分比或像素阈值。"}
+    ]
+  },
+  {
+    "id": "A05",
+    "title": "Clarity in League",
+    "url": "https://www.leagueoflegends.com/en-us/news/dev/clarity-in-league/",
+    "publisher": "Riot Games; bananaband1t",
+    "accessed": "2026-10-20",
+    "kind": "developer_article",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A05-C1","claim":"League要求视觉层级支持玩法重要度，并在变化的外观中保留识别线索。","support":"The Unbreakable Vows、Silhouettes和Filling Up Buckets段。","limits":"服务竞技公平与迅速反应；恐怖、探索等游戏可能有不同的信息显露目标。"},
+      {"id":"A05-C2","claim":"视觉效果需要对照命中范围、朝向和地图背景验证。","support":"Abilities、Direction和Maps段。","limits":"文中案例是设计目标与开发复盘，不是对全部版本视觉质量的独立测评。"}
+    ]
+  },
+  {
+    "id": "A06",
+    "title": "GuiltyGearXrd's Art Style: The X Factor Between 2D and 3D",
+    "url": "https://www.gdcvault.com/play/1022031/GuiltyGearXrd-s-Art-Style-The",
+    "publisher": "GDC Vault; Junya Christopher Motomura / Arc System Works",
+    "accessed": "2026-10-20",
+    "kind": "conference_record",
+    "verification": "web_open_session_metadata",
+    "claims": [
+      {"id":"A06-C1","claim":"该演讲由Arc System Works的Junya Christopher Motomura在GDC 2015发表，主题是在三维框架中保留二维风格。","support":"会议信息和官方摘要。","limits":"本条只核对演讲身份与主题；技术细节采用A07，不把摘要当完整视频的替代证据。"}
+    ]
+  },
+  {
+    "id": "A07",
+    "title": "GuiltyGearXrd's Art Style — author presentation notes",
+    "url": "https://www.ggxrd.com/Motomura_Junya_GuiltyGearXrd.pdf",
+    "publisher": "Arc System Works / ggxrd.com; Junya Christopher Motomura",
+    "accessed": "2026-10-20",
+    "kind": "author_conference_notes",
+    "verification": "web_open_pdf_34_pages",
+    "claims": [
+      {"id":"A07-C1","claim":"Xrd的二维感由模型、分段着色、专用光照和逐姿态动画共同产生。","support":"PDF第6、17–21、27–29页解释各环节。","limits":"该讲稿描述特定项目的人工控制方法；不意味着所有二维感都必须采用同一工作流。"},
+      {"id":"A07-C2","claim":"动画平滑程度是风格选择：团队为二维感停用了关键姿态间的插值。","support":"PDF第27页讲有限动画及插值取舍。","limits":"姿态更新频率、渲染帧率和游戏模拟频率需分开记录。"}
+    ]
+  },
+  {
+    "id": "A08",
+    "title": "Physically Based Materials in Unreal Engine",
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/physically-based-materials-in-unreal-engine",
+    "publisher": "Epic Games",
+    "accessed": "2026-10-20",
+    "kind": "engine_documentation",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A08-C1","claim":"UE的PBR材质使用Base Color、Roughness、Metallic、Specular等属性；PBR也能用于非照片写实图像。","support":"PBR Material Attributes及开篇说明。","limits":"参数含义与着色模型有关；不可把0–1材质参数直接当作通用视觉风格分数。"}
+    ]
+  },
+  {
+    "id": "A09",
+    "title": "Unity Manual: Cameras overview (6000.0)",
+    "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/CamerasOverview.html",
+    "publisher": "Unity Technologies",
+    "accessed": "2026-10-20",
+    "kind": "engine_documentation",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A09-C1","claim":"透视投影随距离改变对象的表观大小；正交投影不产生这种近大远小。","support":"Perspective and orthographic cameras段。","limits":"投影不同于相机俯角；正交不自动等于等距，也不自动等于二维制作。"}
+    ]
+  },
+  {
+    "id": "A10",
+    "title": "Blender 4.0 Release Notes: Color Management",
+    "url": "https://developer.blender.org/docs/release_notes/4.0/color_management/",
+    "publisher": "Blender Foundation",
+    "accessed": "2026-10-20",
+    "kind": "software_release_documentation",
+    "verification": "direct_http_200_full_html; web_open_blocked_402",
+    "claims": [
+      {"id":"A10-C1","claim":"显示变换会改变渲染的输出表现；Blender 4.0引入AgX并讨论SDR/HDR输出适用条件。","support":"AgX View Transform、HDR Display on macOS段。","limits":"这是4.0版本说明；不推断当前安装版本的默认值或所有引擎的色彩流水线。"}
+    ]
+  },
+  {
+    "id": "A11",
+    "title": "Blender 4.5 LTS Manual: Freestyle Line Style Introduction",
+    "url": "https://docs.blender.org/manual/en/4.5/render/freestyle/view_layer/line_style/introduction.html",
+    "publisher": "Blender Foundation",
+    "accessed": "2026-10-20",
+    "kind": "software_documentation",
+    "verification": "direct_http_200_full_html; web_open_blocked_402",
+    "claims": [
+      {"id":"A11-C1","claim":"线条外观可分别控制笔画、颜色、透明度、宽度、几何与纹理。","support":"手册列出line style的控制页及可复用line style。","limits":"原页把这些称作five aspects但实际列出六项；本框架逐项列出而不沿用计数。Freestyle不是全部描边技术的标准。"}
+    ]
+  },
+  {
+    "id": "A12",
+    "title": "Understanding the 12 Principles of Animation",
+    "url": "https://www.adobe.com/creativecloud/animation/discover/principles-of-animation.html",
+    "publisher": "Adobe",
+    "accessed": "2026-10-20",
+    "kind": "official_animation_education",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A12-C1","claim":"动画词汇包含预备动作、时间控制、缓入缓出、跟随动作、挤压伸展与夸张等。","support":"官方教学页逐项说明12原则。","limits":"属于软件厂商对传统动画原则的教学整理，非原始著作；这些方法不必在每个游戏或每个动作中同时使用。"}
+    ]
+  },
+  {
+    "id": "A13",
+    "title": "Material Design (v1): Introduction",
+    "url": "https://m1.material.io/material-design/introduction.html",
+    "publisher": "Google",
+    "accessed": "2026-10-20",
+    "kind": "official_design_system",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A13-C1","claim":"设计系统可把字体、网格、空间、色彩和运动组织成有关系与层级的统一语言。","support":"Goals及Bold, graphic, intentional、Motion provides meaning段。","limits":"来自界面系统，不是游戏画风标准；可借鉴规范的组织方式，无须复制其材料隐喻或视觉外观。"}
+    ]
+  },
+  {
+    "id": "A14",
+    "title": "CSS Color Module Level 4",
+    "url": "https://www.w3.org/TR/css-color-4/",
+    "publisher": "W3C / CSS Working Group",
+    "accessed": "2026-10-20",
+    "kind": "web_color_specification",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A14-C1","claim":"HSL的等数值距离并不保证等知觉差异；Oklab/OkLCh提供另一种色彩描述坐标。","support":"HSL和Oklab、OkLCh相关章节对比。","limits":"色彩坐标不能单独决定艺术质量；显示设备、色域与观察条件仍影响结果。"}
+    ]
+  },
+  {
+    "id": "A15",
+    "title": "Xbox Accessibility Guideline 102: Contrast",
+    "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/102",
+    "publisher": "Microsoft",
+    "accessed": "2026-10-20",
+    "kind": "game_accessibility_guideline",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A15-C1","claim":"关键视觉元素需要对背景有足够对比，让低视力玩家可辨认。","support":"Goal及Implementation guidelines。","limits":"指南中的对比比率要按元素类别与上下文使用；不可把文字阈值机械套给全画面所有纹理。"}
+    ]
+  },
+  {
+    "id": "A16",
+    "title": "Xbox Accessibility Guideline 103: Additional channels for visual and audio cues",
+    "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/103",
+    "publisher": "Microsoft",
+    "accessed": "2026-10-20",
+    "kind": "game_accessibility_guideline",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A16-C1","claim":"重要信息应有可替代线索，避免仅由视觉或听觉单一感官方式提供。","support":"Goal及Overview，并列出颜色信息和其他提示示例。","limits":"多线索需评估同步与负荷；图形与文字虽能补偿色觉差异，却不等于覆盖完全失明玩家。"}
+    ]
+  },
+  {
+    "id": "A17",
+    "title": "Xbox Accessibility Guideline 117: Visual distractions and motion settings",
+    "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/117",
+    "publisher": "Microsoft",
+    "accessed": "2026-10-20",
+    "kind": "game_accessibility_guideline",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A17-C1","claim":"相机摇晃、视场角、动态模糊、自动相机变化等需要可访问性层面的配置考虑。","support":"Overview及Implementation guidelines。","limits":"需要按游戏和玩家测试；不存在适用于所有人的统一舒适数值。"}
+    ]
+  },
+  {
+    "id": "A18",
+    "title": "Xbox Accessibility Guideline 101: Text display",
+    "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/101",
+    "publisher": "Microsoft",
+    "accessed": "2026-10-20",
+    "kind": "game_accessibility_guideline",
+    "verification": "web_open_full_text",
+    "claims": [
+      {"id":"A18-C1","claim":"文字表现需要共同考虑可见字高、字形、粗细、间距、对齐、颜色及缩放。","support":"Text display、Measuring text size及Implementation guidelines。","limits":"字体文件的标称字号不是最终可见字高；数值建议有平台与显示条件，中文等文字还需独立核验。"}
+    ]
+  }
+]

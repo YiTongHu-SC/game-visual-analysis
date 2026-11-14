@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="atlas-title atlas-desc" lang="zh-CN" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif">
+  <title id="atlas-title">边缘与表面信息：两组独立对照</title>
+  <desc id="atlas-desc">同一原创回收扫描器，上排演示硬边、软边和主壳不规则边；下排演示6、20、60个同类表面标记。两排不构成好坏排序，也不表示完整游戏画风。</desc>
+  <rect width="1200" height="700" fill="#f4f6f2" />
+  <text x="40" y="44" font-size="28" font-weight="700" fill="#263b45" text-anchor="start">边缘与表面信息：两组独立对照</text>
+  <text x="40" y="76" font-size="16" font-weight="400" fill="#263b45" text-anchor="start">基准画布 1200 × 700；两排分别观察边界与表面信息；所有对象保持同一比例与色板。</text>
+  <defs>
+    <filter id="soft-edge" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="1.8" />
+    </filter>
+  </defs>
+  <g data-panel="hard-edge">
+    <rect x="40" y="100" width="360" height="260" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <text x="60" y="129" font-size="22" font-weight="700" fill="#263b45" text-anchor="start">硬边</text>
+    <g transform="translate(220 231)" data-role="tool" data-outline-width="0" stroke="#263b45" stroke-width="0" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+    </g>
+    <text x="220" y="345" font-size="15" font-weight="400" fill="#566b70" text-anchor="middle">边界转换集中；内部图形保持清晰。</text>
+  </g>
+  <g data-panel="soft-edge">
+    <rect x="420" y="100" width="360" height="260" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <text x="440" y="129" font-size="22" font-weight="700" fill="#263b45" text-anchor="start">软边</text>
+    <g transform="translate(600 231)" data-role="tool" data-outline-width="0" stroke="#263b45" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" filter="url(#soft-edge)">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+    </g>
+    <text x="600" y="345" font-size="15" font-weight="400" fill="#566b70" text-anchor="middle">整体高斯模糊：边界过渡变宽。</text>
+  </g>
+  <g data-panel="irregular-edge">
+    <rect x="800" y="100" width="360" height="260" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <text x="820" y="129" font-size="22" font-weight="700" fill="#263b45" text-anchor="start">不规则边</text>
+    <g transform="translate(980 231)" data-role="tool" data-outline-width="0" stroke="#263b45" stroke-width="0" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 L -39 -64 L -18 -61 L 4 -63 L 34 -61 L 45 -48 L 59 -34 L 61 -12 L 58 8 L 61 29 L 59 49 L 61 66 L 37 65 L 16 67 L -8 64 L -33 67 L -60 65 L -58 43 L -62 22 L -59 1 L -62 -21 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+    </g>
+    <text x="980" y="345" font-size="15" font-weight="400" fill="#566b70" text-anchor="middle">仅扰动主壳边界；不是随机闪烁。</text>
+  </g>
+  <g data-panel="detail-6">
+    <rect x="40" y="380" width="360" height="260" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <text x="60" y="409" font-size="22" font-weight="700" fill="#263b45" text-anchor="start">稀疏表面信息</text>
+    <g transform="translate(220 511)" data-role="tool" data-outline-width="1.5" stroke="#263b45" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <path d="M -47.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -2.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -47.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -2.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+    </g>
+    <text x="220" y="625" font-size="15" font-weight="400" fill="#566b70" text-anchor="middle">6 个同类表面标记；标记大小保持相同。</text>
+  </g>
+  <g data-panel="detail-20">
+    <rect x="420" y="380" width="360" height="260" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <text x="440" y="409" font-size="22" font-weight="700" fill="#263b45" text-anchor="start">中等表面信息</text>
+    <g transform="translate(600 511)" data-role="tool" data-outline-width="1.5" stroke="#263b45" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <path d="M -47.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -24.50 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -2.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 20.50 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -47.00 25.33 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -24.50 25.33 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -2.00 25.33 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 20.50 25.33 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 25.33 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -47.00 33.67 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -24.50 33.67 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -2.00 33.67 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 20.50 33.67 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 33.67 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -47.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -24.50 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -2.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 20.50 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+    </g>
+    <text x="600" y="625" font-size="15" font-weight="400" fill="#566b70" text-anchor="middle">20 个同类表面标记；标记大小保持相同。</text>
+  </g>
+  <g data-panel="detail-60">
+    <rect x="800" y="380" width="360" height="260" rx="16" fill="#ffffff" stroke="#d7e0db" />
+    <text x="820" y="409" font-size="22" font-weight="700" fill="#263b45" text-anchor="start">密集表面信息</text>
+    <g transform="translate(980 511)" data-role="tool" data-outline-width="1.5" stroke="#263b45" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-14" y="60" width="28" height="40" rx="7" fill="#cfa77e" />
+      <rect x="-38" y="-86" width="76" height="30" rx="8" fill="#cfa77e" />
+      <path d="M -60 -62 H 34 L 60 -36 V 66 H -60 Z" fill="#d6e3dc" data-role="housing" />
+      <rect x="-42" y="-38" width="84" height="40" rx="7" fill="#9fbfc2" />
+      <rect x="-23" y="-19" width="10" height="12" rx="2" fill="#263b45" stroke="none" />
+      <rect x="-6" y="-29" width="10" height="22" rx="2" fill="#263b45" stroke="none" />
+      <rect x="11" y="-23" width="10" height="16" rx="2" fill="#263b45" stroke="none" />
+      <circle cx="-28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="0" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <circle cx="28" cy="54" r="4" fill="#6b8580" stroke="none" />
+      <path d="M -47.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -37.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -27.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -17.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -7.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 3.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 13.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 23.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 33.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 17.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -47.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -37.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -27.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -17.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -7.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 3.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 13.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 23.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 33.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 22.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -47.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -37.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -27.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -17.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -7.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 3.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 13.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 23.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 33.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 27.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -47.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -37.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -27.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -17.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -7.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 3.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 13.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 23.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 33.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 32.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -47.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -37.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -27.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -17.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -7.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 3.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 13.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 23.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 33.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 37.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -47.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -37.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -27.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -17.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M -7.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 3.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 13.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 23.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 33.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+      <path d="M 43.00 42.00 l 4 -2" stroke="#788f88" stroke-width="1.4" fill="none" data-role="surface-mark" />
+    </g>
+    <text x="980" y="625" font-size="15" font-weight="400" fill="#566b70" text-anchor="middle">60 个同类表面标记；标记大小保持相同。</text>
+  </g>
+  <text x="40" y="671" font-size="16" font-weight="400" fill="#263b45" text-anchor="start">不规则 ≠ 模糊；信息密集 ≠ 质量更高。表面标记数量只是本图的控制量，不是通用细节评分。</text>
+  <text x="40" y="694" font-size="14" font-weight="400" fill="#263b45" text-anchor="start">原创程序示意，非 examples 的待制作参考；不覆盖全部画风。实际项目需在真实资产、视角与运动中另行校准。</text>
+</svg>

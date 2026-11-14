@@ -1,2 +1,3 @@
 * text eol=lf
 references/gvf-*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+offline/gvf/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

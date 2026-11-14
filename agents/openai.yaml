@@ -1,4 +1,4 @@
 interface:
   display_name: "游戏视觉分析"
-  short_description: "跨项目拆解游戏画风、视觉层级与交互反馈，提供有证据的对比和改进建议"
+  short_description: "查看并打开离线 GVF 框架，分析游戏画风、视觉层级与交互反馈"
   default_prompt: "使用 $game-visual-analysis，分析我提供的游戏截图或实机录像，说明画风构成、视觉层级、关键问题和改进建议，并标明证据与未知项。"

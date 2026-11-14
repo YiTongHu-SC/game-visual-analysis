@@ -1,0 +1,629 @@
+{
+  "schema_version": "0.2.0",
+  "framework_version": "0.2.0",
+  "catalog_version": "0.2.0",
+  "id": "cel-3d",
+  "title": "云轨巡游：赛璐璐三维",
+  "status": "draft_unvalidated",
+  "preset": "production_3d",
+  "intent": {
+    "experience": "在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。",
+    "keywords": [
+      "分段明暗",
+      "有色描边",
+      "夸张动作"
+    ],
+    "avoid": [
+      "写实皮肤毛孔",
+      "高强度运动模糊",
+      "无规则彩色特效"
+    ]
+  },
+  "scope": {
+    "target": "原创假想游戏的代表性主玩法镜头、主体资产和覆盖UI；不是实际游戏分析结果。",
+    "context": {
+      "dimension": "3d",
+      "render_pipeline": "cel",
+      "camera_projection": "perspective",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 60,
+      "working_color_space": "linear-sRGB",
+      "output_color_space": "sRGB",
+      "tone_mapping": "示例占位：需固定引擎tone mapper、自动曝光与曝光基线后复核",
+      "display_target": "SDR桌面显示器，参考输出1920×1080；观看距离需项目校准。"
+    }
+  },
+  "references": [
+    {
+      "id": "anchor-plan",
+      "kind": "anchor_sheet",
+      "uri": "pending:anchor-sheet/cel-3d",
+      "description": "待制作的五级锚点片与动作/渲染参考计划；当前无已核验图像证据。",
+      "verified": false
+    }
+  ],
+  "parameters": {
+    "representation.mode": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "3d",
+      "calibration_ref": "anchor-plan"
+    },
+    "representation.recognizability": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "representation.depth_cues": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "representation.abstraction_strategy": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "distorted"
+    },
+    "representation.source_medium": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "digital_clean"
+    },
+    "representation.semantic_load": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.naturalism": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.proportion_exaggeration": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.shape_language": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "angular"
+    },
+    "form.edge_roundness": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.silhouette_complexity": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.scale_consistency": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "form.anatomy_strategy": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "exaggerated"
+    },
+    "line.usage": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "outer_and_inner",
+      "calibration_ref": "anchor-plan"
+    },
+    "line.width_px": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 3,
+      "calibration_ref": "anchor-plan"
+    },
+    "line.weight_variation": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "line.edge_regularity": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "line.color_mode": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "tinted_dark"
+    },
+    "line.inner_density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.material_physicality": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.detail_density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.texture_mode": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "flat_blocks"
+    },
+    "surface.brush_visibility": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "surface.brush_scale_px": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "无可辨手绘笔触。"
+    },
+    "surface.roughness": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "赛璐璐自定义着色器未暴露PBR粗糙度。"
+    },
+    "surface.metallic": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "赛璐璐材质响应使用分段色阶。"
+    },
+    "color.palette_mode": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "complementary"
+    },
+    "color.palette_colors": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "四个命名基础色token；光照、渐变和抗锯齿派生色不计入，初始假设尚未视觉验证。",
+      "value": 4
+    },
+    "color.saturation": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "color.value_range": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 0.65
+    },
+    "color.palette_lightness": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "尚未正式指定主色token及其测量条件；不得把色板样例或未经计算的L/C/h当作已测量指令。"
+    },
+    "color.palette_chroma": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "尚未正式指定主色token及其测量条件；不得把色板样例或未经计算的L/C/h当作已测量指令。"
+    },
+    "color.palette_hue": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "尚未正式指定主色token及其测量条件；不得把色板样例或未经计算的L/C/h当作已测量指令。"
+    },
+    "color.accent_area": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 8
+    },
+    "color.temperature_bias": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "split"
+    },
+    "light.physicality": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.model": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "cel"
+    },
+    "light.shadow_hardness": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 100,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.contrast": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.exposure_ev": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "引擎tone mapper、自动曝光状态与曝光基线尚未固定；确定基线后再记录EV补偿，未定不等于NA或0。"
+    },
+    "light.emissive_prominence": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "light.ambient_occlusion": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "camera.projection": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "perspective",
+      "calibration_ref": "anchor-plan"
+    },
+    "camera.elevation_deg": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 15
+    },
+    "camera.vertical_fov_deg": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 50
+    },
+    "camera.distance_m": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 8
+    },
+    "camera.movement": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "follow"
+    },
+    "camera.distortion": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "composition.focal_hierarchy": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "composition.negative_space": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25
+    },
+    "composition.depth_layers": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 3
+    },
+    "composition.density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "composition.alignment": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "organic"
+    },
+    "composition.subject_separation": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 75,
+      "calibration_ref": "anchor-plan"
+    },
+    "motion.naturalism": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "motion.timing": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "snappy"
+    },
+    "motion.animation_fps": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 24
+    },
+    "motion.squash_stretch": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "motion.anticipation_ms": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 120
+    },
+    "motion.secondary_motion": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "vfx.density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。 0.2迁移复核：此原有数值尚未按收窄后的静帧空间占据/同帧叠层锚点重校准；不得沿用旧时间频率解释。",
+      "value": 50,
+      "calibration_ref": "anchor-plan"
+    },
+    "vfx.bloom": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "vfx.motion_blur_shutter": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "vfx.screen_shake_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 6
+    },
+    "vfx.hit_flash_ms": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 80
+    },
+    "vfx.semantic_color": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "danger_based"
+    },
+    "ui.integration": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "overlay"
+    },
+    "ui.typography": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "sans"
+    },
+    "ui.min_font_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 24
+    },
+    "ui.text_contrast": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 7
+    },
+    "ui.information_density": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 25,
+      "calibration_ref": "anchor-plan"
+    },
+    "ui.component_shape": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "ornamental"
+    },
+    "presentation.resolution_strategy": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "native",
+      "calibration_ref": "anchor-plan"
+    },
+    "presentation.pixel_grid_px": {
+      "state": "not_applicable",
+      "strength": "soft",
+      "rationale": "原生高清三维，不定义像素美术网格。"
+    },
+    "presentation.antialiasing": {
+      "state": "set",
+      "strength": "hard",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": "smaa",
+      "calibration_ref": "anchor-plan"
+    },
+    "presentation.grain": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "presentation.chromatic_aberration_px": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 0
+    },
+    "presentation.vignette": {
+      "state": "set",
+      "strength": "soft",
+      "rationale": "初始假设：支持“在高架云轨高速巡游，角色轮廓鲜明，动作与危险反馈清晰。”；需在固定输出的代表性样张中复核。",
+      "value": 0,
+      "calibration_ref": "anchor-plan"
+    },
+    "camera.view_orientation": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "0.2.0新增独立参数；原方案未明确此项，迁移时不自动推断。"
+    },
+    "light.shading_appearance": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "0.2.0新增独立参数；原方案未明确此项，迁移时不自动推断。"
+    },
+    "representation.spatial_logic": {
+      "state": "unknown",
+      "strength": "soft",
+      "rationale": "0.2.0新增独立参数；原方案未明确此项，迁移时不自动推断。"
+    }
+  },
+  "overrides": [
+    {
+      "id": "boss-outline",
+      "target": {
+        "kind": "asset",
+        "id": "cloud-boss"
+      },
+      "priority": 20,
+      "reason": "远景boss轮廓需要单独识别，保留显式局部例外。",
+      "parameters": {
+        "line.width_px": {
+          "state": "set",
+          "strength": "hard",
+          "value": 5,
+          "rationale": "大型boss在远景提高轮廓厚度；先比较5px与3px的样张。",
+          "calibration_ref": "anchor-plan"
+        }
+      }
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "boss-hard-line",
+      "parameter_id": "line.width_px",
+      "override_id": "boss-outline",
+      "rule": "hard_override",
+      "reason": "远景boss偏离基础3px描边，需要负责人对比样张后决定是否保留。",
+      "owner": "示例美术负责人（角色占位）",
+      "review_date": "2026-11-20"
+    }
+  ],
+  "review": {
+    "visual_status": "not_reviewed",
+    "notes": "所有风格数值、颜色、时间与对比度均为原创示例初始假设，尚未生成样张、测量或进行视觉验证；verified=false不得解释为已校准。"
+  },
+  "palette": [
+    {
+      "id": "sky",
+      "color": "#456AA4",
+      "color_space": "sRGB",
+      "role": "background",
+      "usage": "冷色远景；初始设计假设，未验证对比度和色域映射。"
+    },
+    {
+      "id": "hero",
+      "color": "#F0A33E",
+      "color_space": "sRGB",
+      "role": "primary",
+      "usage": "主角识别；初始设计假设，未验证对比度和色域映射。"
+    },
+    {
+      "id": "danger",
+      "color": "#E65262",
+      "color_space": "sRGB",
+      "role": "danger",
+      "usage": "危险提示同时配形状；初始设计假设，未验证对比度和色域映射。"
+    },
+    {
+      "id": "text",
+      "color": "#FFF5E4",
+      "color_space": "sRGB",
+      "role": "text",
+      "usage": "深底文字；初始设计假设，未验证对比度和色域映射。"
+    }
+  ],
+  "document_type": "design_profile"
+}
