@@ -43,7 +43,7 @@ class OfflineFrameworkTests(unittest.TestCase):
                   for p in WEB.rglob("*") if p.is_file()}
         self.assertEqual(actual, manifest["files"])
         self.assertEqual(manifest["framework_version"], "0.2.0")
-        self.assertEqual(len(actual), 42)
+        self.assertEqual(len(actual), 45)
         for filename in ("parameters", "glossary"):
             self.assertEqual((WEB / "data" / (filename + ".json")).read_bytes(),
                              (ROOT / "references" / ("gvf-" + filename + ".json")).read_bytes())

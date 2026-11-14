@@ -2,11 +2,14 @@
   "framework_version": "0.2.0",
   "packaged_on": "2026-11-14",
   "source": "GVF 0.2.0 research framework static export",
-  "source_index_sha256": "2422033453ab2b6247983e8b92ae1e5c3426f9b99ce0d617ccd10eee210437ea",
+  "source_index_sha256": "e61ea72812683ff61952d85c6e967674a01971efa99804a34084c0663184859e",
   "entrypoint": "gvf/index.html",
   "files": {
-    "gvf/calibration/edge-and-detail.svg": "456f2e552bf46524d29be8802686cc8c4e9b6ab3a00d3ee3a35bb554b7a5d7ec",
-    "gvf/calibration/line-width.svg": "8f1a2bdba9adf6699c03400d0145599d212eccab91e945809d1105bb7c4ef245",
+    "gvf/calibration/cat-mage-master.png": "3c02436c4a9d133545ef5a6af05839e9c1e350c1eedd4394b5aa9b9d323b90a9",
+    "gvf/calibration/contour-irregularity.svg": "decdcf675138adcdeb35e434f8ff98e69b24687d2728034059251a233139b207",
+    "gvf/calibration/edge-and-detail.svg": "0d6e8384c83f56c6689538facc0cb0b30e437d6a154fcfcb2fdfe96a5caf27c4",
+    "gvf/calibration/line-width.svg": "11b1e2dd2050e7d5ee3b7d48be267f585b437005a7be4263438d832b6e11da80",
+    "gvf/calibration/texture-density.svg": "eb974ed9cd91042de115853e4f24be991421bb411397cea773a35742df243eb2",
     "gvf/cases/case-metrics.json": "6e78570175ccd1fa1de2ee4a55d3607e85d92591c267c2223f8946d6489e3206",
     "gvf/cases/findings.json": "0feb18281bd8287bd581ad7008c36d34358e76704274f38a020d0e1acfaae505",
     "gvf/cases/image-manifest.json": "eafbf9f54921e685b1dca7c8633c916a9fd710312ae7b746c3a7b3d159ac2799",
@@ -39,7 +42,7 @@
     "gvf/examples/observational-3d.json": "3f4842aa004b11fa61c5ff3e146bfb434bb28845ad11443fd8b612f1f6b110cf",
     "gvf/examples/paper-flat.json": "62067b44c71b8bc2a0ae70386a4d795557e2b21b5906caddcd10782a5b356e96",
     "gvf/examples/pixel-topdown.json": "3aada5cf9478fe5f417e046cb622d01c2fcb4709c4e38adc6699b2428bf0cc87",
-    "gvf/index.html": "7f313cd58b569f0a3f02b378e21db5d5adabd092d5654a66c1f0daf1178cfa55",
+    "gvf/index.html": "4e3a2fe6a23c21f3655997d5a0d4bcba1d8241b5b6bcb5a2edeacc6fbed19fb3",
     "gvf/README.html": "abb037be7013265a71a508d3bfd6d1aec515618c6c735b2b3ba038d096b0b783",
     "gvf/reference/03-parameterization.md": "10f11afb3156b490120f7b23af2040a200e5eae22f5528c2a8bc663bdd2acbcf",
     "gvf/reference/05-calibration-and-qa.md": "4c00a010ab7290a545101c096f1b8e0d2edb18161b24ebef4200077324c59567",
@@ -47,5 +50,6 @@
     "gvf/reference/11-contract-changes.md": "69515a538bff9d3b7a53c1cd886f8715f74f1135807e582f742e4071764ccb3d",
     "gvf/schemas/observation.schema.json": "a557af68abc47e9c663c9e15403abe51cf2f88b6df23414bdbf5277e712c53fc",
     "gvf/schemas/profile.schema.json": "a55d7e5abaeb50f512d6f5e23456bf4034a67b328fad4f39eb8f2c1b2807d317"
-  }
+  },
+  "atlas_revision": "cat-mage-single-variable-2026-11-14"
 }
