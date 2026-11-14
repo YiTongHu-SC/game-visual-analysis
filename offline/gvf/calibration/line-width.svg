@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="atlas-title atlas-desc" lang="zh-CN" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" data-master-sha256="3c02436c4a9d133545ef5a6af05839e9c1e350c1eedd4394b5aa9b9d323b90a9">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="atlas-title atlas-desc" lang="zh-CN" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" data-master-sha256="3c02436c4a9d133545ef5a6af05839e9c1e350c1eedd4394b5aa9b9d323b90a9">
   <title id="atlas-title">01 描边宽度：从细线到极粗外轮廓</title>
   <desc id="atlas-desc">只增加角色外侧的描边范围；五官、服装内部线条与原始填色保持不变。三格复用同一张猫咪法师母图。参数仅用于当前示例，不是风格质量分。</desc>
-  <rect width="1200" height="630" fill="#f8f7f1" />
+  <rect width="1200" height="600" fill="#f8f7f1" />
   <text x="32" y="45" font-size="30" font-weight="700" text-anchor="start" fill="#263b45">01 描边宽度：从细线到极粗外轮廓</text>
   <text x="32" y="78" font-size="17" font-weight="400" text-anchor="start" fill="#263b45">只增加角色外侧的描边范围；五官、服装内部线条与原始填色保持不变。</text>
   <defs>
@@ -70,5 +70,4 @@
     <text x="990" y="541" font-size="28" font-weight="700" text-anchor="middle" fill="#263b45">极粗描边</text>
     <text x="990" y="570" font-size="17" font-weight="400" text-anchor="middle" fill="#566b70">外扩强度 15</text>
   </g>
-  <text x="32" y="612" font-size="16" font-weight="400" text-anchor="start" fill="#263b45">固定母图、比例、配色与内部细节。数值为 SVG 控制量，缩放会改变屏幕尺寸；不是 0–100 质量评分。</text>
 </svg>
